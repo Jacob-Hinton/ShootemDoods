@@ -45,9 +45,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Player_gun.cs" />
      <Compile Include="Assets\Scripts\Ambient_scrolling.cs" />
      <Compile Include="Assets\Scripts\Camera_Scripts\Camera_scrolling.cs" />
+     <Compile Include="Assets\Scripts\Player_scripts\Player_bullet.cs" />
      <Compile Include="Assets\Scripts\Player_scripts\Player_movement.cs" />
+     <Compile Include="Assets\Scripts\Projectile_scripts\Within_bounds.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
  <Reference Include="UnityEngine.UI">
