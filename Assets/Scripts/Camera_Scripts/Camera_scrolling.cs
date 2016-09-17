@@ -11,7 +11,7 @@ public class Camera_scrolling : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		pos.x += space;
 		transform.position = Vector3.MoveTowards(transform.position, pos, cameraScrollSpeed * Time.deltaTime);
 	}

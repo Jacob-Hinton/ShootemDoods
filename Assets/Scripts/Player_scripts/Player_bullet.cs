@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Player_bullet : MonoBehaviour {
 
-	public Rigidbody projectile;
+	public Rigidbody2D projectile;
 	int speed = 20;
 
 
@@ -20,8 +20,8 @@ public class Player_bullet : MonoBehaviour {
 
 
 			// Instantiate the projectile at the position and rotation of this transform
-			Rigidbody clone;
-			clone = Instantiate(projectile, transform.position + new Vector3(0.5F,0,0), transform.rotation) as Rigidbody;
+			Rigidbody2D clone;
+			clone = Instantiate(projectile, transform.position + new Vector3(0.5F,0,0), transform.rotation) as Rigidbody2D;
 
 			clone.velocity = transform.TransformDirection(new Vector3(speed, 0,0));
 
