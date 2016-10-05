@@ -7,19 +7,24 @@ public class Player_control : MonoBehaviour {
 	float default_speed;
 	public int b_speed = 20;
 	public Rigidbody2D projectile;
+	public Rigidbody2D laZer;
 	public float m_speed;
 	public Vector3 pos;
 	private bool shield;
-	private bool automaticFire = true;
+	private int automaticFire = 5;
+	public float invuln_timer = 0;
+	public bool hitframes = false;
 
 	public Stack held_power_ups = new Stack();
 	//array indices: 0=red, 1=blue, 2=yellow
-	int[] poweruparray = {0, 0, 0};
+	public int[] poweruparray = {0, 0, 0};
 	// private int red_state;
 	// private int blue_state;
 	// private int yellow_state;
 	// Use this for initialization
 	void Start () {
+		// poweruparray[1] = 2;
+		this.gameObject.layer = 9;
 		default_speed = m_speed;
 		shield = false;
 		pos = transform.position;
@@ -41,6 +46,20 @@ public class Player_control : MonoBehaviour {
 		else if (Input.GetKey (KeyCode.D)||Input.GetAxis("Horizontal")>0) {
 			transform.position += Vector3.right * m_speed * Time.deltaTime;
 		}
+
+		if (invuln_timer>0){
+			invuln_timer -= 1f*Time.deltaTime;
+			// this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+			if(invuln_timer<=0) {
+				this.gameObject.layer = 9;
+				hitframes = false;
+				this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+				// this.gameObject.GetComponent<BoxCollider2D>().enabled = true;
+			}
+		}
+
+		// Debug.Log(this.gameObject.layer);
+		// Debug.Log(poweruparray[1]);
 		
 		transform.position += Vector3.right * Ambient_scrolling.ambientScrollSpeed * Time.deltaTime;
 
@@ -48,35 +67,45 @@ public class Player_control : MonoBehaviour {
 
 	void Update() {
 		// if (Input.GetKeyDown (KeyCode.Space)||Input.GetButtonDown("Fire1")) {
-			FireWeapon();
-			if(Input.GetKeyDown(KeyCode.E)||Input.GetButtonDown("GetPower")){
-				Activate_Powerups();
-			}
-			if(Input.GetKeyDown(KeyCode.LeftShift)||Input.GetButtonDown("Special")){
-
-			}
+		FireWeapon();
+		if(Input.GetKeyDown(KeyCode.E)||Input.GetButtonDown("GetPower")){
+			ActivatePowerups();
+		}
+		if(Input.GetKeyDown(KeyCode.LeftShift)||Input.GetButtonDown("Special")){
+			UseAbility();
+		}
 		// 	// Instantiate the projectile at the position and rotation of this transform
 		// 	Rigidbody2D clone;
 		// 	clone = Instantiate(projectile, transform.position + new Vector3(0.5F,0,0), transform.rotation) as Rigidbody2D;
 		// 	clone.velocity = transform.TransformDirection(new Vector3(b_speed, 0,0));
 		// 	// ShowPowerUps();
-		}
+	}
 	
 
 	void FireWeapon(){
+		//machine gun
 		if(poweruparray[0]==1){
 			if (Input.GetKey(KeyCode.Space)||Input.GetButton("Fire1")) {
-				if (automaticFire == true){
+				if (automaticFire == 5){
 					Rigidbody2D clone;
 					clone = Instantiate(projectile, transform.position + new Vector3(0.5F,0,0), transform.rotation) as Rigidbody2D;
 					clone.velocity = transform.TransformDirection(new Vector3(b_speed, 0,0));
-					automaticFire = false;
+					automaticFire = 0;
 				}
 				else{
-					automaticFire = true;
+					automaticFire++;
 				}
 			}
 		}
+		//laZer
+		else if(poweruparray[0] == 3){ 
+			if (Input.GetKeyDown(KeyCode.Space)||Input.GetButtonDown("Fire1")) {
+				Rigidbody2D clone;
+				clone = Instantiate(laZer, transform.position + new Vector3(0.5F,0,0), transform.rotation) as Rigidbody2D;
+				clone.velocity = transform.TransformDirection(new Vector3(b_speed, 0,0));
+			}	
+		}
+		//default
 		else{ 
 			if (Input.GetKeyDown(KeyCode.Space)||Input.GetButtonDown("Fire1")) {
 				Rigidbody2D clone;
@@ -91,7 +120,29 @@ public class Player_control : MonoBehaviour {
 	// 		Debug.Log(poweruparray[i]);
 	// 	}
 
-	void Activate_Powerups() {
+	void UseAbility(){
+		//Barrel Roll
+		if(poweruparray[1] == 2){
+			this.gameObject.GetComponent<SpriteRenderer>().color = new Color(0.5f, 0.5f, 0.5f, 0.8f);
+			invuln_timer = 1;
+			this.gameObject.layer = 10;
+			// this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+		}
+	}
+
+	public void LosePowerUp(){
+		// Getting hit with a power-up
+		poweruparray = new int[3];
+		invuln_timer = 3;
+		hitframes = true;
+		this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 0.5f, 0.5f, 0.8f);
+		this.gameObject.layer = 10;
+		m_speed=default_speed;
+	}
+
+	void ActivatePowerups() {
+		// Cashing in
+
 		//array indices: 0=red, 1=blue, 2=yellow
 		//Clear power-up stack, determine activated power-up, activate power-up
 		// switch(poweruparray){
@@ -106,8 +157,9 @@ public class Player_control : MonoBehaviour {
 		poweruparray = new int[3];
 
 		// Debug.Log(held_power_ups.Pop());
-		for (int i=0; i<held_power_ups.Count; i++){
+		while (held_power_ups.Count>0){
 			char code = (char)held_power_ups.Pop();
+			Debug.Log(code);
 			if (code == 'r'){
 				poweruparray[0]++;
 			}
@@ -119,9 +171,13 @@ public class Player_control : MonoBehaviour {
 			}
 		}
 
-		for (int i=0; i<3; i++){
-			Debug.Log(poweruparray[i]);
-		}
+		// for (int i=0; i<3; i++){
+		// 	Debug.Log(poweruparray[i]);
+		// }
+
+		// if (poweruparray[1] != 2){
+		// 	this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+		// }
 
 		if (poweruparray[2] == 1){
 			m_speed=m_speed*1.5f;

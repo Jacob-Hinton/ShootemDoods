@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Destroy_bullet : MonoBehaviour {
+public class Destroy_laZer : MonoBehaviour {
 
-	
 	public Transform explosionPrefab;
 
 
@@ -18,7 +17,6 @@ public class Destroy_bullet : MonoBehaviour {
 				col.gameObject.GetComponent<Spawn_powerup>().Spawn();
 				Destroy(col.gameObject);
 			}
-			Destroy(gameObject);
 		}
 	}
 }
