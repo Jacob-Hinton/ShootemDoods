@@ -1,4 +1,4 @@
-___
+﻿___
 
 # <p style="text-align: right;">Software Requirments Specification</p>
 
@@ -97,28 +97,18 @@ This document is intended to be read by the developers of the software, managers
 
 # **4.  System Features**
 
-| Item | FR-1: Controller Support |
-|-------| ---------|
-|Priority | High |
-| Summary | The system should provide one or more ways for the Player to make inputs |
-| Rational | If the player is unable to control the game, then the game is unplayable. Control is a highly essential part of the system |
-| Requirements | The system should check if an XInput compatible controller is connected to the user's device. If no such controller is connected, the system will accept input from the keyboard.If a compatible controller is connected, it will accept user input from the controller. These inputs will be used to move the Player's ship, shoot the player's weapon, navigate menus|
-| Users | Player |
-| Preconditions | |
-| Basic Course of Events |  |
-| References | FR-2, FR-3, FR-4 |
+
+##  **4.1 Basic Gameplay Support**
 
 
-| Item | FR-2: Move Player |
-|-------| ---------|
-|Priority | High |
-| Summary | The system should provide one or more ways for the user to move the Player's ship. |
-| Rational | If the player is unable to control the player's ship, then the game is unplayable. |
-| Requirements |   The Player shall be able to move the ship with keys W, A, S, and D, or the analog stick or directional pad of the XInput device. The User can move the player ship py pressing keys W, A, S, and D on the keyboard, or use of the analog stick or directional pad of the XInput device. |
-| Users | Player |
-| Preconditions | <ul><li>The game is running and is the active window</li><li>The user has either a keyboard plugged into the computer or a valid xinput device</li></ul> |
-| Basic Course of Events | <ul><li>User presses W, A, S, D or moves the left analog stick</li><li>The system moves the player ship in a direction that corresponds with what cardinal direction was indicated</li><li>User releases keyboard key or analog stick</li><li>The system halts the player ship</li></ul> |
-| References | FR-1 |
+#### 4.1.1 Description and Priority
+
+
+This feature is the implementation of all things that will allow the Player to play the game. This feature contains things such as moving and shooting, as well as menu navigation and variables that affect the Player during gameplay.
+
+
+#### 4.1.2  Stimulus Response Sequences
+
 
 
 | Actor Actions | System Actions |
@@ -127,7 +117,23 @@ This document is intended to be read by the developers of the software, managers
 | | 3. System gives a directional velocity to the ship that corresponds to the direction the input indicates |
 | | 4. The player ship starts to move in the direction given by the input |
 | 5. The player releases the directional key or analog stick | 6. The System removes the directional velocity applied to the player ship |
-| | 7. The player ship stops moving |
+| | 6. The player ship stops moving |
+
+
+####  4.1.3  Functional Requirements
+
+
+| Item | FR-2: Move Player |
+|-------| ---------|
+|Priority | High |
+| Summary | The system should provide one or more ways for the user to move the Player's ship. |
+| Rational | If the player is unable to control the player's ship, then the game is unplayable. |
+| Requirements |   The Player shall be able to move the ship with keys W, A, S, and D, or the analog stick or directional pad of the XInput device. The User can move the player ship by pressing keys W, A, S, and D on the keyboard, or use of the analog stick or directional pad of the XInput device. |
+| Users | Player |
+| Preconditions | <ul><li>The game is running and is the active window</li><li>The user has either a keyboard plugged into the computer or a valid xinput device</li></ul> |
+| Basic Course of Events | <ul><li>User presses W, A, S, D or moves the left analog stick</li><li>The system moves the player ship in a direction that corresponds with what cardinal direction was indicated</li><li>User releases keyboard key or analog stick</li><li>The system halts the player ship</li></ul> |
+| References | FR-1 |
+
 
 
 | Item | FR-3: Shoot Weapon  |
@@ -148,98 +154,11 @@ This document is intended to be read by the developers of the software, managers
 |Priority | High |
 | Summary |The system should provide one or more ways for the Player to navigate the menus.  |
 | Rational | The player must be able |
-| Requirements | The Player shall be able to navigate menus with keys W, A, S, and D, or the analog stick or directional pad of the XInput device. The User can move the player ship py pressing keys W, A, S, and D on the keyboard, or use of the analog stick or directional pad of the XInput device. |
+| Requirements | The Player shall be able to navigate menus with keys W, A, S, and D, or the analog stick or directional pad of the XInput device. The User can move the player ship by pressing keys W, A, S, and D on the keyboard, or use of the analog stick or directional pad of the XInput device. |
 | Users | Player |
 | Preconditions | |
 | Basic Course of Events |  |
 | References | FR-1 |
-
-
-| Item | FR-5: AI Behavior |
-|-------| ---------|
-|Priority | High |
-| Summary | |
-| Rational | |
-| Requirements |  |
-| References |  |
-
-
-| Item | FR-6: Start Game |
-|-------| ---------|
-|Priority | High |
-| Summary | The system should allow the Player to choose when gameplay begins. |
-| Rational | The Player should be able to choose when to begin the gameplay to ensure tha they are ready to play the game. |
-| Requirements | The Player shall navigate the main menu to the "Start" Option, and proceed to select the option by pressing the **TODO** key on the keyboard or the **TODO** button on the XInput device. The game should start at the first level. There shall be no saving or loading of progress. |
-| Users | Player |
-| Preconditions | |
-| Basic Course of Events |  |
-| References |  |
-
-
-
-| Item | FR-7: Game Over |
-|-------| ---------|
-|Priority | High | 
-| Summary | The game should end when the Player loses all lives. |
-| Rational | Losing should have consequences. A game over is a common consequence in many games of this style. |
-| Requirements | Should a player lose all lives and either choose not to continue, or be out of continues, the game over screeen should be presented. The game should present the game over screen until the player inputs any non-directional input. The game should then return the player to the title screen. |
-| Users | Player |
-| Preconditions | |
-| Basic Course of Events |  |
-| References |  |
-
-
-| Item | FR-8: Quit Game |
-|-------| ---------|
-|Priority | Low |
-| Summary | The player should be able to manually end gameplay. |
-| Rational | The player may wish to end gameplay, so it should be possible for them to do so. |
-| Requirements | The player shall press the pause button, bringing up the pause menu. The Player shall then select "Quit" and press **TODO** to confirm. The game shall then return to the main menu.  |
-| Users | Player |
-| Preconditions | |
-| Basic Course of Events |  |
-| References |  |
-
-
-
-
-| Item | FR-9: Play Level |
-|-------| ---------|
-|Priority | High |
-| Summary | A level should start, and continue until gameplay is ended manually, through a game over, or by completion of the level. |
-| Rational | |
-| Requirements |  |
-| Users | Player |
-| Preconditions | |
-| Basic Course of Events |  |
-| References |  |
-
-
-
-| Item | FR-10: Transition Levels |
-|-------| ---------|
-|Priority | High |
-| Summary | The system should be able to end the level upon victory, and prepare to start the next level. |
-| Rational | The game must be able to continue once one level has been completed. |
-| Requirements |  |
-| Users | Player |
-| Preconditions | |
-| Basic Course of Events |  |
-| References |  |
-
-
-
-| Item | FR-11: Destroy Enemies |
-|-------| ---------|
-|Priority | High |
-| Summary | The system should allow the player to destroy enemies|
-| Rational | The game would not be fun if the Player's weapon did nothing and would fail to fit the intended genre. |
-| Requirements | Upon an enemy being hit by a shot from the player's weapon, the enemy should be destroyed. The enemy should display an animation before disappearing. Upon Disappearing, enemies shall leave behind a powerup under conditions to be discussed. |
-| Users | Player |
-| Preconditions | |
-| Basic Course of Events |  |
-| References |  |
-
 
 
 | Item | FR-12: Collect Power Ups |
@@ -301,26 +220,84 @@ This document is intended to be read by the developers of the software, managers
 
 
 
-| Item | FR-17: Collide with Objects |
+
+##  **4.2 Game State Transitions**
+
+#### 4.2.1 Description and Priority
+
+
+This feature envelops all functions pertaining to changing the state of the system. This includes things such as starting and quitting the game, level progression and transitions, and pausing.
+
+
+#### 4.2.2  Stimulus Response Sequences
+
+
+####  4.2.3  Functional Requirements
+
+
+| Item | FR-6: Start Game |
 |-------| ---------|
 |Priority | High |
-| Summary | The levels shall contain objects that can be collided with, and the system needs to be able to deal with it. |
-| Rational | The Player is not meant to go through walls objects . The Player is meant to avoid walls and objects.  |
-| Requirements | If the Player's ship collides with a wall, enemy, or other object, then the player's ship shall take damage as outlined in FR-14. The Player's ship shall not continue moving through the wall, enemy, or other object. The Player's ship shall be able to move in directions that allow it to move away from the wall, enemy, or other object. |
-| References | FR-14 |
-
-
-
-| Item | FR-18: Quit Application |
-|-------| ---------|
-|Priority | Medium |
-| Summary | The system should provide the player the ability to close the application. |
-| Rational | Closing the application is basic functionality. |
-| Requirements | The player shall navigate to the "Quit" option in the main menu and select it. The system shall produce a dialog box asking the player to confirm. Should the player confirm, the system shall close the window and end. |
+| Summary | The system should allow the Player to choose when gameplay begins. |
+| Rational | The Player should be able to choose when to begin the gameplay to ensure that they are ready to play the game. |
+| Requirements | The Player shall navigate the main menu to the "Start" Option, and proceed to select the option by pressing the **TODO** key on the keyboard or the **TODO** button on the XInput device. The game should start at the first level. There shall be no saving or loading of progress. |
 | Users | Player |
 | Preconditions | |
 | Basic Course of Events |  |
-| References | FR-4 |
+| References |  |
+
+
+
+| Item | FR-7: Game Over |
+|-------| ---------|
+|Priority | High | 
+| Summary | The game should end when the Player loses all lives. |
+| Rational | Losing should have consequences. A game over is a common consequence in many games of this style. |
+| Requirements | Should a player lose all lives and either choose not to continue, or be out of continues, the game over screeen should be presented. The game should present the game over screen until the player inputs any non-directional input. The game should then return the player to the title screen. |
+| Users | Player |
+| Preconditions | |
+| Basic Course of Events |  |
+| References |  |
+
+
+
+| Item | FR-8: Quit Game |
+|-------| ---------|
+|Priority | Low |
+| Summary | The player should be able to manually end gameplay. |
+| Rational | The player may wish to end gameplay, so it should be possible for them to do so. |
+| Requirements | The player shall press the pause button, bringing up the pause menu. The Player shall then select "Quit" and press **TODO** to confirm. The game shall then return to the main menu.  |
+| Users | Player |
+| Preconditions | |
+| Basic Course of Events |  |
+| References |  |
+
+
+
+
+| Item | FR-9: Play Level |
+|-------| ---------|
+|Priority | High |
+| Summary | A level should start, and continue until gameplay is ended manually, through a game over, or by completion of the level. |
+| Rational | |
+| Requirements |  |
+| Users | Player |
+| Preconditions | |
+| Basic Course of Events |  |
+| References |  |
+
+
+
+| Item | FR-10: Transition Levels |
+|-------| ---------|
+|Priority | High |
+| Summary | The system should be able to end the level upon victory, and prepare to start the next level. |
+| Rational | The game must be able to continue once one level has been completed. |
+| Requirements |  |
+| Users | Player |
+| Preconditions | |
+| Basic Course of Events |  |
+| References |  |
 
 
 | Item | FR-19: Pause game  |
@@ -335,7 +312,6 @@ This document is intended to be read by the developers of the software, managers
 | References | FR-1 |
 
 
-
 | Item | FR-20: Resume game  |
 |-------| ---------|
 |Priority | Medium |
@@ -346,6 +322,96 @@ This document is intended to be read by the developers of the software, managers
 | Preconditions | FR-19 |
 | Basic Course of Events |  |
 | References | FR-1, FR-19 |
+
+
+##  **4.3 Gameplay Obstacles**
+
+
+#### 4.3.1 Description and Priority
+
+
+This feature consists of things that the Player will face, but do not require any direct input from the player. 
+
+
+#### 4.3.2  Stimulus Response Sequences
+
+
+####  4.3.3  Functional Requirements
+
+
+| Item | FR-17: Collide with Objects |
+|-------| ---------|
+|Priority | High |
+| Summary | The levels shall contain objects that can be collided with, and the system needs to be able to deal with it. |
+| Rational | The Player is not meant to go through walls objects . The Player is meant to avoid walls and objects.  |
+| Requirements | If the Player's ship collides with a wall, enemy, or other object, then the player's ship shall take damage as outlined in FR-14. The Player's ship shall not continue moving through the wall, enemy, or other object. The Player's ship shall be able to move in directions that allow it to move away from the wall, enemy, or other object. |
+| References | FR-14 |
+
+
+
+| Item | FR-5: AI Behavior |
+|-------| ---------|
+|Priority | High |
+| Summary | |
+| Rational | |
+| Requirements |  |
+| References |  |
+
+
+
+| Item | FR-11: Destroy Enemies |
+|-------| ---------|
+|Priority | High |
+| Summary | The system should allow the player to destroy enemies|
+| Rational | The game would not be fun if the Player's weapon did nothing and would fail to fit the intended genre. |
+| Requirements | Upon an enemy being hit by a shot from the player's weapon, the enemy should be destroyed. The enemy should display an animation before disappearing. Upon Disappearing, enemies shall leave behind a powerup under conditions to be discussed. |
+| Users | Player |
+| Preconditions | |
+| Basic Course of Events |  |
+
+
+##  **4.4 Basic Functionality **
+
+
+#### 4.4.1 Description and Priority
+
+
+This feature includes things such as accepting inputs and exiting the application. These are things all programs are generally expected to have.
+
+
+#### 4.4.2  Stimulus Response Sequences
+
+
+#### 4.4.3  Functional Requirements
+
+
+| Item | FR-1: Controller Support |
+|-------| ---------|
+|Priority | High |
+| Summary | The system should provide one or more ways for the Player to make inputs |
+| Rational | If the player is unable to control the game, then the game is unplayable. Control is a highly essential part of the system |
+| Requirements | The system should check if an XInput compatible controller is connected to the user's device. If no such controller is connected, the system will accept input from the keyboard.If a compatible controller is connected, it will accept user input from the controller. These inputs will be used to move the Player's ship, shoot the player's weapon, navigate menus|
+| References | FR-2, FR-3, FR-4 |
+
+| Item | FR-18: Quit Application |
+|-------| ---------|
+|Priority | Medium |
+| Summary | The system should provide the player the ability to close the application. |
+| Rational | Closing the application is basic functionality. |
+| Requirements | The player shall navigate to the "Quit" option in the main menu and select it. The system shall produce a dialog box asking the player to confirm. Should the player confirm, the system shall close the window and end. |
+| Users | Player |
+| Preconditions | |
+| Basic Course of Events |  |
+| References | FR-4 |
+
+| Item | FR-21: Save |
+|-------| ---------|
+|Priority | Low |
+| Summary | The system should Save the Player's score. |
+| Rational | Saving score is common in games like this. |
+| Requirements | Upon a game over, the game shall check if the Player's score is higher than the previously saved score, if so, it will save the score. If no score has been saved, it will save the score.. |
+| References | FR-4 |
+
 
 
 # 5.  **Nonfunctional Requirements**
@@ -367,6 +433,11 @@ This document is intended to be read by the developers of the software, managers
 | References | FR-5 FR-9 FR-12 FR-13 FR-14 FR-15 FR-16 FR-17 |
 
 
-
+| Item | NF-1 Saftey Constraints for Shootem Doods |
+|-------| ---------|
+| Summary | Shootem Doods should provide the player with an Epliepsy warning. |
+| Rational | This will cover the developers in case flashing lights trigger an epileptic seizure. |
+| Requirements | An epilepsy warning shall be displayed before the title screen. |
+| References | |
 
 
