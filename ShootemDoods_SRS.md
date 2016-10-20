@@ -118,10 +118,7 @@ This document is intended to be read by the developers of the software, managers
 | Users | Player |
 | Preconditions |* The game is running and is the active window 
 * The user has either a keyboard plugged into the computer or a valid xinput device |
-| Basic Course of Events | * User presses W, A, S, D or moves the left analog stick
-* The system moves the player ship in a direction that corresponds with what cardinal direction was indicated
-* User releases keyboard key or analog stick
-* The system halts the player ship |
+| Basic Course of Events | * User presses W, A, S, D or moves the left analog stick * The system moves the player ship in a direction that corresponds with what cardinal direction was indicated * User releases keyboard key or analog stick * The system halts the player ship |
 | References | FR-1 |
 
 
@@ -131,7 +128,7 @@ This document is intended to be read by the developers of the software, managers
 | | 3. System gives a directional velocity to the ship that corresponds to the direction the input indicates |
 | | 4. The player ship starts to move in the direction given by the input |
 | 5. The player releases the directional key or analog stick | 6. The System removes the directional velocity applied to the player ship |
-| | 6. The player ship stops moving |
+| | 7. The player ship stops moving |
 
 
 | Item | FR-3: Shoot Weapon  |
