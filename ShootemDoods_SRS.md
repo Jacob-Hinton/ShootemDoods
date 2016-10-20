@@ -116,8 +116,7 @@ This document is intended to be read by the developers of the software, managers
 | Rational | If the player is unable to control the player's ship, then the game is unplayable. |
 | Requirements |   The Player shall be able to move the ship with keys W, A, S, and D, or the analog stick or directional pad of the XInput device. The User can move the player ship py pressing keys W, A, S, and D on the keyboard, or use of the analog stick or directional pad of the XInput device. |
 | Users | Player |
-| Preconditions |* The game is running and is the active window 
-* The user has either a keyboard plugged into the computer or a valid xinput device |
+| Preconditions | <ul><li>The game is running and is the active window</li><li>The user has either a keyboard plugged into the computer or a valid xinput device</li></ul> |
 | Basic Course of Events | <ul><li>User presses W, A, S, D or moves the left analog stick</li><li>The system moves the player ship in a direction that corresponds with what cardinal direction was indicated</li><li>User releases keyboard key or analog stick</li><li>The system halts the player ship</li></ul> |
 | References | FR-1 |
 
