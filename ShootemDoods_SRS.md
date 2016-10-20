@@ -91,7 +91,7 @@ This document is intended to be read by the developers of the software, managers
 ## 1.5 References
 
 
-[1] IEEE Software Engineering Standards Committee, ìIEEE Std 830-1998, IEEE Recommended Practice for Software Requirements Specificationsî, October 20, 1998.
+[1] IEEE Software Engineering Standards Committee, ‚ÄúIEEE Std 830-1998, IEEE Recommended Practice for Software Requirements Specifications‚Äù, October 20, 1998.
 
 
 
@@ -116,9 +116,22 @@ This document is intended to be read by the developers of the software, managers
 | Rational | If the player is unable to control the player's ship, then the game is unplayable. |
 | Requirements |   The Player shall be able to move the ship with keys W, A, S, and D, or the analog stick or directional pad of the XInput device. The User can move the player ship py pressing keys W, A, S, and D on the keyboard, or use of the analog stick or directional pad of the XInput device. |
 | Users | Player |
-| Preconditions | |
-| Basic Course of Events |  |
+| Preconditions |* The game is running and is the active window 
+* The user has either a keyboard plugged into the computer or a valid xinput device |
+| Basic Course of Events | * User presses W, A, S, D or moves the left analog stick
+* The system moves the player ship in a direction that corresponds with what cardinal direction was indicated
+* User releases keyboard key or analog stick
+* The system halts the player ship |
 | References | FR-1 |
+
+
+| Actor Actions | System Actions |
+|---------------|----------------|
+| 1. Player presses W, A, S, D or moves the left analog stick | 2. System detects input from xinput controller or keyboard |
+| | 3. System gives a directional velocity to the ship that corresponds to the direction the input indicates |
+| | 4. The player ship starts to move in the direction given by the input |
+| 5. The player releases the directional key or analog stick | 6. The System removes the directional velocity applied to the player ship |
+| | 6. The player ship stops moving |
 
 
 | Item | FR-3: Shoot Weapon  |
