@@ -118,7 +118,7 @@ This document is intended to be read by the developers of the software, managers
 | Users | Player |
 | Preconditions |* The game is running and is the active window 
 * The user has either a keyboard plugged into the computer or a valid xinput device |
-| Basic Course of Events | * User presses W, A, S, D or moves the left analog stick * The system moves the player ship in a direction that corresponds with what cardinal direction was indicated * User releases keyboard key or analog stick * The system halts the player ship |
+| Basic Course of Events | <ul><li>User presses W, A, S, D or moves the left analog stick</li><li>The system moves the player ship in a direction that corresponds with what cardinal direction was indicated</li><li>User releases keyboard key or analog stick</li><li>The system halts the player ship</li></ul> |
 | References | FR-1 |
 
 
