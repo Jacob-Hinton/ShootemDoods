@@ -1,4 +1,4 @@
-___
+﻿___
 
 # <p style="text-align: right;">Software Requirments Specification</p>
 
@@ -52,11 +52,7 @@ Table of Contents
 4. **System Features**
 
 5. **Other Nonfunctional Requirements**
-   1.  Performance Requirements	
-   2.  Safety Requirements	
-   3.  Security Requirements	
-   4.  Software Quality Attributes	
-   5.  Business Rules
+
 6. **Other Requirements	**
 
 Appendix A: Glossary	
@@ -92,6 +88,116 @@ This document is intended to be read by the developers of the software, managers
 
 
 [1] IEEE Software Engineering Standards Committee, “IEEE Std 830-1998, IEEE Recommended Practice for Software Requirements Specifications”, October 20, 1998.
+
+
+
+# **2. Overall Description**
+
+
+###  2.1.  Product Perspective
+
+
+Shootem Doods is a new, self-contained video game. However, its creation is inspired by the 1985 video game Gradius. Both Shootem Doods and Gradius are side-scrolling shooting games whose win condition is to reach the end screen by to navigate a space ship through a series of levels without receiving a game over screen. In Shootem Doods, however, there will be branching level paths and color themed power ups and enemies.  
+
+
+Reference Figure one
+
+
+###  2.2.  Product Functions
+
+
+*  Basic gameplay support
+*  Game transition states
+*  Game play obstacles
+*  Basic functionality
+
+
+ Reference Figure one
+
+
+###  2.3.  User Classes and Characteristics
+
+
+|UCC-1:	|Player: The Player will play the game by navigating a space ship (see FR-1 & FR-2) through a series levels. The Player does not have to have any technical expertise or any specific level of education in order to play Shootem Doods.   |
+|-----|----|
+
+
+###  2.4.  Operating Environment
+
+
+|OE-1: |	The product will operate on any machine whose operating system is on or above Windows 7.|
+|-----|----|
+
+### 2.5.  Design and Implementation Constraints
+
+
+|CO-1:	| Platform constraints: Due to restraints in hardware and time for testing, Shootem Doods will be restricted to machines whose operating system is on or above Windows 7. |
+|-----|----|
+
+|CO-2:	| Language constraints: All scripts will be written in C# because Unity only supports the C# and JavaScript scripting languages. | 
+|-----|----|
+
+
+###  2.6.  User Documentation
+
+
+TBD
+
+
+###  2.7.  Assumptions and Dependencies
+
+
+It is anticipated that the features provided to us by Unity will allow us to easily implement all of the features in Shootem Doods. Also, it is anticipated that the operating systems Windows 7 and above will support the final published build of Shootem Doods.  
+
+
+#  **3.  External Interface Requirements**
+
+
+###  3.1.  User Interfaces
+	
+Keyboard input device
+![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/kybd.png "Keyboard input device")
+
+Sample Xinput controller
+
+![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/x360.png "Sample Xinput controller")
+
+Sample title screen
+
+![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/mockupStartScreen.png "Sample title screen")
+
+Sample gameplay screen
+
+![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/screenGrab.png "Sample gameplay screen")
+
+Sample Pause screen
+
+![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/mockUpPauseScreen.png "Sample Pause screen")
+
+Sample continue screen
+
+![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/mockupContinueScreen.png "Sample continue screen")
+
+
+###  3.2.  Hardware Interfaces
+
+
+The most pertinent hardware interface for Shootem Doods is that the machine running the game is a PC.  It is possible that Shootem Doods will become available on machines running MacOS or a Linux operating system, but, as of now, only PCs are supported. In addition, it is important that the user’s machine has the correct drivers installed for their specific XInput controller (if they decide to use one). To elaborate, different versions of the Windows operating system supports different controllers. For example, Windows 10 now supports XBOX One controllers as well as XBOX 360 controllers. The drivers should be built into the operating system, but it is important that the user checks to make sure that their controller is support on their specific operating system.
+
+
+Reference Windows Controller API
+
+
+###  3.3.  Software Interfaces
+
+
+The software interface that Shootem Doods relies on the most is Unity. Unity is used to both develop and maintain Shootem Doods. Another software interface that Shootem Doods relies on is Windows 7+. This will be the only operating system that the first published build of Shootem Doods will be supported on. It is possible that there will be support for MacOS and Linux operating systems in future builds, but for the first build we only plan on supporting Windows 7 and above. The last software interface that Shootem Doods requires is Paint.net. Paint.net is used to create all of the original artwork used in Shootem Doods as well as any future art for future builds.
+
+
+###  3.4.  Communications Interfaces
+
+
+TBD
 
 
 
@@ -424,10 +530,25 @@ This feature includes things such as accepting inputs and exiting the applicatio
 | References | FR-9 |
 
 
+#  Appendix A: Glossary
+|Term | Definition |
+|-----|----|
+|Player | The End-user. The person playing the game.|
+|Player's Ship | The In-game entity the player controls|
+| | |
+
+#Appendix B: Analysis Models
+
+Figure one: Component Diagram
+
+![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/Componenet.png "Figure one: Component Diagram")
 
 
+Figure two: System State Diagram
 
-### power up table
+ ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/State.png "Figure two: System State Diagram")
+
+Figure Three: power up table
 
 
 | | one | two | three |
