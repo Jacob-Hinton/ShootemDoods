@@ -552,7 +552,7 @@ Figure Three: power up table
 
 
 | | one | two | three |
-|-|-----|-----|-------|
+|----|-----|-----|-------|
 | Red | machine gun | rocket | lazer |
 | Blue | shield | barrel roll | shock wave |
 | yellow | speed up | blink | charge attack |
