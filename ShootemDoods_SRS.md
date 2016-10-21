@@ -340,6 +340,18 @@ This feature envelops all functions pertaining to changing the state of the syst
 #### 4.2.2  Stimulus Response Sequences
 
 
+
+| Actor Actions | System Actions |
+|---------------|----------------|
+| 1. Player presses W, A, S, D or moves the left analog stick | 2. System detects input from xinput controller or keyboard |
+| | 3. System moves the cursor in the proper direction in the menu. |
+| | 4. The menu options are highlighted. |
+| 5. The player releases the directional key or analog stick | 6. The System stops moving the cursor. |
+| | 7. The menu option is highlighted, and ready to be selected. |
+| 8.  Player presses the Enter key or the A button on the xinput device | 9.  System detects input from xinput controller or keyboard. |
+|  | 10.  System selects the option and makes the proper transition  |
+
+
 ####  4.2.3  Functional Requirements
 
 
@@ -428,6 +440,13 @@ This feature consists of things that the Player will face, but do not require an
 #### 4.3.2  Stimulus Response Sequences
 
 
+| Actor Actions | System Actions |
+|---------------|----------------|
+| 1. Player presses the Spacebar on the keyboard or the A button on the xinput device. | 2. System detects input from xinput controller or keyboard |
+| | 3. The player's ship generates a projectile |
+| | 4. The System detects an enemy being hit by the projectile |
+| | 5. The Enemy is destroyed. |
+
 ####  4.3.3  Functional Requirements
 
 
@@ -459,11 +478,11 @@ This feature consists of things that the Player will face, but do not require an
 |Priority | High |
 | Summary | The system should allow the player to destroy enemies|
 | Rational | The game would not be fun if the Player's weapon did nothing and would fail to fit the intended genre. |
-| Requirements | Upon an enemy being hit by a shot from the player's weapon, the system shall decrement the enemy's hitpoints by the amount outlined in the power up ability functional requirement **TODO**. If the enemy's hitpoints fall to 0 or lower,the system shall destroy the enemy. The system shall display an effect or animation before the enemy disappears depending on the particular enemy's definition. Upon Disappearing, the system shall either leave a red, blue, or yellow power-up corresponding to the enemy's color or leave no power-up, depending on the particular enemy's power-up drop chance. |
+| Requirements | Upon an enemy being hit by a shot from the player's weapon, the system shall decrement the enemy's hitpoints by the amount outlined in the power up ability table in Appendix B. If the enemy's hitpoints fall to 0 or lower,the system shall destroy the enemy. The system shall display an effect or animation before the enemy disappears depending on the particular enemy's definition. Upon Disappearing, the system shall either leave a red, blue, or yellow power-up corresponding to the enemy's color or leave no power-up, depending on the particular enemy's power-up drop chance. |
 | References | FR-2 FR-4 |
 
 
-##  **4.4 Basic Functionality **
+##  **4.4 Basic Functionality**
 
 
 #### 4.4.1 Description and Priority
