@@ -296,10 +296,10 @@ This feature is the implementation of all things that will allow the Player to p
 |Priority | High |
 | Summary | The system should provide a way for the player to lose the game. |
 | Rational | A side scrolling shooter must have a reason for the player to move and shoot. If the Player cannot take damage, there is no fail state for the game, and the system fails to be a challenge for the player. |
-| Requirements | Upon colliding with either an obstacle, an enemy, or upon being hit by an enemy's projectile, the Player's ship shall take 1 stage of damage **TODO table of dmg dealers**. If the player has used powerups, the player will lose the powerup ability, and return to a default state. If the player is in the default state, then the player's ship will be destroyed and a life will be lost. |
+| Requirements | Upon colliding with either an obstacle, an enemy, or upon being hit by an enemy's projectile, the Player's ship shall take 1 stage of damage. If the player has used powerups, the player will lose the powerup ability, and return to a default state. If the player is in the default state, then the player's ship will be destroyed and a life will be lost. |
 | Users | Player |
-| Preconditions | <ul><li>The game is running and is the active window</li><li>A level is currently playing and not paused</li><li>The player ship has collided with **TODO**</ul> |
-| Basic Course of Events | <ul><li>The player ship collides with **TODO**</li><li>The game will decrement the health of the player</li><li>If the player had a powerup ability they will lose it and be returned to default state and be given 3 seconds of invincibility frames where they cannot take damage again</li><li>If the player ship was already in a default state the ship will be destroyed and the lives requirement (FR-7) will dictate what happens next</li></ul> |
+| Preconditions | <ul><li>The game is running and is the active window</li><li>A level is currently playing and not paused</li><li>The player ship has collided with an obstacle, an enemy, or an enemy's projectile</ul> |
+| Basic Course of Events | <ul><li>The player ship collides with an obstacle, an enemy, or an enemy's projectile</li><li>The game will decrement the health of the player</li><li>If the player had a powerup ability they will lose it and be returned to default state and be given 3 seconds of invincibility frames where they cannot take damage again</li><li>If the player ship was already in a default state the ship will be destroyed and the lives requirement (FR-7) will dictate what happens next</li></ul> |
 | References | FR-7 FR-15 |
 
 
