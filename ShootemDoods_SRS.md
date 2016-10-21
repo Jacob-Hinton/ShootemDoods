@@ -552,7 +552,8 @@ This feature includes things such as accepting inputs and exiting the applicatio
 |-----|----|
 |Player | The End-user. The person playing the game.|
 |Player's Ship | The In-game entity the player controls|
-| | |
+| powerup | collectible that is dropped by enemies and adds to the player's powerup meter |
+| powerup ability | this is a specfic collection of abilities that a player receives upon activating their powerups. The specific ability received depends on the combination of powerups the player has collected. This is further explained in figure three. |
 
 #Appendix B: Analysis Models
 
