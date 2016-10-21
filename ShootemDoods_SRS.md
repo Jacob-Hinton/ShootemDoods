@@ -136,11 +136,6 @@ Reference Figure one
 |-----|----|
 
 
-###  2.6.  User Documentation
-
-
-TBD
-
 
 ###  2.7.  Assumptions and Dependencies
 
@@ -190,12 +185,6 @@ Reference Windows Controller API
 
 
 The software interface that Shootem Doods relies on the most is Unity. Unity is used to both develop and maintain Shootem Doods. Another software interface that Shootem Doods relies on is Windows 7+. This will be the only operating system that the first published build of Shootem Doods will be supported on. It is possible that there will be support for MacOS and Linux operating systems in future builds, but for the first build we only plan on supporting Windows 7 and above. The last software interface that Shootem Doods requires is Paint.net. Paint.net is used to create all of the original artwork used in Shootem Doods as well as any future art for future builds.
-
-
-###  3.4.  Communications Interfaces
-
-
-TBD
 
 
 
@@ -578,4 +567,7 @@ Figure Three: power up table
 In accordance with the power system, only three can be held at a time and when "cashing in the power ups you receive a power up ability that corresponds with the above table. For example, collecting two blue and one yellow power up would give the player ship a barrel roll ability and a speed up.
 
 
+# Appendix C: To Be Determined list
 
+  *  2.6.  User Documentation
+  *  3.4.  Communications Interfaces
