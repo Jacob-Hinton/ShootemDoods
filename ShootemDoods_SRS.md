@@ -51,9 +51,7 @@ Table of Contents
    4.  Communications Interfaces	
 4. **System Features**
 
-5. **Other Nonfunctional Requirements**
-
-6. **Other Requirements	**
+5. **Nonfunctional Requirements**
 
 Appendix A: Glossary	
 
