@@ -85,7 +85,14 @@ This document is intended to be read by the developers of the software, managers
 ## 1.5 References
 
 
-[1] IEEE Software Engineering Standards Committee, “IEEE Std 830-1998, IEEE Recommended Practice for Software Requirements Specifications”, October 20, 1998.
+
+[1] Gradius [Computer software]. (n.d.). 
+
+
+[2] IEEE Software Engineering Standards Committee, “IEEE Std 830-1998, IEEE Recommended Practice for Software Requirements Specifications”, October 20, 1998.
+
+
+[3] Unity - Manual: Unity Manual. (n.d.). Retrieved October 21, 2016, from https://docs.unity3d.com/Manual/index.html 
 
 
 
