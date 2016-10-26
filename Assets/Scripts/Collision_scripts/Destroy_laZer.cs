@@ -1,6 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/****************************************************************************************/
+/*
+/* FILE NAME: Destroy laZer
+/*
+/* DESCRIPTION: this is the descrution script for laZer projectiles that is essentially
+/* 		identical to destroy bullet except it is not stopped by enemies.
+/*
+/*
+/* DATE     BY     	DESCRIPTION
+/* ======== ======= =============
+/* 10/25/16	Jacob	created headr
+/*
+/*
+/****************************************************************************************/
+
 public class Destroy_laZer : MonoBehaviour {
 
 	public Transform explosionPrefab;

@@ -1,6 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/****************************************************************************************/
+/*
+/* FILE NAME: Spawn_powerup
+/*
+/* DESCRIPTION: this script checks what type of enemy an enemy is (red, blue, yellow, neutral)
+/* 		and spawns the appropiate power up.
+/*
+/*
+/* DATE     BY     	DESCRIPTION
+/* ======== ======= =============
+/* 10/25/16	Jacob	created headr
+/*
+/*
+/****************************************************************************************/
+
 public class Spawn_powerup : MonoBehaviour {
 	public Transform red_power_up;
 

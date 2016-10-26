@@ -2,6 +2,23 @@
 using System.Collections;
 using System.Linq;
 
+/****************************************************************************************/
+/*
+/* FILE NAME: Destroy ship
+/*
+/* DESCRIPTION: this is the descrution script for the player ship. It first checks if a player
+/* is receiving I-frames when it collides with something. If it is, nothing happens. If not,
+/* then we check if the ship has a power up ability. If it does, we remove it and give the player
+/* I-frames. If it does not, we blow the ship up.
+/*
+/*
+/* DATE     BY     	DESCRIPTION
+/* ======== ======= =============
+/* 10/25/16	Jacob	created headr
+/*
+/*
+/****************************************************************************************/
+
 public class Destroy_ship : MonoBehaviour {
 
 	private Player_control pc;

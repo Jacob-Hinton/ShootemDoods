@@ -1,6 +1,20 @@
 using UnityEngine;
 using System.Collections;
 
+/****************************************************************************************/
+/*
+/* FILE NAME: Enemy_Straight_Line
+/*
+/* DESCRIPTION: this script has enemies travel in straight lines across the screen
+/*
+/*
+/* DATE     BY     	DESCRIPTION
+/* ======== ======= =============
+/* 10/25/16	Jacob	created headr
+/*
+/*
+/****************************************************************************************/
+
 public class Enemy_Straight_Line : MonoBehaviour {
 
 	public float speed;

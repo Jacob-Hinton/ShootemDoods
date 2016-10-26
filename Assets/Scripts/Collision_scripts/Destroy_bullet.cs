@@ -1,6 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/****************************************************************************************/
+/*
+/* FILE NAME: Destroy bullet
+/*
+/* DESCRIPTION: this script checks what a bullet collided with, and if its someone it can hurt,
+/*		it does so. Regardless afterward the bullet explodes and is removed.
+/*
+/*
+/* DATE     BY     	DESCRIPTION
+/* ======== ======= =============
+/* 10/25/16	Jacob	created headr
+/*
+/*
+/****************************************************************************************/
+
 public class Destroy_bullet : MonoBehaviour {
 
 	

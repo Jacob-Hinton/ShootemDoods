@@ -2,6 +2,21 @@
 using System;
 using System.Collections;
 
+/****************************************************************************************/
+/*
+/* FILE NAME: Player_control
+/*
+/* DESCRIPTION: this script contains all the default player controls as well as the pwr
+/* 		up implementation.
+/*
+/*
+/* DATE     BY     	DESCRIPTION
+/* ======== ======= 	=============
+/* 10/25/16 Jacob	created headr
+/*
+/*
+/****************************************************************************************/
+
 public class Player_control : MonoBehaviour {
 
 	float default_speed;
@@ -18,22 +33,19 @@ public class Player_control : MonoBehaviour {
 	public Stack held_power_ups = new Stack();
 	//array indices: 0=red, 1=blue, 2=yellow
 	public int[] poweruparray = {0, 0, 0};
-	// private int red_state;
-	// private int blue_state;
-	// private int yellow_state;
+
 	// Use this for initialization
 	void Start () {
-		// poweruparray[1] = 2;
 		this.gameObject.layer = 9;
 		default_speed = m_speed;
 		shield = false;
 		pos = transform.position;
-		// held_power_ups.Push('b');
 	}
 	
 	// FixedUpdate called at regular intervals
 	void FixedUpdate () {
 
+		//movement keys
 		if (Input.GetKey (KeyCode.W)||Input.GetAxis("Vertical")>0) {
 			transform.position += Vector3.up * m_speed * Time.deltaTime;
 		}
@@ -47,26 +59,24 @@ public class Player_control : MonoBehaviour {
 			transform.position += Vector3.right * m_speed * Time.deltaTime;
 		}
 
+		//check for invulnerability
 		if (invuln_timer>0){
 			invuln_timer -= 1f*Time.deltaTime;
-			// this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
 			if(invuln_timer<=0) {
 				this.gameObject.layer = 9;
 				hitframes = false;
 				this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
-				// this.gameObject.GetComponent<BoxCollider2D>().enabled = true;
 			}
 		}
 
-		// Debug.Log(this.gameObject.layer);
-		// Debug.Log(poweruparray[1]);
-		
+
+		//ambient movement		
 		transform.position += Vector3.right * Ambient_scrolling.ambientScrollSpeed * Time.deltaTime;
 
 	}
 
 	void Update() {
-		// if (Input.GetKeyDown (KeyCode.Space)||Input.GetButtonDown("Fire1")) {
+
 		FireWeapon();
 		if(Input.GetKeyDown(KeyCode.E)||Input.GetButtonDown("GetPower")){
 			ActivatePowerups();
@@ -74,11 +84,6 @@ public class Player_control : MonoBehaviour {
 		if(Input.GetKeyDown(KeyCode.LeftShift)||Input.GetButtonDown("Special")){
 			UseAbility();
 		}
-		// 	// Instantiate the projectile at the position and rotation of this transform
-		// 	Rigidbody2D clone;
-		// 	clone = Instantiate(projectile, transform.position + new Vector3(0.5F,0,0), transform.rotation) as Rigidbody2D;
-		// 	clone.velocity = transform.TransformDirection(new Vector3(b_speed, 0,0));
-		// 	// ShowPowerUps();
 	}
 	
 
