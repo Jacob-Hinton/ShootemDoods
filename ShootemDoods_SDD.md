@@ -83,7 +83,7 @@ Shootem Doods should be Object Oriented in as many ways as we can manage to enca
 The only Sub System in Shootem Doods is the enemies. It is object oriented as well. It is also partially pipes and filters due to the behavior aspect. There are different types of enemies that are placed inside levels, and each enemy has a behavior. Each is distinct, and a different object inheriting from an enemies superclass. Behaviors are altered to the environment, preventing the enemies from spawning or driving somewhere where they would be destroyed. This is the pipes and filters aspect.
 
 
-#  **4.  Application views
+#  **4.  Application views**
 
 ##  4.1 Logical View
 
@@ -101,7 +101,7 @@ The only Sub System in Shootem Doods is the enemies. It is object oriented as we
 
 ##  4.4 Database View
 
-![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/DatView.png "Database View")
+![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/PhysView.png?raw=true "Database View")
 
 
 ##  4.5 Work-Assignment View
