@@ -1,6 +1,6 @@
 ___
 
-# <p style="text-align: right;">Software Requirments Specification</p>
+# <p style="text-align: right;">Software Design Document</p>
 
 </br>
 
@@ -9,10 +9,6 @@ ___
 </br>
 
 # <p style="text-align: right;">Shootem Doods</p> 
-
-</br>
-
-### <p style="text-align: right;"> Version 1.0 Approved</p>
 
 </br>
 
@@ -101,8 +97,9 @@ The only Sub System in Shootem Doods is the enemies. It is object oriented as we
 
 ##  4.4 Database View
 
-![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/PhysView.png?raw=true "Database View")
+![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/DatView.png "Database View")
 
+Our game does not implement a database, but does save one value, the player's highest score.
 
 ##  4.5 Work-Assignment View
 Our responsibilities have been decided as follows:
@@ -156,3 +153,17 @@ Sample continue screen
 The continue Screen supplies the player with a simple choice: Continue or quit. The player can move up and down to select either yes or no. If yes, the player is started at the beginning of the level with a score of zero and the continues counter decrements. If no is selected, the game quits back to the title screen. 
 
 #  **6. Element Catalog**
+
+## Logical View Catalog
+
+![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/LogCat.png "Logical View Catalog")
+
+## Physical View Catalog
+
+![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/PhysCat.png "Physical View Catalog")
+
+## Development View Catalog
+
+![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/DevCat.png "Development View Catalog")
+
+
