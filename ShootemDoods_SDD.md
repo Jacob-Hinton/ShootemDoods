@@ -85,7 +85,7 @@ The only Sub System in Shootem Doods is the enemies. It is object oriented as we
 
 ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/LogView.png "Logical view")
 
-An Object Oriented Architeture was chosen for this project. 
+An Object Oriented Architeture was chosen for this project. The rationale is described in section 2.
 ##  4.2 Physical View
 
 ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/PhysView.png "Physical View")
