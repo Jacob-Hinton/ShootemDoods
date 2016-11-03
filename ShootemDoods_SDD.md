@@ -85,15 +85,18 @@ The only Sub System in Shootem Doods is the enemies. It is object oriented as we
 
 ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/LogView.png "Logical view")
 
-
+An Object Oriented Architeture was chosen for this project. 
 ##  4.2 Physical View
 
 ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/PhysView.png "Physical View")
 
+Shootem Doods has no online component besides aquiring the game. Otherwise, it merely needs a computer with a keyboard, and, optionally, an Xinput Controller.
 
 ##  4.3 Development View
 
 ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/DevView.png "Development View")
+
+This is the suggested folder setup to run a game made in unity. Until a better understanding of the game engine is obtained, the structure will not be changed, but the contents of the structur will be.
 
 ##  4.4 Database View
 
