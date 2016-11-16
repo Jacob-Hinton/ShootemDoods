@@ -23,12 +23,15 @@ public class Player_control : MonoBehaviour {
 	public int b_speed = 20;
 	public Rigidbody2D projectile;
 	public Rigidbody2D laZer;
+	public Rigidbody2D shipBody;
 	public float m_speed;
 	public Vector3 pos;
 	private bool shield;
 	private int automaticFire = 5;
 	public float invuln_timer = 0;
 	public bool hitframes = false;
+	public System.Random rand = new System.Random ();
+
 
 	public Stack held_power_ups = new Stack();
 	//array indices: 0=red, 1=blue, 2=yellow
@@ -36,6 +39,7 @@ public class Player_control : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		shipBody = GetComponent<Rigidbody2D> ();
 		this.gameObject.layer = 9;
 		default_speed = m_speed;
 		shield = false;
@@ -46,18 +50,9 @@ public class Player_control : MonoBehaviour {
 	void FixedUpdate () {
 
 		//movement keys
-		if (Input.GetKey (KeyCode.W)||Input.GetAxis("Vertical")>0) {
-			transform.position += Vector3.up * m_speed * Time.deltaTime;
-		}
-		else if (Input.GetKey (KeyCode.S)||Input.GetAxis("Vertical")<0) {
-			transform.position += Vector3.down * m_speed * Time.deltaTime;
-		}
-		if (Input.GetKey (KeyCode.A)||Input.GetAxis("Horizontal")<0) {
-			transform.position += Vector3.left * (m_speed + Ambient_scrolling.ambientScrollSpeed) * Time.deltaTime;
-		}
-		else if (Input.GetKey (KeyCode.D)||Input.GetAxis("Horizontal")>0) {
-			transform.position += Vector3.right * m_speed * Time.deltaTime;
-		}
+
+		var move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"),0);
+		transform.position += move * m_speed * Time.deltaTime;
 
 		//check for invulnerability
 		if (invuln_timer>0){
@@ -91,10 +86,10 @@ public class Player_control : MonoBehaviour {
 		//machine gun
 		if(poweruparray[0]==1){
 			if (Input.GetKey(KeyCode.Space)||Input.GetButton("Fire1")) {
-				if (automaticFire == 5){
+				if (automaticFire == 20){
 					Rigidbody2D clone;
-					clone = Instantiate(projectile, transform.position + new Vector3(0.5F,0,0), transform.rotation) as Rigidbody2D;
-					clone.velocity = transform.TransformDirection(new Vector3(b_speed, 0,0));
+					clone = Instantiate(projectile, transform.position + new Vector3(0.8F,0,0), transform.rotation) as Rigidbody2D;
+					clone.velocity = transform.TransformDirection(new Vector3(b_speed, 3*(float)(rand.NextDouble()-0.5),0));
 					automaticFire = 0;
 				}
 				else{
@@ -106,7 +101,7 @@ public class Player_control : MonoBehaviour {
 		else if(poweruparray[0] == 3){ 
 			if (Input.GetKeyDown(KeyCode.Space)||Input.GetButtonDown("Fire1")) {
 				Rigidbody2D clone;
-				clone = Instantiate(laZer, transform.position + new Vector3(0.5F,0,0), transform.rotation) as Rigidbody2D;
+				clone = Instantiate(laZer, transform.position + new Vector3(0.8F,0,0), transform.rotation) as Rigidbody2D;
 				clone.velocity = transform.TransformDirection(new Vector3(b_speed, 0,0));
 			}	
 		}
@@ -114,7 +109,7 @@ public class Player_control : MonoBehaviour {
 		else{ 
 			if (Input.GetKeyDown(KeyCode.Space)||Input.GetButtonDown("Fire1")) {
 				Rigidbody2D clone;
-				clone = Instantiate(projectile, transform.position + new Vector3(0.5F,0,0), transform.rotation) as Rigidbody2D;
+				clone = Instantiate(projectile, transform.position + new Vector3(0.8F,0,0), transform.rotation) as Rigidbody2D;
 				clone.velocity = transform.TransformDirection(new Vector3(b_speed, 0,0));
 			}
 		}
