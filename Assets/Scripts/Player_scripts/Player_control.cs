@@ -10,10 +10,10 @@ using System.Collections;
 /* 		up implementation.
 /*
 /*
-/* DATE     BY     	DESCRIPTION
+/* DATE     BY     		DESCRIPTION
 /* ======== ======= 	=============
-/* 10/25/16 Jacob	created headr
-/*
+/* 10/25/16 Jacob		created headr
+/* 11/15/16 Jacob/Brandon edited movement/machine gun pwrup
 /*
 /****************************************************************************************/
 
@@ -23,7 +23,7 @@ public class Player_control : MonoBehaviour {
 	public int b_speed = 20;
 	public Rigidbody2D projectile;
 	public Rigidbody2D laZer;
-	public Rigidbody2D shipBody;
+	public Rigidbody2D rocket;
 	public float m_speed;
 	public Vector3 pos;
 	private bool shield;
@@ -39,11 +39,12 @@ public class Player_control : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		shipBody = GetComponent<Rigidbody2D> ();
 		this.gameObject.layer = 9;
 		default_speed = m_speed;
 		shield = false;
 		pos = transform.position;
+		GameObject theCamera = GameObject.Find("Camera");
+		pause_script pauseScript = theCamera.GetComponent<pause_script>();
 	}
 	
 	// FixedUpdate called at regular intervals
@@ -72,12 +73,14 @@ public class Player_control : MonoBehaviour {
 
 	void Update() {
 
-		FireWeapon();
-		if(Input.GetKeyDown(KeyCode.E)||Input.GetButtonDown("GetPower")){
-			ActivatePowerups();
-		}
-		if(Input.GetKeyDown(KeyCode.LeftShift)||Input.GetButtonDown("Special")){
-			UseAbility();
+		if (!pause_script.isPause) {
+			FireWeapon ();
+			if (Input.GetKeyDown (KeyCode.E) || Input.GetButtonDown ("GetPower")) {
+				ActivatePowerups ();
+			}
+			if (Input.GetKeyDown (KeyCode.LeftShift) || Input.GetButtonDown ("Special")) {
+				UseAbility ();
+			}
 		}
 	}
 	
@@ -96,6 +99,14 @@ public class Player_control : MonoBehaviour {
 					automaticFire++;
 				}
 			}
+		}
+		//rocket
+		else if(poweruparray[0] == 2){ 
+			if (Input.GetKeyDown(KeyCode.Space)||Input.GetButtonDown("Fire1")) {
+				Rigidbody2D clone;
+				clone = Instantiate(laZer, transform.position + new Vector3(0.8F,0,0), transform.rotation) as Rigidbody2D;
+				clone.velocity = transform.TransformDirection(new Vector3(b_speed, 0,0));
+			}	
 		}
 		//laZer
 		else if(poweruparray[0] == 3){ 
