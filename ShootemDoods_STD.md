@@ -29,9 +29,9 @@ Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu</p>
 # Table of Contents
 Table of Contents
 
-1. **Introduction**
+1. **Introduction**  
    1. Purpose
-   2. Document Conventions  
+   2. Document Conventions
 2. **Functional Requirements Test Cases**
    1. Move Player
    2. Shoot Weapon
@@ -76,16 +76,16 @@ Table of Contents
 ## 2. Document Conventions
 
 # **Functional Requirements Test Cases**
-## 1. Move Player
-## 2. Shoot Weapon
-## 3. Menu Navigation
-## 4. Collect Power-ups
-## 5. Use Power-ups
-## 6. Take Damage
-## 7. Lose Life
-## 8. Use Continue
-## 9. Start Menu    
-## 10. Game Over
+## i. Move Player
+## ii. Shoot Weapon
+## iii. Menu Navigation
+## iv. Collect Power-ups
+## v. Use Power-ups
+## vi. Take Damage
+## vii. Lose Life
+## viii. Use Continue
+## ix. Start Menu    
+## x. Game Over
 ### TC-10.1: Correct Keyboard Input
 ___
 **System:** *Shootem Doods*  
@@ -166,8 +166,8 @@ ___
 1. The Game Over screen is displayed
 
 ___
-## 11. Play Level
-## 12. Transition Levels
+## xi. Play Level
+## xii. Transition Levels
 ### TC-12.1: Correct Input
 ___
 **System:** *Shootem Doods*  
@@ -224,7 +224,7 @@ ___
 **Post-conditions**  
 1. The level high score is displayed
 ___
-## 13. Pause Game Menu
+## xiii. Pause Game Menu
 ### TC-13.1: Keyboard Input
 ___
 **System:** *Shootem Doods*  
@@ -275,7 +275,7 @@ ___
 **Post-conditions**  
 1. The Pause Menu is displayed
 ___
-## 14. Resume Game
+## xiv. Resume Game
 ### TC-14: Resume Suspended Gameplay
 ___
 **System:** *Shootem Doods*  
@@ -301,7 +301,7 @@ ___
 **Post-conditions**  
 1. The suspended gameplay resumes
 ___
-## 15. Collide with Objects
+## xv. Collide with Objects
 ### TC-15: Take Damage
 ___
 **System:** *Shootem Doods*  
@@ -327,7 +327,7 @@ ___
 **Post-conditions**  
 1. The Player's ship takes damage
 ___
-## 16. Enemy Behavior
+## xvi. Enemy Behavior
 ### TC-16: Check Enemy Movement
 ___
 **System:** *Shootem Doods*  
@@ -354,7 +354,7 @@ ___
 1. The enemy begins moving along a connection of straight, curved, or sinusoidal
 lines.
 ___
-## 17. Destroy Enemies
+## xvii. Destroy Enemies
 ### TC-17: Check Enemy Death
 ___
 **System:** *Shootem Doods*  
@@ -385,7 +385,7 @@ ___
 **Post-conditions**  
 1. The enemy is destroyed and the correct power-up or no power-up is displayed.
 ___
-## 18. Controller Support
+## xviii. Controller Support
 ### TC-18.1: Check XInput Input
 ___
 **System:** *Shootem Doods*  
@@ -444,7 +444,7 @@ ___
 **Post-conditions**  
 1. The keyboard is the recognized input device.
 ___
-## 19. Quit Application
+## xix. Quit Application
 ### TC-19.1: Check 'Yes' Option
 ___
 **System:** *Shootem Doods*  
@@ -497,7 +497,7 @@ ___
 **Post-conditions**  
 1. The main menu is displayed
 ___
-## 20. Save High Score
+## xx. Save High Score
 ### TC-20: Check Save High Score
 ___
 **System:** *Shootem Doods*  
