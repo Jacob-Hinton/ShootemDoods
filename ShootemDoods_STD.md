@@ -231,8 +231,8 @@ ___
 **Subsystem:** Pause Game Menu  
 **Created by:**    
 **Executed by:**   
-**Short Description:** Tests that Pause Menu appears once the 'M' key on the
-keyboard is pressed.
+**Short Description:** Tests that pressing the 'M' key on the
+keyboard causes the Pause Menu to appear.
 ___
 
 **Pre-conditions**  
@@ -256,8 +256,8 @@ ___
 **Subsystem:** Pause Game Menu  
 **Created by:**    
 **Executed by:**
-**Short Description:** Tests that Pause Menu appears once the 'Start' button on
-the XInput device is pressed.
+**Short Description:** Tests that pressing the 'Start' button on the
+XInput device causes the Pause Menu to appear.  
 ___
 
 **Pre-conditions**  
@@ -307,7 +307,7 @@ ___
 **System:** *Shootem Doods*  
 **Subsystem:** Collide with Objects  
 **Created by:**    
-**Executed by:**
+**Executed by:**  
 **Short Description:** Tests that the Player's ship takes damage if it collides
 with a wall, enemy, or other object.
 ___
@@ -513,7 +513,7 @@ ___
 * The Player has either a keyboard or a valid XInput device plugged into the computer.
 * A game over is achieved
 
-  
+
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
