@@ -99,7 +99,9 @@ ___
 **Pre-conditions**  
 * The game is running  
 * The Player decided to not continue or is out of continues when they ran out of
-lives.  
+lives.
+
+ 
 ___
 
 
