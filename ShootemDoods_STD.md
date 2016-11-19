@@ -97,8 +97,8 @@ Game Over screen returns the Player to the title screen.
 ___
 
 **Pre-conditions**  
-The game is running  
-The Player decided to not continue or is out of continues when they ran out of
+* The game is running  
+* The Player decided to not continue or is out of continues when they ran out of
 lives.
 ___
 
@@ -121,8 +121,8 @@ at the Game Over screen returns the Player to the title screen.
 ___
 
 **Pre-conditions**  
-The game is running  
-The Player decided to not continue or is out of continues when they ran out of
+* The game is running  
+* The Player decided to not continue or is out of continues when they ran out of
 lives.  
 ___
 
@@ -146,8 +146,8 @@ any button other than the spacebar on the keyboard and the 'A' button on the XIn
 ___
 
 **Pre-conditions**  
-The game is running  
-The Player decided to not continue or is out of continues when they ran out of
+* The game is running  
+* The Player decided to not continue or is out of continues when they ran out of
 lives.
 ___
 
@@ -173,9 +173,9 @@ the next level begins.
 ___
 
 **Pre-conditions**  
-The game is running  
-The Player has either a keyboard or a valid XInput device plugged into the computer.
-A level has been completed
+* The game is running  
+* The Player has either a keyboard or a valid XInput device plugged into the computer.
+* A level has been completed
 ___
 
 
@@ -200,9 +200,9 @@ score continues to be displayed if any button other than the spacebar or the
 ___
 
 **Pre-conditions**  
-The game is running  
-The Player has either a keyboard or a valid XInput device plugged into the computer.
-A level has been completed
+* The game is running  
+* The Player has either a keyboard or a valid XInput device plugged into the computer.
+* A level has been completed
 ___
 
 
@@ -226,9 +226,9 @@ keyboard is pressed.
 ___
 
 **Pre-conditions**  
-The game is running  
-The Player has either a keyboard or a valid XInput device plugged into the computer.
-A level is currently playing and not paused
+* The game is running  
+* The Player has either a keyboard or a valid XInput device plugged into the computer.
+* A level is currently playing and not paused
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
@@ -249,9 +249,9 @@ the XInput device is pressed.
 ___
 
 **Pre-conditions**  
-The game is running  
-The Player has either a keyboard or a valid XInput device plugged into the computer.
-A level is currently playing and not paused
+* The game is running  
+* The Player has either a keyboard or a valid XInput device plugged into the computer.
+* A level is currently playing and not paused
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
@@ -273,9 +273,9 @@ Menu resumes suspended gameplay.
 ___
 
 **Pre-conditions**  
-The game is running  
-The Player has either a keyboard or a valid XInput device plugged into the computer.
-Gameplay is suspended and the Pause Menu is displayed
+* The game is running  
+* The Player has either a keyboard or a valid XInput device plugged into the computer.
+* Gameplay is suspended and the Pause Menu is displayed
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
@@ -297,9 +297,9 @@ with a wall, enemy, or other object.
 ___
 
 **Pre-conditions**  
-The game is running  
-The Player has either a keyboard or a valid XInput device plugged into the computer.  
-A level is currently playing and not paused
+* The game is running  
+* The Player has either a keyboard or a valid XInput device plugged into the computer.  
+* A level is currently playing and not paused
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
@@ -321,9 +321,9 @@ path once it enters the Player's view.
 ___
 
 **Pre-conditions**  
-The game is running  
-The Player has either a keyboard or a valid XInput device plugged into the computer.  
-A level is currently playing and not paused
+* The game is running  
+* The Player has either a keyboard or a valid XInput device plugged into the computer.  
+* A level is currently playing and not paused
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
@@ -349,9 +349,9 @@ enemy appears on the screen.
 ___
 
 **Pre-conditions**  
-The game is running  
-The Player has either a keyboard or a valid XInput device plugged into the computer.  
-A level is currently playing and not paused
+* The game is running  
+* The Player has either a keyboard or a valid XInput device plugged into the computer.  
+* A level is currently playing and not paused
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
@@ -376,10 +376,10 @@ controller is connected to the user's device and that the system accepts its inp
 ___
 
 **Pre-conditions**  
-The user's device is on  
-The user has a XInput compatible controller plugged into their device
-The user has a keyboard plugged into their device  
-The game is running and a menu is displayed
+* The user's device is on  
+* The user has a XInput compatible controller plugged into their device
+* The user has a keyboard plugged into their device  
+* The game is running and a menu is displayed
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
@@ -404,9 +404,9 @@ ___
 ___
 
 **Pre-conditions**  
-The user's device is on  
-The user has a keyboard plugged into their device  
-The game is running and a menu is displayed
+* The user's device is on  
+* The user has a keyboard plugged into their device  
+* The game is running and a menu is displayed
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
@@ -430,9 +430,9 @@ having to use the operating system task manager.
 ___
 
 **Pre-conditions**  
-The game is running  
-The Player has either a keyboard or a valid XInput device plugged into the computer.
-The main menu is displayed on the screen
+* The game is running  
+* The Player has either a keyboard or a valid XInput device plugged into the computer.
+* The main menu is displayed on the screen
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
@@ -454,9 +454,9 @@ to the main menu if they select the 'No' option.
 ___
 
 **Pre-conditions**  
-The game is running  
-The Player has either a keyboard or a valid XInput device plugged into the computer.
-The main menu is displayed on the screen
+* The game is running  
+* The Player has either a keyboard or a valid XInput device plugged into the computer.
+* The main menu is displayed on the screen
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
@@ -479,9 +479,9 @@ higher than the current saved high score.
 ___
 
 **Pre-conditions**  
-The game is running  
-The Player has either a keyboard or a valid XInput device plugged into the computer.
-A game over is achieved
+* The game is running  
+* The Player has either a keyboard or a valid XInput device plugged into the computer.
+* A game over is achieved
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
