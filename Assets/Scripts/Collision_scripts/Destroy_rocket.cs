@@ -28,10 +28,6 @@ public class Destroy_rocket : MonoBehaviour {
 			Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
 			Vector3 pos = contact.point;
 			Instantiate(explosionPrefab, pos, rot);
-			if(col.gameObject.tag == "red_enemy"){
-				col.gameObject.GetComponent<Spawn_powerup>().Spawn();
-				Destroy(col.gameObject);
-			}
 			Destroy(gameObject);
 		}
 	}
