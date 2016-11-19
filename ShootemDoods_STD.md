@@ -101,7 +101,7 @@ ___
 * The Player decided to not continue or is out of continues when they ran out of
 lives.
 
- 
+
 ___
 
 
@@ -126,6 +126,8 @@ ___
 * The game is running  
 * The Player decided to not continue or is out of continues when they ran out of
 lives.  
+
+
 ___
 
 
@@ -150,7 +152,9 @@ ___
 **Pre-conditions**  
 * The game is running  
 * The Player decided to not continue or is out of continues when they ran out of
-lives.
+lives.  
+
+
 ___
 
 
@@ -177,7 +181,9 @@ ___
 **Pre-conditions**  
 * The game is running  
 * The Player has either a keyboard or a valid XInput device plugged into the computer.
-* A level has been completed
+* A level has been completed  
+
+
 ___
 
 
@@ -204,7 +210,9 @@ ___
 **Pre-conditions**  
 * The game is running  
 * The Player has either a keyboard or a valid XInput device plugged into the computer.
-* A level has been completed
+* A level has been completed  
+
+
 ___
 
 
@@ -231,6 +239,8 @@ ___
 * The game is running  
 * The Player has either a keyboard or a valid XInput device plugged into the computer.
 * A level is currently playing and not paused
+
+
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
@@ -254,6 +264,8 @@ ___
 * The game is running  
 * The Player has either a keyboard or a valid XInput device plugged into the computer.
 * A level is currently playing and not paused
+
+
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
@@ -278,6 +290,8 @@ ___
 * The game is running  
 * The Player has either a keyboard or a valid XInput device plugged into the computer.
 * Gameplay is suspended and the Pause Menu is displayed
+
+
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
@@ -302,6 +316,8 @@ ___
 * The game is running  
 * The Player has either a keyboard or a valid XInput device plugged into the computer.  
 * A level is currently playing and not paused
+
+
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
@@ -326,6 +342,8 @@ ___
 * The game is running  
 * The Player has either a keyboard or a valid XInput device plugged into the computer.  
 * A level is currently playing and not paused
+
+
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
@@ -354,6 +372,8 @@ ___
 * The game is running  
 * The Player has either a keyboard or a valid XInput device plugged into the computer.  
 * A level is currently playing and not paused
+
+
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
@@ -382,6 +402,8 @@ ___
 * The user has a XInput compatible controller plugged into their device
 * The user has a keyboard plugged into their device  
 * The game is running and a menu is displayed
+
+
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
@@ -409,6 +431,8 @@ ___
 * The user's device is on  
 * The user has a keyboard plugged into their device  
 * The game is running and a menu is displayed
+
+
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
@@ -435,6 +459,8 @@ ___
 * The game is running  
 * The Player has either a keyboard or a valid XInput device plugged into the computer.
 * The main menu is displayed on the screen
+
+
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
@@ -459,6 +485,8 @@ ___
 * The game is running  
 * The Player has either a keyboard or a valid XInput device plugged into the computer.
 * The main menu is displayed on the screen
+
+
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
@@ -483,7 +511,9 @@ ___
 **Pre-conditions**  
 * The game is running  
 * The Player has either a keyboard or a valid XInput device plugged into the computer.
-* A game over is achieved  
+* A game over is achieved
+
+  
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
