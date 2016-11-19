@@ -33,6 +33,7 @@ public class pause_script : MonoBehaviour {
 	}
 
 	void Update () {
+		//TODO add trigger for the controller start button
 		if( Input.GetKeyDown(KeyCode.Escape))
 		{
 			isPause = !isPause;

@@ -10,15 +10,17 @@ using System.Collections;
 /* 		up implementation.
 /*
 /*
-/* DATE     BY     		DESCRIPTION
-/* ======== ======= 	=============
-/* 10/25/16 Jacob		created headr
-/* 11/15/16 Jacob/Brandon edited movement/machine gun pwrup
+/* DATE     BY     			  DESCRIPTION
+/* ======== ======= 		  =============
+/* 10/25/16 Jacob		      created headr
+/* 11/15/16 Jacob/Brandon     edited movement/machine gun pwrup
+ * 11/18/16 Brandon/Jacob     added ship movement animation
+ * 						      added rocket pwrup
 /*
 /****************************************************************************************/
 
 public class Player_control : MonoBehaviour {
-
+	private SpriteRenderer sRenderer;
 	float default_speed;
 	public int b_speed = 20;
 	public Rigidbody2D projectile;
@@ -32,6 +34,10 @@ public class Player_control : MonoBehaviour {
 	public bool hitframes = false;
 	public System.Random rand = new System.Random ();
 
+	public Sprite down;
+	public Sprite idle;
+	public Sprite up;
+
 
 	public Stack held_power_ups = new Stack();
 	//array indices: 0=red, 1=blue, 2=yellow
@@ -39,6 +45,7 @@ public class Player_control : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		sRenderer = GetComponent<SpriteRenderer> ();
 		this.gameObject.layer = 9;
 		default_speed = m_speed;
 		shield = false;
@@ -50,8 +57,13 @@ public class Player_control : MonoBehaviour {
 	// FixedUpdate called at regular intervals
 	void FixedUpdate () {
 
-		//movement keys
 
+
+
+
+
+
+		//ship movement
 		var move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"),0);
 		transform.position += move * m_speed * Time.deltaTime;
 
@@ -68,6 +80,15 @@ public class Player_control : MonoBehaviour {
 
 		//ambient movement		
 		transform.position += Vector3.right * Ambient_scrolling.ambientScrollSpeed * Time.deltaTime;
+
+		//up-down animation
+		if (move.y < 0) {
+			sRenderer.sprite = down;
+		} else if (move.y > 0) {
+			sRenderer.sprite = up;
+		} else {
+			sRenderer.sprite = idle;
+		}
 
 	}
 
@@ -104,7 +125,7 @@ public class Player_control : MonoBehaviour {
 		else if(poweruparray[0] == 2){ 
 			if (Input.GetKeyDown(KeyCode.Space)||Input.GetButtonDown("Fire1")) {
 				Rigidbody2D clone;
-				clone = Instantiate(laZer, transform.position + new Vector3(0.8F,0,0), transform.rotation) as Rigidbody2D;
+				clone = Instantiate(rocket, transform.position + new Vector3(0.8F,0,0), transform.rotation) as Rigidbody2D;
 				clone.velocity = transform.TransformDirection(new Vector3(b_speed, 0,0));
 			}	
 		}
