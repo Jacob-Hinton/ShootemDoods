@@ -360,7 +360,7 @@ ___
 **System:** *Shootem Doods*  
 **Subsystem:** Destroy Enemies  
 **Created by:**    
-**Executed by:**
+**Executed by:**  
 **Short Description:** Tests that the enemy is destroyed after being hit by a
 certain amount of shots from the Player's ship and, depending on the particular
 enemy's power-up drop chance, a power-up of the same color as the destroyed
