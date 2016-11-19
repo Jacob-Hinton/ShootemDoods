@@ -99,7 +99,7 @@ ___
 **Pre-conditions**  
 * The game is running  
 * The Player decided to not continue or is out of continues when they ran out of
-lives.
+lives.  
 ___
 
 
@@ -481,7 +481,7 @@ ___
 **Pre-conditions**  
 * The game is running  
 * The Player has either a keyboard or a valid XInput device plugged into the computer.
-* A game over is achieved
+* A game over is achieved  
 ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
