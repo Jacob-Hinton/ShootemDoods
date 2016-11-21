@@ -21,11 +21,9 @@ public class Within_bounds : MonoBehaviour {
 	void Start () {
 	}
 
-	// Update is called once per frame
+	// Late Update is called once per frame at the end
 	void Update () {
 		if (!GetComponent<Renderer>().isVisible)
 			Destroy (this.gameObject);
-			
-	
 	}
 }

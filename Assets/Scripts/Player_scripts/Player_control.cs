@@ -29,7 +29,8 @@ public class Player_control : MonoBehaviour {
 	public float m_speed;
 	public Vector3 pos;
 	private bool shield;
-	private int automaticFire = 5;
+	private bool automaticFire = true;
+	private bool coRoutineIsStarted = false;
 	public float invuln_timer = 0;
 	public bool hitframes = false;
 	public System.Random rand = new System.Random ();
@@ -109,15 +110,15 @@ public class Player_control : MonoBehaviour {
 	void FireWeapon(){
 		//machine gun
 		if(poweruparray[0]==1){
-			if (Input.GetKey(KeyCode.Space)||Input.GetButton("Fire1")) {
-				if (automaticFire == 20){
+			if (Input.GetKey (KeyCode.Space) || Input.GetButton ("Fire1")) {
+				//StartCoroutine (AutoFire());
+				if (automaticFire) {
 					Rigidbody2D clone;
-					clone = Instantiate(projectile, transform.position + new Vector3(0.8F,0,0), transform.rotation) as Rigidbody2D;
-					clone.velocity = transform.TransformDirection(new Vector3(b_speed, 3*(float)(rand.NextDouble()-0.5),0));
-					automaticFire = 0;
-				}
-				else{
-					automaticFire++;
+					clone = Instantiate (projectile, transform.position + new Vector3 (0.8F, 0, 0), transform.rotation) as Rigidbody2D;
+					clone.velocity = transform.TransformDirection (new Vector3 (b_speed, 3 * (float)(rand.NextDouble () - 0.5), 0));
+					automaticFire = false;
+				} else if(!coRoutineIsStarted){
+					StartCoroutine (AutoFire());
 				}
 			}
 		}
@@ -238,5 +239,12 @@ public class Player_control : MonoBehaviour {
 	// 	return transform.position.y;
 	// }
 
+	public IEnumerator AutoFire() {
+		coRoutineIsStarted = true;
+		automaticFire = false;
+		yield return new WaitForSeconds (.18f);
+		automaticFire = true;
+		coRoutineIsStarted = false;
+	}
 
 }

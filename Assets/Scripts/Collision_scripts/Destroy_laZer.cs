@@ -27,8 +27,10 @@ public class Destroy_laZer : MonoBehaviour {
 			ContactPoint2D contact = col.contacts[0];
 			Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
 			Vector3 pos = contact.point;
-		//	Instantiate(explosionPrefab, pos, rot);
-			//			Destroy(gameObject);
+
+			if(col.gameObject.layer.Equals("Terrain")) {
+				Destroy(gameObject);
+			}
 		}
 	}
 }
