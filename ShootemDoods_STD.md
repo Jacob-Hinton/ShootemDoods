@@ -101,11 +101,11 @@ Table of Contents
 # **Introduction**
 ## 1. Purpose
 
-This document details test cases to be used to test Shootem Doods. The test cases are formed with Black box testing.
+This document details test cases to be used to test *Shootem Doods*. The test cases are formed with Black box testing.
 
 ## 2. Document Conventions
 
-The template shown in class was used to form these test cases
+The template shown in class was used to form these test cases. Also, the numbers of the subsections (i.e. i, ii, iii, etc.) directly correspond to the numbers of the functional requirements outlined in our SRS document.  
 
 # **Functional Requirements Test Cases**
 ## i. Move Player
@@ -130,10 +130,10 @@ ___
 
 | Step     | Action         |Expected System Response| Pass/Fail | Comment |
 | :------: | :------------- | :----------------------| :-------: | :-------|
-|1         | Press the 'W' button on the Keyboard| The Player character moves up. |  |  ||
-|2         | Press the 'A' button on the Keyboard| The Player character moves left. |  |  ||
-|3         | Press the 'S' button on the Keyboard| The Player character moves right. |  |  ||
-|4         | Press the 'D' button on the Keyboard| The Player character moves down. |  |  ||
+|1         | Press the 'W' button on the Keyboard| The Player ship moves up. |  |  ||
+|2         | Press the 'A' button on the Keyboard| The Player ship moves left. |  |  ||
+|3         | Press the 'S' button on the Keyboard| The Player ship moves right. |  |  ||
+|4         | Press the 'D' button on the keyboard| The Player ship moves down. |  |  ||
 ___
 **Post-conditions**  
 1. The character should be still after all buttons are released.
@@ -145,7 +145,7 @@ ___
 **Subsystem:** Play Level  
 **Created by:**    
 **Executed by:**  
-**Short Description:**  Tests that moving the analog stick and pressing the Directional buttons on the XInput device moves the player.
+**Short Description:**  Tests that moving the analog stick and pressing the directional buttons on the XInput device moves the player.
 ___
 
 **Pre-conditions**  
@@ -158,14 +158,14 @@ ___
 
 | Step     | Action         |Expected System Response| Pass/Fail | Comment |
 | :------: | :------------- | :----------------------| :-------: | :-------|
-|1         | Press up on directional pad of the the XInput device| The Player character moves up. |  |  ||
-|2         | Press down on directional pad ofthe XInput device| The Player character moves left. |  |  ||
-|3         | Press right on directional pad of theXInput device| The Player character moves right. |  |  ||
-|4         | Press down on directional pad of the XInput device| The Player character moves down. |  |  ||
-|5         | Move the left analog stick on the XInput device in a circle. | The Player character moves in a circle |  |  ||
+|1         | Press up on directional pad of the the XInput device| The Player ship moves up. |  |  ||
+|2         | Press down on directional pad of the XInput device| The Player ship moves left. |  |  ||
+|3         | Press right on directional pad of the XInput device| The Player ship moves right. |  |  ||
+|4         | Press down on directional pad of the XInput device| The Player ship moves down. |  |  ||
+|5         | Move the left analog stick on the XInput device in a circle. | The Player ship moves in a circle |  |  ||
 ___
 **Post-conditions**  
-1. The character should be still after all buttons are released.
+1. The Player ship should be still after all buttons are released.
 
 
 ___
@@ -175,7 +175,7 @@ ___
 **Subsystem:** Play Level  
 **Created by:**    
 **Executed by:**  
-**Short Description:** Tests that the Player Character remains still if any  W,A,S, or D on the keyboard or the left analog stick or Directional pad on the XInput device is pressed.
+**Short Description:** Tests that the Player ship remains still if any  W,A,S, or D on the keyboard or the left analog stick or Directional pad on the XInput device is pressed.
 ___
 
 **Pre-conditions**  
@@ -187,7 +187,7 @@ ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
 | :------: | :---------------- | :----------------------| :-------: | :-------|
-|1         | Press a button that is **not** W,A,S, or D on the keyboard or the left analog stick or Directional pad on the XInput device | The Player Character does not move|  |  ||
+|1         | Press a button that is **not** W,A,S, or D on the keyboard or the left analog stick or Directional pad on the XInput device | The Player ship does not move|  |  ||
 ___
 **Post-conditions**  
 1. The Player character should not have moved as outlined in Move Player.
@@ -295,13 +295,13 @@ ___
 **Post-conditions**  
 1. The cursor should be still after all buttons are released.
 
-### TC-3.2: Correct Xinput Input
+### TC-3.2: Correct XInput Input
 ___
 **System:** *Shootem Doods*  
 **Subsystem:** Play Level  
 **Created by:**    
 **Executed by:**  
-**Short Description:** Tests that the menu's response to if a W,D, or Enter on the keyboard or up or down on the directional pad, up or down on the left Analog stick, or 'A' on the XInput Device.
+**Short Description:** Tests that the menu's response to if a W,D, or Enter on the keyboard or up or down on the directional pad, up or down on the left analog stick, or 'A' on the XInput Device.
 ___
 
 **Pre-conditions**  
@@ -313,8 +313,8 @@ ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
 | :------: | :---------------- | :----------------------| :-------: | :-------|
-|1         | Press the down on the Directional pad of the XInput device| The cursor of the menu moves down. |  |  ||
-|2         | Press the up on the Direction pad of the XInput device.| The cursor of the menu moves up. |  |  ||
+|1         | Press the down on the directional pad of the XInput device| The cursor of the menu moves down. |  |  ||
+|2         | Press the up on the direction pad of the XInput device.| The cursor of the menu moves up. |  |  ||
 |3         | Press the down on the left analog stick of the XInput device| The cursor of the menu moves down. |  |  ||
 |4         | Press the up on the left analog stick of the XInput device| The cursor of the menu moves up. |  |  ||
 |5         | Press the up on the left analog stick of the XInput device| The cursor of the menu moves up. |  |  ||
@@ -329,7 +329,7 @@ ___
 **Subsystem:** Menus  
 **Created by:**    
 **Executed by:**  
-**Short Description:** Tests that the Cursor remains still if anything other than W or D on the keyboard or up and down on the left analog stick or Directional pad on the XInput device is pressed.
+**Short Description:** Tests that the cursor remains still if anything other than W or D on the keyboard or up and down on the left analog stick or directional pad on the XInput device is pressed.
 ___
 
 **Pre-conditions**  
@@ -341,10 +341,10 @@ ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
 | :------: | :---------------- | :----------------------| :-------: | :-------|
-|1         | Press a button that is **not** W,A,S, or D on the keyboard or the left analog stick or Directional pad on the XInput device | The Player Character does not move|  |  ||
+|1         | Press a button that is **not** W,A,S, or D on the keyboard or the left analog stick or directional pad on the XInput device | The Player ship does not move|  |  ||
 ___
 **Post-conditions**  
-1. The Player character should not have moved as outlined in Move Player.
+1. The Player ship should not have moved as outlined in Move Player.
 
 
 ## iv. Collect Power-ups
@@ -673,7 +673,7 @@ ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
 | :------: | :---------------- | :----------------------| :-------: | :-------|
-|1         | Press the spacebar on the keyboard or 'A' on the XInput device. | The game Starts the first level|  |  ||
+|1         | Press the spacebar on the keyboard or 'A' on the XInput device. | The game starts the first level|  |  ||
 ___
 **Post-conditions**  
 1. The level restarts from the beginning
@@ -697,8 +697,8 @@ ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
 | :------: | :---------------- | :----------------------| :-------: | :-------|
-|1         | Press 'S' or Down on the left analog stick or Directional pad. | The cursor goes to the "View High Scores" option. |  |  ||
-|2         | Press the spacebar or 'A'. | The game shows the High scores. |  |  ||
+|1         | Press 'S' or Down on the left analog stick or directional pad. | The cursor goes to the 'View High Scores' option. |  |  ||
+|2         | Press the spacebar or 'A'. | The game shows the High Scores. |  |  ||
 ___
 **Post-conditions**  
 1. The High Scores are shown.
@@ -723,8 +723,8 @@ ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
 | :------: | :---------------- | :----------------------| :-------: | :-------|
-|1         | Press 'S' or Down on the left analog stick or Directional pad. | The cursor goes to the "View High Scores" option. |  |  ||
-|2         | Press 'S' or Down on the left analog stick or Directional pad. | The cursor goes to the "Quit Game" option. |  |  ||
+|1         | Press 'S' or Down on the left analog stick or directional pad. | The cursor goes to the 'View High Scores' option. |  |  ||
+|2         | Press 'S' or down on the left analog stick or Directional pad. | The cursor goes to the 'Quit Game' option. |  |  ||
 |3         | Press the spacebar or 'A' on the XInput device. | The game exits. |  |  ||
 ___
 **Post-conditions**  
