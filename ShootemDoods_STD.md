@@ -189,7 +189,7 @@ ___
 1. The character should be still after all buttons are released.
 
 ___
-### TC-2.2: Correct Keyboard Input
+### TC-2.2: Correct XInput Input
 ___
 **System:** *Shootem Doods*  
 **Subsystem:** Play Level  
@@ -243,6 +243,7 @@ ___
 ___
 **System:** *Shootem Doods*  
 **Subsystem:** Menus 
+
 **Created by:**    
 **Executed by:**  
 **Short Description:**  Tests that pressing the spacebar on keyboard during Gameplay shoots the player's weapon.
@@ -267,9 +268,10 @@ ___
 ___
 **System:** *Shootem Doods*  
 **Subsystem:** Play Level
+
 **Created by:**    
 **Executed by:**  
-**Short Description:** TTests that the menu's response to if a W,D, or Enter on the keyboard or up or down on the directional pad, up or down on the left Analog stick, or 'A' on the Xinput Device. 
+**Short Description:** Tests that the menu's response to if a W,D, or Enter on the keyboard or up or down on the directional pad, up or down on the left Analog stick, or 'A' on the Xinput Device. 
 ___
 
 **Pre-conditions**  
@@ -295,9 +297,10 @@ ___
 ___
 **System:** *Shootem Doods*  
 **Subsystem:** Menus
+
 **Created by:**    
 **Executed by:**  
-**Short Description:** Tests that the Player Character remains still if anything other than W or D on the keyboard or up and down on the left analog stick or Directional pad on the XInput device is pressed.
+**Short Description:** Tests that the Cursor remains still if anything other than W or D on the keyboard or up and down on the left analog stick or Directional pad on the XInput device is pressed.
 ___
 
 **Pre-conditions**  
@@ -322,6 +325,7 @@ ___
 ___
 **System:** *Shootem Doods*  
 **Subsystem:**  Play Level 
+
 **Created by:**    
 **Executed by:**  
 **Short Description:**  Tests that Collecting powerups collects powerups.
@@ -347,6 +351,7 @@ ___
 ___
 **System:** *Shootem Doods*  
 **Subsystem:** Play Level
+
 **Created by:**    
 **Executed by:**  
 **Short Description:**  Tests that not hitting powerups does not collect powerups.
@@ -374,6 +379,7 @@ ___
 ___
 **System:** *Shootem Doods*  
 **Subsystem:** Menus 
+
 **Created by:**    
 **Executed by:**  
 **Short Description:**  Tests that pressing 'E' on the keyboard or Right Bumper on the Xinput device during Gameplay uses collected powerups.
@@ -400,14 +406,15 @@ ___
 ___
 **System:** *Shootem Doods*  
 **Subsystem:** Menus 
+
 **Created by:**    
 **Executed by:**  
-**Short Description:**  Tests that not pressing the spacebar on keyboard during Gameplay does not use powerups.
+**Short Description:**  Tests that not pressing 'E' on the keyboard or Right Bumper on the Xinput device during Gameplay does not use powerups.
 ___
 
 **Pre-conditions**  
 * The game is running  
-* The player has not started gameplay or has paused the game.
+* The player has started gameplay.
 
 
 ___
@@ -428,6 +435,7 @@ ___
 ___
 **System:** *Shootem Doods*  
 **Subsystem:**  Play Level 
+
 **Created by:**    
 **Executed by:**  
 **Short Description:**  Tests that hitting damage sources causes damage to the player.
@@ -452,6 +460,7 @@ ___
 ___
 **System:** *Shootem Doods*  
 **Subsystem:** Play Level
+
 **Created by:**    
 **Executed by:**  
 **Short Description:**  Tests that not hitting damage sources does not cause damages.
@@ -477,6 +486,7 @@ ___
 ___
 **System:** *Shootem Doods*  
 **Subsystem:**  Play Level 
+
 **Created by:**    
 **Executed by:**  
 **Short Description:**  Tests that hitting damage sources causes damage to the player.
@@ -500,7 +510,8 @@ ___
 ### TC-7.2: Take Damage, but do not lose a life.
 ___
 **System:** *Shootem Doods*  
-**Subsystem:**  Play Level 
+**Subsystem:**  Play Level
+ 
 **Created by:**    
 **Executed by:**  
 **Short Description:**  Tests that hitting damage sources while powered up causes damage to the player and does not decrement the life counter.
@@ -526,9 +537,10 @@ ___
 ___
 **System:** *Shootem Doods*  
 **Subsystem:** Play Level
+
 **Created by:**    
 **Executed by:**  
-**Short Description:**  Tests that not hitting damage sources does not cause damage or cause the player to lose a life..
+**Short Description:**  Tests that not hitting damage sources does not cause damage or cause the player to lose a life.
 ___
 
 **Pre-conditions**  
@@ -550,6 +562,7 @@ ___
 ___
 **System:** *Shootem Doods*  
 **Subsystem:** Continue
+
 **Created by:**    
 **Executed by:**    
 **Short Description:** Tests that pressing the spacebar on the keyboard or the 'A' button on the Xinput device to select the yes option uses a continue.
@@ -575,6 +588,7 @@ ___
 ___
 **System:** *Shootem Doods*  
 **Subsystem:** Continue 
+
 **Created by:**    
 **Executed by:**    
 **Short Description:** Tests that selecting the 'no' option at the continue screen declines continues
@@ -601,6 +615,7 @@ ___
 ___
 **System:** *Shootem Doods*  
 **Subsystem:** Continue
+
 **Created by:**    
 **Executed by:**    
 **Short Description:** Tests that pressing the spacebar on the keyboard or the 'A' button on the Xinput device to select the yes option uses a continue.
@@ -627,6 +642,7 @@ ___
 ___
 **System:** *Shootem Doods*  
 **Subsystem:** Continue
+
 **Created by:**    
 **Executed by:**    
 **Short Description:** Tests that pressing the spacebar on the keyboard or the 'A' button on the Xinput device to select the yes option uses a continu.
@@ -651,6 +667,7 @@ ___
 ___
 **System:** *Shootem Doods*  
 **Subsystem:** Start Menu
+
 **Created by:**    
 **Executed by:**    
 **Short Description:** Tests that selecting the 'View High Scores' option at the Start Menu shows High Scores.
@@ -677,6 +694,7 @@ ___
 ___
 **System:** *Shootem Doods*  
 **Subsystem:** Start Menu
+
 **Created by:**    
 **Executed by:**    
 **Short Description:** Tests that selecting the 'Quit Game' option at the Start Menu exits the game.
@@ -703,6 +721,7 @@ ___
 ___
 **System:** *Shootem Doods*  
 **Subsystem:** Start Menu
+
 **Created by:**    
 **Executed by:**    
 **Short Description:** Tests that pressing anything other than A,D, or the spacebar on the keyboard or up and down on the directional pad or left analog stick or the 'A' button on the Xinput device does nothing.
