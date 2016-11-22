@@ -33,40 +33,40 @@ Table of Contents
    1. Purpose
    2. Document Conventions
 2. **Functional Requirements Test Cases**
-   1. Move Player
-   TC-1.1: Correct Keyboard Input  
-   TC-1.2: Correct XInput Input
-   TC-1.3: Incorrect input
-   2. Shoot Weapon
-   TC-10.1: Correct Keyboard Input  
-   TC-10.2: Correct XInput Input  
-   TC-10.3: Incorrect Input
-   3. Menu Navigation
-   TC-3.1: Correct Keyboard Input  
-   TC-3.2: Correct Xinput Input   
-   TC-3.3: Incorrect Input  
-   4. Collect Power-ups
-   TC-4.1: Collect Powerups  
-   TC-4.2: Do not collect Powerups  
-   5. Use Power-ups
-   TC-5.1: Use Powerups
-   TC-5.2: Use no powerups
-   6. Take Damage
-   TC-6.1: Take Damage   
-   TC-6.2: Do not take damage   
-   7. Lose Life
-   TC-7.1: Lose Life
-   TC-7.2: Take Damage, but do not lose a life.     
-   TC-7.3: Do not lose a life
-   8. Use Continue
-   TC-8.1: Use continue
-   TC-8.2: Decline Continue
-   TC-8.3: Invalid input
-   9. Start Menu
-   TC-9.1: Start Game
-   TC-9.2: View High Scores
-   TC-9.3: Quit Game
-   TC-9.4: Invalid input
+   1. Move Player  
+   TC-1.1: Correct Keyboard Input    
+   TC-1.2: Correct XInput Input  
+   TC-1.3: Incorrect Input  
+   2. Shoot Weapon  
+   TC-10.1: Correct Keyboard Input    
+   TC-10.2: Correct XInput Input    
+   TC-10.3: Incorrect Input  
+   3. Menu Navigation  
+   TC-3.1: Correct Keyboard Input    
+   TC-3.2: Correct XInput Input     
+   TC-3.3: Incorrect Input    
+   4. Collect Power-ups  
+   TC-4.1: Collect Power-ups    
+   TC-4.2: Do Not Collect Power-ups    
+   5. Use Power-ups  
+   TC-5.1: Use Power-ups  
+   TC-5.2: Use No Power-ups  
+   6. Take Damage  
+   TC-6.1: Take Damage     
+   TC-6.2: Do Not Take Damage       
+   7. Lose Life  
+   TC-7.1: Lose Life    
+   TC-7.2: Take Damage, but do not lose a life.       
+   TC-7.3: Do Not Lose A Life  
+   8. Use Continue  
+   TC-8.1: Use Continue  
+   TC-8.2: Decline Continue  
+   TC-8.3: Invalid Input  
+   9. Start Menu  
+   TC-9.1: Start Game  
+   TC-9.2: View High Scores  
+   TC-9.3: Quit Game  
+   TC-9.4: Invalid Input  
    10. Game Over  
    TC-10.1: Correct Keyboard Input  
    TC-10.2: Correct XInput Input  
@@ -114,8 +114,8 @@ ___
 ### TC-1.1: Correct Keyboard Input
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** None
-**Created by:**    
+**Subsystem:** None  
+**Created by:**      
 **Executed by:**  
 **Short Description:**  Tests that pressing the 'WASD' buttons on keyboard during Gameplay moves the player.
 ___
@@ -142,7 +142,7 @@ ___
 ### TC-1.2: Correct XInput Input
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Play Level
+**Subsystem:** Play Level  
 **Created by:**    
 **Executed by:**  
 **Short Description:**  Tests that moving the analog stick and pressing the Directional buttons on the XInput device moves the player.
@@ -172,7 +172,7 @@ ___
 ### TC-1.3: Incorrect Input
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Play Level
+**Subsystem:** Play Level  
 **Created by:**    
 **Executed by:**  
 **Short Description:** Tests that the Player Character remains still if any  W,A,S, or D on the keyboard or the left analog stick or Directional pad on the XInput device is pressed.
@@ -199,7 +199,7 @@ ___
 ### TC-2.1: Correct Keyboard Input
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Play Level  
+**Subsystem:** Play Level    
 **Created by:**    
 **Executed by:**  
 **Short Description:**  Tests that pressing the spacebar on keyboard during Gameplay shoots the player's weapon.
@@ -224,10 +224,10 @@ ___
 ### TC-2.2: Correct XInput Input
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Play Level  
+**Subsystem:** Play Level    
 **Created by:**    
 **Executed by:**  
-**Short Description:**  Tests that pressing the 'A' Button on the XInput Device during Gameplay shoots the player's weapon.
+**Short Description:**  Tests that pressing the 'A' Button on the XInput device during Gameplay shoots the player's weapon.
 ___
 
 **Pre-conditions**  
@@ -249,7 +249,7 @@ ___
 ### TC-2.3: Incorrect Input
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Play Level  
+**Subsystem:** Play Level    
 **Created by:**    
 **Executed by:**  
 **Short Description:** Tests that the Player Character remains still if anything other than W or D on the keyboard or up and down on the left analog stick or Directional pad on the XInput device is pressed.
@@ -274,8 +274,7 @@ ___
 ### TC-3.1: Correct Keyboard Input
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Menus
-
+**Subsystem:** Menus  
 **Created by:**    
 **Executed by:**  
 **Short Description:**  Tests that pressing the spacebar on keyboard during Gameplay shoots the player's weapon.
@@ -299,11 +298,10 @@ ___
 ### TC-3.2: Correct Xinput Input
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Play Level
-
+**Subsystem:** Play Level  
 **Created by:**    
 **Executed by:**  
-**Short Description:** Tests that the menu's response to if a W,D, or Enter on the keyboard or up or down on the directional pad, up or down on the left Analog stick, or 'A' on the Xinput Device.
+**Short Description:** Tests that the menu's response to if a W,D, or Enter on the keyboard or up or down on the directional pad, up or down on the left Analog stick, or 'A' on the XInput Device.
 ___
 
 **Pre-conditions**  
@@ -315,11 +313,11 @@ ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
 | :------: | :---------------- | :----------------------| :-------: | :-------|
-|1         | Press the down on the Directional pad of the Xinput device| The cursor of the menu moves down. |  |  ||
-|2         | Press the up on the Direction pad of the Xinput device.| The cursor of the menu moves up. |  |  ||
-|3         | Press the down on the left analog stick of the Xinput device| The cursor of the menu moves down. |  |  ||
-|4         | Press the up on the left analog stick of the Xinput device| The cursor of the menu moves up. |  |  ||
-|5         | Press the up on the left analog stick of the Xinput device| The cursor of the menu moves up. |  |  ||
+|1         | Press the down on the Directional pad of the XInput device| The cursor of the menu moves down. |  |  ||
+|2         | Press the up on the Direction pad of the XInput device.| The cursor of the menu moves up. |  |  ||
+|3         | Press the down on the left analog stick of the XInput device| The cursor of the menu moves down. |  |  ||
+|4         | Press the up on the left analog stick of the XInput device| The cursor of the menu moves up. |  |  ||
+|5         | Press the up on the left analog stick of the XInput device| The cursor of the menu moves up. |  |  ||
 ___
 **Post-conditions**  
 1. The cursor should be still once all buttons are released.
@@ -328,8 +326,7 @@ ___
 ### TC-3.3: Incorrect Input
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Menus
-
+**Subsystem:** Menus  
 **Created by:**    
 **Executed by:**  
 **Short Description:** Tests that the Cursor remains still if anything other than W or D on the keyboard or up and down on the left analog stick or Directional pad on the XInput device is pressed.
@@ -353,14 +350,13 @@ ___
 ## iv. Collect Power-ups
 
 ___
-### TC-4.1: Collect Powerups
+### TC-4.1: Collect Power-ups
 ___
 **System:** *Shootem Doods*  
-**Subsystem:**  Play Level
-
+**Subsystem:**  Play Level  
 **Created by:**    
 **Executed by:**  
-**Short Description:**  Tests that Collecting powerups collects powerups.
+**Short Description:**  Tests that Collecting power-ups collects power-ups.
 ___
 
 **Pre-conditions**  
@@ -372,21 +368,20 @@ ___
 
 | Step     | Action         |Expected System Response| Pass/Fail | Comment |
 | :------: | :------------- | :----------------------| :-------: | :-------|
-|1         | Run into a powerup in the level| The powerup is added to the player's powerup bar. |  |  ||
+|1         | Run into a power-up in the level| The power-up is added to the player's power-up bar. |  |  ||
 ___
 **Post-conditions**  
-1. The player should have a powerup
+1. The player should have a power-up
 
 
 ___
-### TC-4.2: Do not collect Powerups
+### TC-4.2: Do Not Collect Power-ups
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Play Level
-
+**Subsystem:** Play Level  
 **Created by:**    
 **Executed by:**  
-**Short Description:**  Tests that not hitting powerups does not collect powerups.
+**Short Description:**  Tests that not hitting power-ups does not collect power-ups.
 ___
 
 **Pre-conditions**  
@@ -397,24 +392,23 @@ ___
 
 | Step     | Action         |Expected System Response| Pass/Fail | Comment |
 | :------: | :------------- | :----------------------| :-------: | :-------|
-|1         | Play through the level without collecting powerups| The player should not have powerups. |  |  ||
+|1         | Play through the level without collecting power-ups| The player should not have power-ups. |  |  ||
 ___
 **Post-conditions**  
-1. The player should not have any powerups
+1. The player should not have any power-ups
 
 
 ## v. Use Power-ups
 
 
 ___
-### TC-5.1: Use Powerups
+### TC-5.1: Use Power-ups
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Menus
-
+**Subsystem:** Menus  
 **Created by:**    
 **Executed by:**  
-**Short Description:**  Tests that pressing 'E' on the keyboard or Right Bumper on the Xinput device during Gameplay uses collected powerups.
+**Short Description:**  Tests that pressing 'E' on the keyboard or Right Bumper on the XInput device during Gameplay uses collected power-ups.
 ___
 
 **Pre-conditions**  
@@ -426,22 +420,21 @@ ___
 
 | Step     | Action         |Expected System Response| Pass/Fail | Comment |
 | :------: | :------------- | :----------------------| :-------: | :-------|
-|1         | Run into a powerup| The powerup is added to the player's inventory |  |  ||
-|2         | Press 'E' on the keyboard or Right Bumper on the Xinput device to use powerup|The powerups in the player's inventory are used. |  |  ||
+|1         | Run into a power-up| The power-up is added to the player's inventory |  |  ||
+|2         | Press 'E' on the keyboard or Right Bumper on the XInput device to use power-up|The power-ups in the player's inventory are used. |  |  ||
 ___
 **Post-conditions**  
-1. The powerups should have activated.
+1. The power-ups should have activated.
 
 
 ___
-### TC-5.2: Use no powerups
+### TC-5.2: Use No Power-ups
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Menus
-
+**Subsystem:** Menus  
 **Created by:**    
 **Executed by:**  
-**Short Description:**  Tests that not pressing 'E' on the keyboard or Right Bumper on the Xinput device during Gameplay does not use powerups.
+**Short Description:**  Tests that not pressing 'E' on the keyboard or Right Bumper on the XInput device during Gameplay does not use power-ups.
 ___
 
 **Pre-conditions**  
@@ -453,11 +446,11 @@ ___
 
 | Step     | Action         |Expected System Response| Pass/Fail | Comment |
 | :------: | :------------- | :----------------------| :-------: | :-------|
-|1         | Run into a powerup during Gameplay| The powerup is collected. |  |  ||
-|2         | Do not press 'E' on the keyboard or the Right Bumper on an Xinput device. | Nothing |  |  ||
+|1         | Run into a power-up during Gameplay| The power-up is collected. |  |  ||
+|2         | Do not press 'E' on the keyboard or the Right Bumper on an XInput device. | Nothing |  |  ||
 ___
 **Post-conditions**  
-1. No powerups should be used
+1. No power-ups should be used
 
 
 
@@ -467,7 +460,6 @@ ___
 ___
 **System:** *Shootem Doods*  
 **Subsystem:**  Play Level
-
 **Created by:**    
 **Executed by:**  
 **Short Description:**  Tests that hitting damage sources causes damage to the player.
@@ -475,7 +467,7 @@ ___
 
 **Pre-conditions**  
 * The game is running  
-* The player has chosen to start gameplay
+* The Player has chosen to start gameplay
 
 
 ___
@@ -488,11 +480,10 @@ ___
 1. The player should take damage.
 
 ___
-### TC-6.2: Do not take damage
+### TC-6.2: Do Not Take Damage
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Play Level
-
+**Subsystem:** Play Level  
 **Created by:**    
 **Executed by:**  
 **Short Description:**  Tests that not hitting damage sources does not cause damages.
@@ -517,8 +508,7 @@ ___
 ### TC-7.1: Lose Life
 ___
 **System:** *Shootem Doods*  
-**Subsystem:**  Play Level
-
+**Subsystem:**  Play Level  
 **Created by:**    
 **Executed by:**  
 **Short Description:**  Tests that hitting damage sources causes damage to the player.
@@ -527,7 +517,7 @@ ___
 **Pre-conditions**  
 * The game is running  
 * The player has chosen to start gameplay
-* The player has no actve powerups
+* The player has no active power-ups
 
 ___
 
@@ -542,8 +532,7 @@ ___
 ### TC-7.2: Take Damage, but do not lose a life.
 ___
 **System:** *Shootem Doods*  
-**Subsystem:**  Play Level
-
+**Subsystem:**  Play Level  
 **Created by:**    
 **Executed by:**  
 **Short Description:**  Tests that hitting damage sources while powered up causes damage to the player and does not decrement the life counter.
@@ -558,8 +547,8 @@ ___
 
 | Step     | Action         |Expected System Response| Pass/Fail | Comment |
 | :------: | :------------- | :----------------------| :-------: | :-------|
-|1         | Run into a powerup| The powerup is added to the player's inventory |  |  ||
-|2         | Press 'E' on the keyboard or Right Bumper on the Xinput device to use powerup|The powerups in the player's inventory are used. |  |  ||
+|1         | Run into a power-up| The power-up is added to the player's inventory |  |  ||
+|2         | Press 'E' on the keyboard or Right Bumper on the XInput device to use power-up|The power-ups in the player's inventory are used. |  |  ||
 |3         | Run into an enemy, projectile, object, or wall in the level| The player should take damage. |  |  ||
 ___
 **Post-conditions**  
@@ -568,8 +557,7 @@ ___
 ### TC-7.3: Do not lose a life
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Play Level
-
+**Subsystem:** Play Level  
 **Created by:**    
 **Executed by:**  
 **Short Description:**  Tests that not hitting damage sources does not cause damage or cause the player to lose a life.
@@ -590,14 +578,13 @@ ___
 
 
 ## viii. Use Continue
-### TC-8.1: Use continue
+### TC-8.1: Use Continue
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Continue
-
+**Subsystem:** Continue  
 **Created by:**    
 **Executed by:**    
-**Short Description:** Tests that pressing the spacebar on the keyboard or the 'A' button on the Xinput device to select the yes option uses a continue.
+**Short Description:** Tests that pressing the spacebar on the keyboard or the 'A' button on the XInput device to select the yes option uses a continue.
 ___
 
 **Pre-conditions**  
@@ -610,7 +597,7 @@ ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
 | :------: | :---------------- | :----------------------| :-------: | :-------|
-|1         | Press the spacebar on the keyboard or 'A' on the Xinput device. | The game returns you to the beginning of the level|  |  ||
+|1         | Press the spacebar on the keyboard or 'A' on the XInput device. | The game returns you to the beginning of the level|  |  ||
 ___
 **Post-conditions**  
 1. The level restarts from the beginning
@@ -619,11 +606,10 @@ ___
 ### TC-8.2: Decline Continue
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Continue
-
+**Subsystem:** Continue  
 **Created by:**    
 **Executed by:**    
-**Short Description:** Tests that selecting the 'no' option at the continue screen declines continues
+**Short Description:** Tests that selecting the 'No' option at the continue screen declines continues
 ___
 
 **Pre-conditions**  
@@ -636,7 +622,7 @@ ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
 | :------: | :---------------- | :----------------------| :-------: | :-------|
-|1         | Press 'D' or left on the left analog stick or Directional pad. | The cursor goes to the "No" option. |  |  ||
+|1         | Press 'D' or left on the left analog stick or Directional pad. | The cursor goes to the 'No' option. |  |  ||
 |2         | Press the spacebar or 'A'. | The game declines use of a continue, and begins the game over sequence. |  |  ||
 ___
 **Post-conditions**  
@@ -646,11 +632,10 @@ ___
 ### TC-8.3: Invalid input
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Continue
-
+**Subsystem:** Continue  
 **Created by:**    
 **Executed by:**    
-**Short Description:** Tests that pressing the spacebar on the keyboard or the 'A' button on the Xinput device to select the yes option uses a continue.
+**Short Description:** Tests that pressing the spacebar on the keyboard or the 'A' button on the XInput device to select the 'Yes' option uses a continue.
 ___
 
 **Pre-conditions**  
@@ -663,7 +648,7 @@ ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
 | :------: | :---------------- | :----------------------| :-------: | :-------|
-|1         | Press anything other than the spacebar on the keyboard or 'A' on the Xinput device. | The game should not respond. |  |  ||
+|1         | Press anything other than the spacebar on the keyboard or 'A' on the XInput device. | The game should not respond. |  |  ||
 ___
 **Post-conditions**  
 1. The Continue screen continues to be displayed
@@ -673,11 +658,10 @@ ___
 ### TC-9.1: Start Game
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Continue
-
+**Subsystem:** Continue  
 **Created by:**    
 **Executed by:**    
-**Short Description:** Tests that pressing the spacebar on the keyboard or the 'A' button on the Xinput device to select the yes option uses a continu.
+**Short Description:** Tests that pressing the spacebar on the keyboard or the 'A' button on the XInput device to select the yes option uses a continue.
 ___
 
 **Pre-conditions**  
@@ -689,7 +673,7 @@ ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
 | :------: | :---------------- | :----------------------| :-------: | :-------|
-|1         | Press the spacebar on the keyboard or 'A' on the Xinput device. | The game Starts the first level|  |  ||
+|1         | Press the spacebar on the keyboard or 'A' on the XInput device. | The game Starts the first level|  |  ||
 ___
 **Post-conditions**  
 1. The level restarts from the beginning
@@ -698,8 +682,7 @@ ___
 ### TC-9.2: View High Scores
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Start Menu
-
+**Subsystem:** Start Menu  
 **Created by:**    
 **Executed by:**    
 **Short Description:** Tests that selecting the 'View High Scores' option at the Start Menu shows High Scores.
@@ -725,8 +708,7 @@ ___
 ### TC-9.3: Quit Game
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Start Menu
-
+**Subsystem:** Start Menu  
 **Created by:**    
 **Executed by:**    
 **Short Description:** Tests that selecting the 'Quit Game' option at the Start Menu exits the game.
@@ -743,7 +725,7 @@ ___
 | :------: | :---------------- | :----------------------| :-------: | :-------|
 |1         | Press 'S' or Down on the left analog stick or Directional pad. | The cursor goes to the "View High Scores" option. |  |  ||
 |2         | Press 'S' or Down on the left analog stick or Directional pad. | The cursor goes to the "Quit Game" option. |  |  ||
-|3         | Press the spacebar or 'A' on the Xinput device. | The game exits. |  |  ||
+|3         | Press the spacebar or 'A' on the XInput device. | The game exits. |  |  ||
 ___
 **Post-conditions**  
 1. The game is not running.
@@ -752,11 +734,10 @@ ___
 ### TC-9.4: Invalid input
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Start Menu
-
+**Subsystem:** Start Menu  
 **Created by:**    
 **Executed by:**    
-**Short Description:** Tests that pressing anything other than A,D, or the spacebar on the keyboard or up and down on the directional pad or left analog stick or the 'A' button on the Xinput device does nothing.
+**Short Description:** Tests that pressing anything other than A,D, or the spacebar on the keyboard or up and down on the directional pad or left analog stick or the 'A' button on the XInput device does nothing.
 ___
 
 **Pre-conditions**  
@@ -769,7 +750,7 @@ ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
 | :------: | :---------------- | :----------------------| :-------: | :-------|
-|1         | Press anything other than A,D, or the spacebar on the keyboard or up and down on the directional pad or left analog stick or the 'A' button on the Xinput device. | The game should not respond. |  |  ||
+|1         | Press anything other than A,D, or the spacebar on the keyboard or up and down on the directional pad or left analog stick or the 'A' button on the XInput device. | The game should not respond. |  |  ||
 ___
 **Post-conditions**  
 1. The Start menu continues to be displayed
@@ -780,7 +761,7 @@ ___
 ### TC-10.1: Correct Keyboard Input
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Game Over  
+**Subsystem:** Game Over    
 **Created by:**    
 **Executed by:**    
 **Short Description:** Tests that pressing the spacebar on the keyboard at the
