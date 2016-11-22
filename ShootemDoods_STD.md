@@ -72,7 +72,9 @@ Table of Contents
    TC-10.2: Correct XInput Input  
    TC-10.3: Incorrect Input
    11. Play Level  
-   TC-11
+   TC-11.1: Level Completion  
+   TC-11.2: Exit Level Manually  
+   TC-11.3: Level Exited by Game Over  
    12. Transition Levels  
    TC-12.1: Correct Input  
    TC-12.2: Incorrect Input
@@ -112,7 +114,7 @@ ___
 ### TC-1.1: Correct Keyboard Input
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** None 
+**Subsystem:** None
 **Created by:**    
 **Executed by:**  
 **Short Description:**  Tests that pressing the 'WASD' buttons on keyboard during Gameplay moves the player.
@@ -140,7 +142,7 @@ ___
 ### TC-1.2: Correct XInput Input
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Play Level 
+**Subsystem:** Play Level
 **Created by:**    
 **Executed by:**  
 **Short Description:**  Tests that moving the analog stick and pressing the Directional buttons on the XInput device moves the player.
@@ -272,7 +274,7 @@ ___
 ### TC-3.1: Correct Keyboard Input
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Menus 
+**Subsystem:** Menus
 
 **Created by:**    
 **Executed by:**  
@@ -301,7 +303,7 @@ ___
 
 **Created by:**    
 **Executed by:**  
-**Short Description:** Tests that the menu's response to if a W,D, or Enter on the keyboard or up or down on the directional pad, up or down on the left Analog stick, or 'A' on the Xinput Device. 
+**Short Description:** Tests that the menu's response to if a W,D, or Enter on the keyboard or up or down on the directional pad, up or down on the left Analog stick, or 'A' on the Xinput Device.
 ___
 
 **Pre-conditions**  
@@ -354,7 +356,7 @@ ___
 ### TC-4.1: Collect Powerups
 ___
 **System:** *Shootem Doods*  
-**Subsystem:**  Play Level 
+**Subsystem:**  Play Level
 
 **Created by:**    
 **Executed by:**  
@@ -408,7 +410,7 @@ ___
 ### TC-5.1: Use Powerups
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Menus 
+**Subsystem:** Menus
 
 **Created by:**    
 **Executed by:**  
@@ -435,7 +437,7 @@ ___
 ### TC-5.2: Use no powerups
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Menus 
+**Subsystem:** Menus
 
 **Created by:**    
 **Executed by:**  
@@ -464,7 +466,7 @@ ___
 ### TC-6.1: Take Damage
 ___
 **System:** *Shootem Doods*  
-**Subsystem:**  Play Level 
+**Subsystem:**  Play Level
 
 **Created by:**    
 **Executed by:**  
@@ -515,7 +517,7 @@ ___
 ### TC-7.1: Lose Life
 ___
 **System:** *Shootem Doods*  
-**Subsystem:**  Play Level 
+**Subsystem:**  Play Level
 
 **Created by:**    
 **Executed by:**  
@@ -541,7 +543,7 @@ ___
 ___
 **System:** *Shootem Doods*  
 **Subsystem:**  Play Level
- 
+
 **Created by:**    
 **Executed by:**  
 **Short Description:**  Tests that hitting damage sources while powered up causes damage to the player and does not decrement the life counter.
@@ -617,7 +619,7 @@ ___
 ### TC-8.2: Decline Continue
 ___
 **System:** *Shootem Doods*  
-**Subsystem:** Continue 
+**Subsystem:** Continue
 
 **Created by:**    
 **Executed by:**    
@@ -855,7 +857,78 @@ ___
 1. The Game Over screen is displayed
 
 ___
-## xi. Play Level
+## xi. Play Level  
+### TC-11.1: Level Completion
+___
+**System:** *Shootem Doods*  
+**Subsystem:** Play Level  
+**Created by:**    
+**Executed by:**    
+**Short Description:** Tests that a level starts and continues until gameplay is ended by level completion.
+___
+
+**Pre-conditions**  
+* The game is running  
+* An event that begins a level (level transition or game start) has occurred.
+
+
+___
+| Step     | Action            |Expected System Response| Pass/Fail | Comment |
+| :------: | :---------------- | :----------------------| :-------: | :-------|
+|1         | Navigate the Player's ship through the level| The level continues running|  |  |
+|2         | Reach the end of the level | The system exits the level and loads the next level|  |  ||
+___
+**Post-conditions**  
+1. The next level is loaded
+___
+
+### TC-11.2: Exit Level Manually
+___
+**System:** *Shootem Doods*  
+**Subsystem:** Play Level  
+**Created by:**    
+**Executed by:**    
+**Short Description:** Tests that a level starts and continues until gameplay is ended manually.
+___
+
+**Pre-conditions**  
+* The game is running  
+* An event that begins a level (level transition or game start) has occurred.
+
+
+___
+| Step     | Action            |Expected System Response| Pass/Fail | Comment |
+| :------: | :---------------- | :----------------------| :-------: | :-------|
+|1         | Navigate the Player's ship through the level| The level continues running|  |  |
+|2         | Press either the 'M' key on the keyboard or the 'Start' button on a XInput device | The Pause Menu is displayed and the level is suspended|  |  |
+|3         | Select 'Quit to Start Screen' | The title screen is shown|  |  ||
+___
+**Post-conditions**  
+1. Game play is ended and the title screen is shown.
+___
+### TC-11.3: Level Exited by Game Over
+___
+**System:** *Shootem Doods*  
+**Subsystem:** Play Level  
+**Created by:**    
+**Executed by:**    
+**Short Description:** Tests that a level starts and continues until gameplay is ended by a game over.
+___
+
+**Pre-conditions**  
+* The game is running  
+* An event that begins a level (level transition or game start) has occurred.
+
+
+___
+| Step     | Action            |Expected System Response| Pass/Fail | Comment |
+| :------: | :---------------- | :----------------------| :-------: | :-------|
+|1         | Navigate the Player's ship through the level| The level continues running|  |  ||
+|2         | Collide with objects or get hit by enemy ships until all lives are lost | The system exits the level and the Game Over screen is displayed|  |  ||
+___
+**Post-conditions**  
+1. The Game Over screen is displayed.
+___
 ## xii. Transition Levels
 ### TC-12.1: Correct Input
 ___
