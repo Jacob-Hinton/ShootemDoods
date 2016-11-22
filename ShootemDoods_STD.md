@@ -117,7 +117,7 @@ ___
 **Subsystem:** None  
 **Created by:**      
 **Executed by:**  
-**Short Description:**  Tests that pressing the 'WASD' buttons on keyboard during Gameplay moves the player.
+**Short Description:**  Tests that pressing the 'W', 'A', 'S', and 'D' buttons on keyboard during Gameplay moves the player.
 ___
 
 **Pre-conditions**  
@@ -130,13 +130,13 @@ ___
 
 | Step     | Action         |Expected System Response| Pass/Fail | Comment |
 | :------: | :------------- | :----------------------| :-------: | :-------|
-|1         | Press the 'W' button on the Keyboard| The Player ship moves up. |  |  ||
-|2         | Press the 'A' button on the Keyboard| The Player ship moves left. |  |  ||
-|3         | Press the 'S' button on the Keyboard| The Player ship moves right. |  |  ||
-|4         | Press the 'D' button on the keyboard| The Player ship moves down. |  |  ||
+|1         | Press the 'W' button on the keyboard| The Player's ship moves up. |  |  ||
+|2         | Press the 'A' button on the keyboard| The Player's ship moves left. |  |  ||
+|3         | Press the 'S' button on the keyboard| The Player's ship moves right. |  |  ||
+|4         | Press the 'D' button on the keyboard| The Player's ship moves down. |  |  ||
 ___
 **Post-conditions**  
-1. The character should be still after all buttons are released.
+1. The Player's ship should be still after all buttons are released.
 
 ___
 ### TC-1.2: Correct XInput Input
@@ -158,14 +158,14 @@ ___
 
 | Step     | Action         |Expected System Response| Pass/Fail | Comment |
 | :------: | :------------- | :----------------------| :-------: | :-------|
-|1         | Press up on directional pad of the the XInput device| The Player ship moves up. |  |  ||
-|2         | Press down on directional pad of the XInput device| The Player ship moves left. |  |  ||
-|3         | Press right on directional pad of the XInput device| The Player ship moves right. |  |  ||
-|4         | Press down on directional pad of the XInput device| The Player ship moves down. |  |  ||
-|5         | Move the left analog stick on the XInput device in a circle. | The Player ship moves in a circle |  |  ||
+|1         | Press up on directional pad of the the XInput device| The Player's ship moves up. |  |  ||
+|2         | Press down on directional pad of the XInput device| The Player's ship moves left. |  |  ||
+|3         | Press right on directional pad of the XInput device| The Player's ship moves right. |  |  ||
+|4         | Press down on directional pad of the XInput device| The Player's ship moves down. |  |  ||
+|5         | Move the left analog stick on the XInput device in a circle. | The Player's ship moves in a circle |  |  ||
 ___
 **Post-conditions**  
-1. The Player ship should be still after all buttons are released.
+1. The Player's ship should be still after all buttons are released.
 
 
 ___
@@ -175,7 +175,7 @@ ___
 **Subsystem:** Play Level  
 **Created by:**    
 **Executed by:**  
-**Short Description:** Tests that the Player ship remains still if any  W,A,S, or D on the keyboard or the left analog stick or Directional pad on the XInput device is pressed.
+**Short Description:** Tests that the Player's ship remains still if any  'W', 'A', 'S', or 'D' on the keyboard or the left analog stick or directional pad on the XInput device is pressed.
 ___
 
 **Pre-conditions**  
@@ -187,10 +187,10 @@ ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
 | :------: | :---------------- | :----------------------| :-------: | :-------|
-|1         | Press a button that is **not** W,A,S, or D on the keyboard or the left analog stick or Directional pad on the XInput device | The Player ship does not move|  |  ||
+|1         | Press a button that is **not** 'W', 'A', 'S', or 'D' on the keyboard or the left analog stick or Directional pad on the XInput device | The Player's ship does not move|  |  ||
 ___
 **Post-conditions**  
-1. The Player character should not have moved as outlined in Move Player.
+1. The Player's ship should not have moved as outlined in Move Player.
 
 
 ## ii. Shoot Weapon
@@ -202,12 +202,12 @@ ___
 **Subsystem:** Play Level    
 **Created by:**    
 **Executed by:**  
-**Short Description:**  Tests that pressing the spacebar on keyboard during Gameplay shoots the player's weapon.
+**Short Description:**  Tests that pressing the spacebar on keyboard during Gameplay shoots the Player's weapon.
 ___
 
 **Pre-conditions**  
 * The game is running  
-* The player has started gameplay.
+* The Player has started gameplay.
 
 
 ___
@@ -215,10 +215,10 @@ ___
 
 | Step     | Action         |Expected System Response| Pass/Fail | Comment |
 | :------: | :------------- | :----------------------| :-------: | :-------|
-|1         | Press the spacebar on the Keyboard| The Player character  shoots. |  |  ||
+|1         | Press the spacebar on the keyboard| The Player's ship shoots. |  |  ||
 ___
 **Post-conditions**  
-1. The character should be still after all buttons are released.
+1. The Player's ship should be still after all buttons are released.
 
 ___
 ### TC-2.2: Correct XInput Input
@@ -227,12 +227,12 @@ ___
 **Subsystem:** Play Level    
 **Created by:**    
 **Executed by:**  
-**Short Description:**  Tests that pressing the 'A' Button on the XInput device during Gameplay shoots the player's weapon.
+**Short Description:**  Tests that pressing the 'A' button on the XInput device during Gameplay shoots the Player's weapon.
 ___
 
 **Pre-conditions**  
 * The game is running  
-* The player has started gameplay.
+* The Player has started gameplay.
 
 
 ___
@@ -240,10 +240,10 @@ ___
 
 | Step     | Action         |Expected System Response| Pass/Fail | Comment |
 | :------: | :------------- | :----------------------| :-------: | :-------|
-|1         | Press the 'A' Button on the Xinput Device| The Player character  shoots. |  |  ||
+|1         | Press the 'A' button on the XInput device| The Player's ship shoots. |  |  ||
 ___
 **Post-conditions**  
-1. The character should be still after all buttons are released.
+1. The Player's ship should be still after all buttons are released.
 
 ___
 ### TC-2.3: Incorrect Input
@@ -252,22 +252,22 @@ ___
 **Subsystem:** Play Level    
 **Created by:**    
 **Executed by:**  
-**Short Description:** Tests that the Player Character remains still if anything other than W or D on the keyboard or up and down on the left analog stick or Directional pad on the XInput device is pressed.
+**Short Description:** Tests that the Player's ship remains still if anything other than 'W' or 'D' on the keyboard or up and down on the left analog stick or directional pad on the XInput device is pressed.
 ___
 
 **Pre-conditions**  
 * The game is running  
-* The player has not started gameplay or has paused the game.
+* The Player has not started gameplay or has paused the game.
 
 ___
 
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
 | :------: | :---------------- | :----------------------| :-------: | :-------|
-|1         | Press a button that is **not** W,A,S, or D on the keyboard or the left analog stick or Directional pad on the XInput device | The Player Character does not move|  |  ||
+|1         | Press a button that is **not** 'W', 'A', 'S', or 'D' on the keyboard or the left analog stick or directional pad on the XInput device | The Player's ship does not move|  |  ||
 ___
 **Post-conditions**  
-1. The Player character should not have moved as outlined in Move Player.
+1. The Player's ship should not have moved as outlined in Move Player.
 
 ## iii. Menu Navigation
 ___
@@ -277,20 +277,20 @@ ___
 **Subsystem:** Menus  
 **Created by:**    
 **Executed by:**  
-**Short Description:**  Tests that pressing the spacebar on keyboard during Gameplay shoots the player's weapon.
+**Short Description:**  Tests that pressing the spacebar on keyboard during Gameplay shoots the Player's weapon.
 ___
 
 **Pre-conditions**  
 * The game is running  
-* The player has not started gameplay or has paused the game.
+* The Player has not started gameplay or has paused the game.
 
 
 ___
 
 | Step     | Action         |Expected System Response| Pass/Fail | Comment |
 | :------: | :------------- | :----------------------| :-------: | :-------|
-|1         | Press the down on the Keyboard| The cursor of the menu moves down. |  |  ||
-|2         | Press the up on the Keyboard| The cursor of the menu moves up. |  |  ||
+|1         | Press the down on the keyboard| The cursor of the menu moves down. |  |  ||
+|2         | Press the up on the keyboard| The cursor of the menu moves up. |  |  ||
 ___
 **Post-conditions**  
 1. The cursor should be still after all buttons are released.
@@ -301,7 +301,7 @@ ___
 **Subsystem:** Play Level  
 **Created by:**    
 **Executed by:**  
-**Short Description:** Tests that the menu's response to if a W,D, or Enter on the keyboard or up or down on the directional pad, up or down on the left analog stick, or 'A' on the XInput Device.
+**Short Description:** Tests that the menu's response to if a 'W', 'D', or 'Enter' on the keyboard or up or down on the directional pad, up or down on the left analog stick, or 'A' on the XInput Device.
 ___
 
 **Pre-conditions**  
@@ -329,7 +329,7 @@ ___
 **Subsystem:** Menus  
 **Created by:**    
 **Executed by:**  
-**Short Description:** Tests that the cursor remains still if anything other than W or D on the keyboard or up and down on the left analog stick or directional pad on the XInput device is pressed.
+**Short Description:** Tests that the cursor remains still if anything other than 'W' or 'D' on the keyboard or up and down on the left analog stick or directional pad on the XInput device is pressed.
 ___
 
 **Pre-conditions**  
@@ -341,10 +341,10 @@ ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
 | :------: | :---------------- | :----------------------| :-------: | :-------|
-|1         | Press a button that is **not** W,A,S, or D on the keyboard or the left analog stick or directional pad on the XInput device | The Player ship does not move|  |  ||
+|1         | Press a button that is **not** 'W', 'A', 'S', or 'D' on the keyboard or the left analog stick or directional pad on the XInput device | The Player's ship does not move|  |  ||
 ___
 **Post-conditions**  
-1. The Player ship should not have moved as outlined in Move Player.
+1. The Player's ship should not have moved as outlined in Move Player.
 
 
 ## iv. Collect Power-ups
@@ -361,17 +361,17 @@ ___
 
 **Pre-conditions**  
 * The game is running  
-* The player has chosen to start gameplay
+* The Player has chosen to start gameplay
 
 
 ___
 
 | Step     | Action         |Expected System Response| Pass/Fail | Comment |
 | :------: | :------------- | :----------------------| :-------: | :-------|
-|1         | Run into a power-up in the level| The power-up is added to the player's power-up bar. |  |  ||
+|1         | Run into a power-up in the level| The power-up is added to the Player's power-up bar. |  |  ||
 ___
 **Post-conditions**  
-1. The player should have a power-up
+1. The Player should have a power-up
 
 
 ___
@@ -392,10 +392,10 @@ ___
 
 | Step     | Action         |Expected System Response| Pass/Fail | Comment |
 | :------: | :------------- | :----------------------| :-------: | :-------|
-|1         | Play through the level without collecting power-ups| The player should not have power-ups. |  |  ||
+|1         | Play through the level without collecting power-ups| The Player should not have power-ups. |  |  ||
 ___
 **Post-conditions**  
-1. The player should not have any power-ups
+1. The Player should not have any power-ups
 
 
 ## v. Use Power-ups
@@ -413,15 +413,15 @@ ___
 
 **Pre-conditions**  
 * The game is running  
-* The player has chosen to start Gameplay.
+* The Player has chosen to start Gameplay.
 
 
 ___
 
 | Step     | Action         |Expected System Response| Pass/Fail | Comment |
 | :------: | :------------- | :----------------------| :-------: | :-------|
-|1         | Run into a power-up| The power-up is added to the player's inventory |  |  ||
-|2         | Press 'E' on the keyboard or Right Bumper on the XInput device to use power-up|The power-ups in the player's inventory are used. |  |  ||
+|1         | Run into a power-up| The power-up is added to the Player's inventory |  |  ||
+|2         | Press 'E' on the keyboard or Right Bumper on the XInput device to use power-up|The power-ups in the Player's inventory are used. |  |  ||
 ___
 **Post-conditions**  
 1. The power-ups should have activated.
@@ -439,7 +439,7 @@ ___
 
 **Pre-conditions**  
 * The game is running  
-* The player has started gameplay.
+* The Player has started gameplay.
 
 
 ___
@@ -474,10 +474,10 @@ ___
 
 | Step     | Action         |Expected System Response| Pass/Fail | Comment |
 | :------: | :------------- | :----------------------| :-------: | :-------|
-|1         | Run into an enemy, projectile, object, or wall in the level| The player should take damage. |  |  ||
+|1         | Run into an enemy, projectile, object, or wall in the level| The Player should take damage. |  |  ||
 ___
 **Post-conditions**  
-1. The player should take damage.
+1. The Player should take damage.
 
 ___
 ### TC-6.2: Do Not Take Damage
@@ -491,7 +491,7 @@ ___
 
 **Pre-conditions**  
 * The game is running  
-* The player has chosen to start gameplay
+* The Player has chosen to start gameplay
 
 ___
 
@@ -500,7 +500,7 @@ ___
 |1         | Play through the level without being hit by enemy projectiles, objects, or walls| The player should not have taken damage. |  |  ||
 ___
 **Post-conditions**  
-1. The player should not have taken damage
+1. The Player should not have taken damage
 
 
 ## vii. Lose Life
@@ -516,17 +516,17 @@ ___
 
 **Pre-conditions**  
 * The game is running  
-* The player has chosen to start gameplay
-* The player has no active power-ups
+* The Player has chosen to start gameplay
+* The Player has no active power-ups
 
 ___
 
 | Step     | Action         |Expected System Response| Pass/Fail | Comment |
 | :------: | :------------- | :----------------------| :-------: | :-------|
-|1         | Run into an enemy, projectile, object, or wall in the level| The player should take damage. |  |  ||
+|1         | Run into an enemy, projectile, object, or wall in the level| The Player should take damage. |  |  ||
 ___
 **Post-conditions**  
-1. The player should take damage and lose a life.
+1. The Player should take damage and lose a life.
 
 ___
 ### TC-7.2: Take Damage, but do not lose a life.
@@ -535,24 +535,24 @@ ___
 **Subsystem:**  Play Level  
 **Created by:**    
 **Executed by:**  
-**Short Description:**  Tests that hitting damage sources while powered up causes damage to the player and does not decrement the life counter.
+**Short Description:**  Tests that hitting damage sources while powered up causes damage to the Player and does not decrement the life counter.
 ___
 
 **Pre-conditions**  
 * The game is running  
-* The player has chosen to start gameplay
+* The Player has chosen to start gameplay
 
 
 ___
 
 | Step     | Action         |Expected System Response| Pass/Fail | Comment |
 | :------: | :------------- | :----------------------| :-------: | :-------|
-|1         | Run into a power-up| The power-up is added to the player's inventory |  |  ||
-|2         | Press 'E' on the keyboard or Right Bumper on the XInput device to use power-up|The power-ups in the player's inventory are used. |  |  ||
-|3         | Run into an enemy, projectile, object, or wall in the level| The player should take damage. |  |  ||
+|1         | Run into a power-up| The power-up is added to the Player's inventory |  |  ||
+|2         | Press 'E' on the keyboard or Right Bumper on the XInput device to use power-up|The power-ups in the Player's inventory are used. |  |  ||
+|3         | Run into an enemy, projectile, object, or wall in the level| The Player should take damage. |  |  ||
 ___
 **Post-conditions**  
-1. The player should take damage, but not lose a life.
+1. The Player should take damage, but not lose a life.
 ___
 ### TC-7.3: Do not lose a life
 ___
@@ -560,21 +560,21 @@ ___
 **Subsystem:** Play Level  
 **Created by:**    
 **Executed by:**  
-**Short Description:**  Tests that not hitting damage sources does not cause damage or cause the player to lose a life.
+**Short Description:**  Tests that not hitting damage sources does not cause damage or cause the Player to lose a life.
 ___
 
 **Pre-conditions**  
 * The game is running  
-* The player has chosen to start gameplay
+* The Player has chosen to start gameplay
 
 ___
 
 | Step     | Action         |Expected System Response| Pass/Fail | Comment |
 | :------: | :------------- | :----------------------| :-------: | :-------|
-|1         | Play through the level without being hit by enemy projectiles, objects, or walls.| The player should not have taken damage. |  |  ||
+|1         | Play through the level without being hit by enemy projectiles, objects, or walls.| The Player should not have taken damage. |  |  ||
 ___
 **Post-conditions**  
-1. The player should not have taken damage, and should not have lost a life.
+1. The Player should not have taken damage, and should not have lost a life.
 
 
 ## viii. Use Continue
@@ -584,12 +584,12 @@ ___
 **Subsystem:** Continue  
 **Created by:**    
 **Executed by:**    
-**Short Description:** Tests that pressing the spacebar on the keyboard or the 'A' button on the XInput device to select the yes option uses a continue.
+**Short Description:** Tests that pressing the spacebar on the keyboard or the 'A' button on the XInput device to select the 'Yes' option uses a continue.
 ___
 
 **Pre-conditions**  
 * The game is running  
-* The Player  ran out of lives.
+* The Player ran out of lives.
 
 
 ___
@@ -640,7 +640,7 @@ ___
 
 **Pre-conditions**  
 * The game is running  
-* The Player  ran out of lives.
+* The Player ran out of lives.
 
 
 ___
@@ -723,8 +723,8 @@ ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
 | :------: | :---------------- | :----------------------| :-------: | :-------|
-|1         | Press 'S' or Down on the left analog stick or directional pad. | The cursor goes to the 'View High Scores' option. |  |  ||
-|2         | Press 'S' or down on the left analog stick or Directional pad. | The cursor goes to the 'Quit Game' option. |  |  ||
+|1         | Press 'S' or down on the left analog stick or directional pad. | The cursor goes to the 'View High Scores' option. |  |  ||
+|2         | Press 'S' or down on the left analog stick or directional pad. | The cursor goes to the 'Quit Game' option. |  |  ||
 |3         | Press the spacebar or 'A' on the XInput device. | The game exits. |  |  ||
 ___
 **Post-conditions**  
@@ -737,7 +737,7 @@ ___
 **Subsystem:** Start Menu  
 **Created by:**    
 **Executed by:**    
-**Short Description:** Tests that pressing anything other than A,D, or the spacebar on the keyboard or up and down on the directional pad or left analog stick or the 'A' button on the XInput device does nothing.
+**Short Description:** Tests that pressing anything other than 'A', 'D', or the spacebar on the keyboard or up and down on the directional pad or left analog stick or the 'A' button on the XInput device does nothing.
 ___
 
 **Pre-conditions**  
@@ -750,7 +750,7 @@ ___
 
 | Step     | Action            |Expected System Response| Pass/Fail | Comment |
 | :------: | :---------------- | :----------------------| :-------: | :-------|
-|1         | Press anything other than A,D, or the spacebar on the keyboard or up and down on the directional pad or left analog stick or the 'A' button on the XInput device. | The game should not respond. |  |  ||
+|1         | Press anything other than 'A', 'D', or the spacebar on the keyboard or up and down on the directional pad or left analog stick or the 'A' button on the XInput device. | The game should not respond. |  |  ||
 ___
 **Post-conditions**  
 1. The Start menu continues to be displayed
