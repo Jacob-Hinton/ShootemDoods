@@ -34,14 +34,39 @@ Table of Contents
    2. Document Conventions
 2. **Functional Requirements Test Cases**
    1. Move Player
+   TC-1.1: Correct Keyboard Input  
+   TC-1.2: Correct XInput Input
+   TC-1.3: Incorrect input
    2. Shoot Weapon
+   TC-10.1: Correct Keyboard Input  
+   TC-10.2: Correct XInput Input  
+   TC-10.3: Incorrect Input
    3. Menu Navigation
+   TC-3.1: Correct Keyboard Input  
+   TC-3.2: Correct Xinput Input   
+   TC-3.3: Incorrect Input  
    4. Collect Power-ups
+   TC-4.1: Collect Powerups  
+   TC-4.2: Do not collect Powerups  
    5. Use Power-ups
+   TC-5.1: Use Powerups
+   TC-5.2: Use no powerups
    6. Take Damage
+   TC-6.1: Take Damage   
+   TC-6.2: Do not take damage   
    7. Lose Life
+   TC-7.1: Lose Life
+   TC-7.2: Take Damage, but do not lose a life.     
+   TC-7.3: Do not lose a life
    8. Use Continue
+   TC-8.1: Use continue
+   TC-8.2: Decline Continue
+   TC-8.3: Invalid input
    9. Start Menu
+   TC-9.1: Start Game
+   TC-9.2: View High Scores
+   TC-9.3: Quit Game
+   TC-9.4: Invalid input
    10. Game Over  
    TC-10.1: Correct Keyboard Input  
    TC-10.2: Correct XInput Input  
@@ -73,7 +98,12 @@ Table of Contents
 
 # **Introduction**
 ## 1. Purpose
+
+This document details test cases to be used to test Shootem Doods. The test cases are formed with Black box testing.
+
 ## 2. Document Conventions
+
+The template shown in class was used to form these test cases
 
 # **Functional Requirements Test Cases**
 ## i. Move Player
