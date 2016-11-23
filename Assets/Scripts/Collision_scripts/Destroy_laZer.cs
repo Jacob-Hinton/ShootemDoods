@@ -23,7 +23,6 @@ public class Destroy_laZer : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col) {
 			
-		if(col.gameObject.tag != "red_power_up" || col.gameObject.tag != "blue_power_up" || col.gameObject.tag != "yellow_power_up"){
 			ContactPoint2D contact = col.contacts[0];
 			Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
 			Vector3 pos = contact.point;
@@ -31,6 +30,5 @@ public class Destroy_laZer : MonoBehaviour {
 			if(col.gameObject.layer.Equals("Terrain")) {
 				Destroy(gameObject);
 			}
-		}
 	}
 }
