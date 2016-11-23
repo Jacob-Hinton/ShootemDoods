@@ -32,15 +32,20 @@ public class Give_Power_Up : MonoBehaviour
 					pc.held_power_ups.Push ('r');
 					Destroy (this.gameObject);
 				} 
-				} else if (this.gameObject.tag == "blue_power_up") {
-					if (pc.held_power_ups.Count <= 2) {
-						pc.held_power_ups.Push ('b');
-						Destroy (this.gameObject);
+			} else if (this.gameObject.tag == "blue_power_up") {
+				if (pc.held_power_ups.Count <= 2) {
+					pc.held_power_ups.Push ('b');
+					Destroy (this.gameObject);
+				}
+			} else if (this.gameObject.tag == "yellow_power_up") {
+				if (pc.held_power_ups.Count <= 2) {
+					pc.held_power_ups.Push ('y');
+					Destroy (this.gameObject);
 				}
 			}
-				// Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
-				// Vector3 pos = contact.point;
-				// Instantiate(, pos, rot);
-			}
+			// Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
+			// Vector3 pos = contact.point;
+			// Instantiate(, pos, rot);
 		}
 	}
+}
