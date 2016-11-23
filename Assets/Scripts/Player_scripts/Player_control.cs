@@ -58,12 +58,6 @@ public class Player_control : MonoBehaviour {
 	// FixedUpdate called at regular intervals
 	void FixedUpdate () {
 
-
-
-
-
-
-
 		//ship movement
 		var move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"),0);
 		transform.position += move * m_speed * Time.deltaTime;
@@ -159,7 +153,6 @@ public class Player_control : MonoBehaviour {
 			this.gameObject.GetComponent<SpriteRenderer>().color = new Color(0.5f, 0.5f, 0.5f, 0.8f);
 			invuln_timer = 1;
 			this.gameObject.layer = 10;
-			// this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
 		}
 	}
 

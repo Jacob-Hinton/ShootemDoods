@@ -16,24 +16,31 @@ using System.Collections;
 /*
 /****************************************************************************************/
 
-public class Give_Power_Up : MonoBehaviour {
+public class Give_Power_Up : MonoBehaviour
+{
 
 	public Player_control pc;
 
-	void OnTriggerEnter2D(Collider2D col) {
+	void OnTriggerEnter2D (Collider2D col)
+	{
 		if (col.gameObject.tag == "Player") {
-			pc = col.gameObject.GetComponent<Player_control>();
+			pc = col.gameObject.GetComponent<Player_control> ();
 
 			// ContactPoint2D contact = col.contacts[0];
-			if(this.gameObject.tag == "red_power_up"){
-				if(pc.held_power_ups.Count<=2){
-					pc.held_power_ups.Push('r');
-					Destroy(this.gameObject);
+			if (this.gameObject.tag == "red_power_up") {
+				if (pc.held_power_ups.Count <= 2) {
+					pc.held_power_ups.Push ('r');
+					Destroy (this.gameObject);
+				} 
+				} else if (this.gameObject.tag == "blue_power_up") {
+					if (pc.held_power_ups.Count <= 2) {
+						pc.held_power_ups.Push ('b');
+						Destroy (this.gameObject);
 				}
 			}
-			// Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
-			// Vector3 pos = contact.point;
-			// Instantiate(, pos, rot);
+				// Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
+				// Vector3 pos = contact.point;
+				// Instantiate(, pos, rot);
+			}
 		}
 	}
-}
