@@ -19,7 +19,7 @@ public class Shoot_Bullet : MonoBehaviour {
 	private bool canShoot = false;
 	private bool coRoutineIsStarted = false;
 	public float pauseTime = 1.5f;
-	public Rigidbody2D projectile;
+	public GameObject projectile;
 
 	// Use this for initialization
 	void Start () {
@@ -29,8 +29,8 @@ public class Shoot_Bullet : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (canShoot) {
-			Rigidbody2D clone;
-			clone = Instantiate (projectile, transform.position + new Vector3 (0, 0, 0), transform.rotation) as Rigidbody2D;
+			GameObject clone;
+			clone = Instantiate (projectile, transform.position + new Vector3 (0, 0, 0), transform.rotation) as GameObject;
 			canShoot = false;
 		} else if (!coRoutineIsStarted) {
 			StartCoroutine (bulletWait ());
