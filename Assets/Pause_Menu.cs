@@ -12,7 +12,8 @@ using UnityEngine.SceneManagement;
 /*
 /* DATE     BY     			  DESCRIPTION
 /* ======== ======= 		  =============
-/* 11/23/26 Brandon           created script
+/* 11/23/16 Brandon           created script
+ * 11/24/16 Brandon           Added "quit" functionality, pressing quit now brings user to main menu
 /*
 /****************************************************************************************/
 
@@ -42,7 +43,7 @@ public class Pause_Menu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (GameObject.Find("Camera").GetComponent<pause_script>().getIsPause())
+        if (pause_script.isPause&&!pause_script.isGameOver)
         {
             if (((Input.GetKeyDown(KeyCode.A) || ((Input.GetAxis("Horizontal")) < 0 && canScroll))) && state > 0)
             {
@@ -60,7 +61,7 @@ public class Pause_Menu : MonoBehaviour {
                 canScroll = true;
             }
 
-            if((Input.GetKey(KeyCode.Space) || Input.GetButton("Fire1")))
+            if((Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Fire1")))
             {
                 select();
             }
@@ -111,7 +112,10 @@ public class Pause_Menu : MonoBehaviour {
         }
         else //select "quit"
         {
-            SceneManager.LoadScene("Main_Menu");
+            SceneManager.LoadSceneAsync("Main_Menu");
+            pause_script.unPause();
+            
+
         }
     }
 }

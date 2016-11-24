@@ -10,12 +10,16 @@ using System.Collections;
 /* DATE     BY     		DESCRIPTION
 /* ======== ======= 	=============
 /* 10/25/16 Jacob		created script
+ * 11/23/16 Brandon     added unPause()
+ * 11/24/16 Brandon     added game over functionality
 /*
 /****************************************************************************************/
 
 public class pause_script : MonoBehaviour {
 
 	public static bool isPause = false;
+    public static bool isGameOver = false;
+    public Canvas gameOverScreen;
 
 
 	void Start() {
@@ -31,7 +35,17 @@ public class pause_script : MonoBehaviour {
         isPause = false;
     }
 
-	void Update () {
+    public static void gameOver()
+    {
+        isGameOver = true;
+    }
+
+    public static void Pause()
+    {
+        isPause = true;
+    }
+
+    void Update () {
         if (isPause)
         {
             Time.timeScale = 0;
@@ -45,6 +59,10 @@ public class pause_script : MonoBehaviour {
 			isPause = !isPause;
 			
 		}
+        if (isGameOver)
+        {
+            gameOverScreen.GetComponent<CanvasGroup>().alpha = 1.0f;
+        }
 	}
 
 }

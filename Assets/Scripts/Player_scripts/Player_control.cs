@@ -16,6 +16,7 @@ using System.Collections;
 /* 11/15/16 Jacob/Brandon     edited movement/machine gun pwrup
  * 11/18/16 Brandon/Jacob     added ship movement animation
  * 						      added rocket pwrup
+ * 11/24/16 Brandon           switch special to B button (joystick 1)
 /*
 /****************************************************************************************/
 
