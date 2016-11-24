@@ -19,10 +19,16 @@ using System.Collections;
 public class Destroy_laZer : MonoBehaviour {
 
 	public Transform explosionPrefab;
+	public Rigidbody2D currentrigid;
+	private int b_speed = 20;
 
+	void Start() {
+		currentrigid = this.GetComponent<Rigidbody2D> ();
 
+	}
 	void OnCollisionEnter2D(Collision2D col) {
 			
+			currentrigid.velocity = transform.TransformDirection(new Vector3(b_speed, 0,0));
 			ContactPoint2D contact = col.contacts[0];
 			Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
 			Vector3 pos = contact.point;

@@ -33,5 +33,11 @@ public class Spawn_powerup : MonoBehaviour {
 		if(gameObject.tag == "red_enemy"){
 			Instantiate(red_power_up, transform.position, Quaternion.identity);
 		}
+		else if(gameObject.tag == "blue_enemy"){
+			Instantiate(red_power_up, transform.position, Quaternion.identity);
+		}
+		else if(gameObject.tag == "yellow_enemy"){
+			Instantiate(red_power_up, transform.position, Quaternion.identity);
+		}
 	}
 }

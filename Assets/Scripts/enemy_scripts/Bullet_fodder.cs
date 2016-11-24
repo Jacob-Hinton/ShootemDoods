@@ -21,7 +21,6 @@ public class Bullet_fodder : MonoBehaviour {
 
 
 	void OnCollisionEnter2D(Collision2D col) {
-		Debug.Log ("fuckmyface");
 		if (col.gameObject.tag == "player_bullet") {
 			ContactPoint2D contact = col.contacts[0];
 			Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);

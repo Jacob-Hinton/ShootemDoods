@@ -26,6 +26,7 @@ public class Player_control : MonoBehaviour {
 	public Rigidbody2D projectile;
 	public Rigidbody2D laZer;
 	public Rigidbody2D rocket;
+	public Rigidbody2D shockwave;
 	public float m_speed;
 	public Vector3 pos;
 	private bool shield;
@@ -76,14 +77,15 @@ public class Player_control : MonoBehaviour {
 		//ambient movement		
 		transform.position += Vector3.right * Ambient_scrolling.ambientScrollSpeed * Time.deltaTime;
 
-		//up-down animation
-		if (move.y < 0) {
-			sRenderer.sprite = down;
-		} else if (move.y > 0) {
-			sRenderer.sprite = up;
-		} else {
-			sRenderer.sprite = idle;
-		}
+
+			//up-down animation
+			if (move.y < 0) {
+				sRenderer.sprite = down;
+			} else if (move.y > 0) {
+				sRenderer.sprite = up;
+			} else {
+				sRenderer.sprite = idle;
+			}
 
 	}
 
@@ -150,9 +152,22 @@ public class Player_control : MonoBehaviour {
 	void UseAbility(){
 		//Barrel Roll
 		if(poweruparray[1] == 2){
-			this.gameObject.GetComponent<SpriteRenderer>().color = new Color(0.5f, 0.5f, 0.5f, 0.8f);
 			invuln_timer = 1;
 			this.gameObject.layer = 10;
+		}
+		//shockwave
+		else if(poweruparray[2] == 3){
+			Rigidbody2D clone;
+			clone = Instantiate(shockwave, transform.position, transform.rotation) as Rigidbody2D;
+			clone.transform.parent = transform;
+		}
+		//blink
+		else if(poweruparray[2] == 2){
+
+		}
+		//charge attack
+		else if(poweruparray[2] == 3){
+
 		}
 	}
 
