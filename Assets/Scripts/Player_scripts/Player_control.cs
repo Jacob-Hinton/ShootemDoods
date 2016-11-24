@@ -144,11 +144,6 @@ public class Player_control : MonoBehaviour {
 			}
 		}
 	}
-	// void ShowPowerUps(){
-	// 	held_power_ups.CopyTo(poweruparray, 0);
-	// 	for (int i=0; i<3; i++){
-	// 		Debug.Log(poweruparray[i]);
-	// 	}
 
 	void UseAbility(){
 		//Barrel Roll
@@ -157,7 +152,7 @@ public class Player_control : MonoBehaviour {
 			this.gameObject.layer = 10;
 		}
 		//shockwave
-		else if(poweruparray[2] == 3){
+		else if(poweruparray[1] == 3){
 			if (cooldownbool.cooldowncomplete) {
 				cooldownbool.cooldowncomplete = false;
 				Rigidbody2D clone;
