@@ -27,6 +27,7 @@ public class Player_control : MonoBehaviour {
 	public Rigidbody2D laZer;
 	public Rigidbody2D rocket;
 	public Rigidbody2D shockwave;
+	public Rigidbody2D shield;
 	public float m_speed;
 	public Vector3 pos;
 	public cooldownbar_script cooldownbool;
@@ -172,6 +173,16 @@ public class Player_control : MonoBehaviour {
 		else if(poweruparray[2] == 3){
 
 		}
+
+		//shield
+		if (poweruparray [1] == 1) {
+			if (cooldownbool.cooldowncomplete) {
+				cooldownbool.cooldowncomplete = false;
+				Rigidbody2D clone;
+				clone = Instantiate (shield, transform.position, transform.rotation) as Rigidbody2D;
+				clone.transform.parent = this.transform;			
+			}
+		}
 	}
 
 	public void LosePowerUp(){
@@ -223,9 +234,7 @@ public class Player_control : MonoBehaviour {
 			m_speed=default_speed;
 		}
 
-		//shield
-		if (poweruparray [1] == 1) {
-		}
+
 
 
 		// held_power_ups.Clear();
