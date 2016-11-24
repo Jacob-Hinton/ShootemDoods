@@ -29,7 +29,7 @@ public class Player_control : MonoBehaviour {
 	public Rigidbody2D shockwave;
 	public float m_speed;
 	public Vector3 pos;
-	private bool shield;
+	public cooldownbar_script cooldownbool;
 	private bool automaticFire = true;
 	private bool coRoutineIsStarted = false;
 	public float invuln_timer = 0;
@@ -48,9 +48,9 @@ public class Player_control : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		sRenderer = GetComponent<SpriteRenderer> ();
+		cooldownbool = GameObject.FindWithTag("cooldown_bar").GetComponent<cooldownbar_script>();
 		this.gameObject.layer = 9;
 		default_speed = m_speed;
-		shield = false;
 		pos = transform.position;
 		GameObject theCamera = GameObject.Find("Camera");
 		pause_script pauseScript = theCamera.GetComponent<pause_script>();
@@ -157,14 +157,17 @@ public class Player_control : MonoBehaviour {
 		}
 		//shockwave
 		else if(poweruparray[2] == 3){
-			Rigidbody2D clone;
-			clone = Instantiate(shockwave, transform.position, transform.rotation) as Rigidbody2D;
-			clone.transform.parent = transform;
+			if (cooldownbool.cooldowncomplete) {
+				cooldownbool.cooldowncomplete = false;
+				Rigidbody2D clone;
+				clone = Instantiate (shockwave, transform.position, transform.rotation) as Rigidbody2D;
+				clone.transform.parent = this.transform;
+			}
 		}
 		//blink
 		else if(poweruparray[2] == 2){
 
-		}
+		} 
 		//charge attack
 		else if(poweruparray[2] == 3){
 
@@ -212,14 +215,7 @@ public class Player_control : MonoBehaviour {
 			}
 		}
 
-		// for (int i=0; i<3; i++){
-		// 	Debug.Log(poweruparray[i]);
-		// }
-
-		// if (poweruparray[1] != 2){
-		// 	this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
-		// }
-
+		//speed up
 		if (poweruparray[2] == 1){
 			m_speed=m_speed*1.5f;
 		}
@@ -227,11 +223,8 @@ public class Player_control : MonoBehaviour {
 			m_speed=default_speed;
 		}
 
-		if (poweruparray[1] == 1){
-			shield = true;
-		}
-		else{
-			shield = false;
+		//shield
+		if (poweruparray [1] == 1) {
 		}
 
 
