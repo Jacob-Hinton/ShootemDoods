@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Linq;
+using UnityEngine.UI;
 
 /****************************************************************************************/
 /*
@@ -15,6 +16,7 @@ using System.Linq;
 /* DATE     BY     	DESCRIPTION
 /* ======== ======= =============
 /* 10/25/16	Jacob	created headr
+ * 11/24/16 Brandon added game over functionality
 /*
 /*
 /****************************************************************************************/
@@ -33,7 +35,8 @@ public class Destroy_ship : MonoBehaviour {
 				Vector3 pos = contact.point;
 				Instantiate(explosionPrefab, pos, rot);
 				Destroy(col.gameObject);
-			}
+                StartCoroutine(showGameOver());
+            }
 			else{
 				pc.LosePowerUp();
 			}
@@ -46,6 +49,16 @@ public class Destroy_ship : MonoBehaviour {
 			Vector3 pos = contact.point;
 			Instantiate(explosionPrefab, pos, rot);
 			Destroy(col.gameObject);
+            StartCoroutine(showGameOver());
 		}
 	}
+
+    public IEnumerator showGameOver()
+    {
+        yield return new WaitForSeconds(1.0f);
+        pause_script.Pause();
+        pause_script.gameOver();
+
+
+    }
 }
