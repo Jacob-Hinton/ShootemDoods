@@ -23,11 +23,15 @@ public class Player_control : MonoBehaviour {
 	private SpriteRenderer sRenderer;
 	float default_speed;
 	public int b_speed = 20;
+	public int charge_speed = 2;
+	public float teleportDistance = 50;
+	private float ambientSpeed = Ambient_scrolling.ambientScrollSpeed;
 	public Rigidbody2D projectile;
 	public Rigidbody2D laZer;
 	public Rigidbody2D rocket;
 	public Rigidbody2D shockwave;
 	public Rigidbody2D shield;
+	public Animator playeranimator;
 	public float m_speed;
 	public Vector3 pos;
 	public cooldownbar_script cooldownbool;
@@ -48,6 +52,8 @@ public class Player_control : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		playeranimator = GetComponent<Animator> ();
+
 		sRenderer = GetComponent<SpriteRenderer> ();
 		cooldownbool = GameObject.FindWithTag("cooldown_bar").GetComponent<cooldownbar_script>();
 		this.gameObject.layer = 9;
@@ -55,11 +61,11 @@ public class Player_control : MonoBehaviour {
 		pos = transform.position;
 		GameObject theCamera = GameObject.Find("Camera");
 		pause_script pauseScript = theCamera.GetComponent<pause_script>();
+
 	}
 	
 	// FixedUpdate called at regular intervals
 	void FixedUpdate () {
-
 		//ship movement
 		var move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"),0);
 		transform.position += move * m_speed * Time.deltaTime;
@@ -76,7 +82,7 @@ public class Player_control : MonoBehaviour {
 
 
 		//ambient movement		
-		transform.position += Vector3.right * Ambient_scrolling.ambientScrollSpeed * Time.deltaTime;
+		transform.position += Vector3.right * ambientSpeed * Time.deltaTime;
 
 
 			//up-down animation
@@ -148,8 +154,12 @@ public class Player_control : MonoBehaviour {
 	void UseAbility(){
 		//Barrel Roll
 		if(poweruparray[1] == 2){
-			invuln_timer = 1;
-			this.gameObject.layer = 10;
+			if (cooldownbool.cooldowncomplete) {
+				cooldownbool.cooldowncomplete = false;
+				invuln_timer = 1;
+				playeranimator.SetTrigger ("barrel_roll");
+				this.gameObject.layer = 10;
+			}
 		}
 		//shockwave
 		else if(poweruparray[1] == 3){
@@ -162,11 +172,23 @@ public class Player_control : MonoBehaviour {
 		}
 		//blink
 		else if(poweruparray[2] == 2){
-
+			if (cooldownbool.cooldowncomplete) {
+				cooldownbool.cooldowncomplete = false;
+				playeranimator.SetTrigger ("teleport");
+				var move = new Vector3(Input.GetAxis("Horizontal") * teleportDistance, Input.GetAxis("Vertical") * teleportDistance,0);
+				transform.position += move * m_speed * Time.deltaTime;
+			}
 		} 
 		//charge attack
 		else if(poweruparray[2] == 3){
+			if (cooldownbool.cooldowncomplete) {
+				cooldownbool.cooldowncomplete = false;
+				playeranimator.SetTrigger ("charge");
+				ambientSpeed += charge_speed;
+				this.gameObject.tag = "player_bullet";
+				StartCoroutine (chargeTime());
 
+			}
 		}
 
 		//shield
@@ -252,4 +274,9 @@ public class Player_control : MonoBehaviour {
 		coRoutineIsStarted = false;
 	}
 
+	public IEnumerator chargeTime() {
+		yield return new WaitForSeconds (.1f);
+		ambientSpeed -= charge_speed;
+		this.gameObject.tag = "Player";
+	}
 }
