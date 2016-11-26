@@ -1,10 +1,17 @@
 fileFormatVersion: 2
 guid: 792988b9664f2464f8dcc45c7afc64b0
-timeCreated: 1473540988
+timeCreated: 1479517672
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - projectile: {fileID: 50000012923340048, guid: 457a02b3364083942887ce2c1e9957a6,
+      type: 2}
+  - laZer: {fileID: 50000012097624742, guid: 56cc9fee8b1c9f14bb8c120111d05f75, type: 2}
+  - rocket: {fileID: 50000014131564068, guid: 32856f07305ba604682f591f0085685f, type: 2}
+  - down: {fileID: 21300000, guid: 9ce7d01e56482f941a56b2d38b5ee2b4, type: 3}
+  - idle: {fileID: 21300000, guid: 61f417b60b087d342961054dc571a11f, type: 3}
+  - up: {fileID: 21300000, guid: 786d7dd5bd8da3d4b81354d04d52f31c, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
