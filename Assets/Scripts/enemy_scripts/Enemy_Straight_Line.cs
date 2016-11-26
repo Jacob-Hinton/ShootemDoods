@@ -11,12 +11,16 @@ using System.Collections;
 /* DATE     BY     	DESCRIPTION
 /* ======== ======= =============
 /* 10/25/16	Jacob	created headr
+ * 11/25/16 Brandon added timer
 /*
 /*
 /****************************************************************************************/
 
 public class Enemy_Straight_Line : MonoBehaviour {
 
+    public float timer = 0.0f;
+    private bool timerUp = false;
+    private bool coroutinestarted = false;
 	public float speed;
 	public float space = 1.0F;
 	public Vector3 pos;
@@ -28,11 +32,20 @@ public class Enemy_Straight_Line : MonoBehaviour {
 	// FixedUpdate called at regular intervals
 	void FixedUpdate () {
 
+
+
         //checks if the enemy is on the screen before executing their movement path
         if(GetComponent<Renderer>().isVisible)
         {
+            if (!timerUp && !coroutinestarted)
+            {
+                StartCoroutine(timerRun());
+            }
             //enemy movement path
-            transform.position += Vector3.left * speed * Time.deltaTime;
+            if (timerUp)
+            {
+                transform.position += Vector3.left * speed * Time.deltaTime;
+            }
         }
 	}
 
@@ -43,6 +56,13 @@ public class Enemy_Straight_Line : MonoBehaviour {
 	float getY() {
 		return transform.position.y;
 	}
+
+    public IEnumerator timerRun()
+    {
+        coroutinestarted = true;
+        yield return new WaitForSeconds(timer);
+        timerUp = true;
+    }
 
 
 }

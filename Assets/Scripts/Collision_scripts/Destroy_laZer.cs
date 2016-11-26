@@ -27,14 +27,17 @@ public class Destroy_laZer : MonoBehaviour {
 
 	}
 	void OnCollisionEnter2D(Collision2D col) {
-			
-			currentrigid.velocity = transform.TransformDirection(new Vector3(b_speed, 0,0));
+
+        if (col.gameObject.tag == "terrain"|| col.gameObject.tag == "blocks_lazer")
+        {
+            Destroy(gameObject);
+        }
+
+        currentrigid.velocity = transform.TransformDirection(new Vector3(b_speed, 0,0));
 			ContactPoint2D contact = col.contacts[0];
 			Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
 			Vector3 pos = contact.point;
 
-			if(col.gameObject.layer.Equals("Terrain")) {
-				Destroy(gameObject);
-			}
+			
 	}
 }

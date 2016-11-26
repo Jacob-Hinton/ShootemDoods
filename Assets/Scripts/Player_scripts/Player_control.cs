@@ -17,15 +17,19 @@ using System.Collections;
  * 11/18/16 Brandon/Jacob     added ship movement animation
  * 						      added rocket pwrup
  * 11/24/16 Brandon           switch special to B button (joystick 1)
+ * 11/25/16 Brandon           balanced machine gun and default gun by adding default gun delay, also decreased default speed.
+ *                            For additional balance, added some i frames to the blink, blink only teleports certain distance to the right
+ *                            For even MORE balance, switched out the missile and laZer in the power-up chain (ie 2 reds now = laZer)
+ *                           
 /*
 /****************************************************************************************/
 
 public class Player_control : MonoBehaviour {
 	private SpriteRenderer sRenderer;
-	float default_speed;
+	float default_speed = 2;
 	public int b_speed = 20;
 	public int charge_speed = 2;
-	public float teleportDistance = 50;
+	public float teleportDistance = 80;
 	private float ambientSpeed = Ambient_scrolling.ambientScrollSpeed;
 	public Rigidbody2D projectile;
 	public Rigidbody2D laZer;
@@ -87,13 +91,13 @@ public class Player_control : MonoBehaviour {
 
 
 			//up-down animation
-			if (move.y < 0) {
-				sRenderer.sprite = down;
-			} else if (move.y > 0) {
-				sRenderer.sprite = up;
-			} else {
-				sRenderer.sprite = idle;
-			}
+		if (move.y < 0) {
+            playeranimator.SetTrigger("flyDown");
+        } else if (move.y > 0) {
+            playeranimator.SetTrigger("flyUp");
+        } else {
+            playeranimator.SetTrigger("idle");
+        }
 
 	}
 
@@ -126,8 +130,17 @@ public class Player_control : MonoBehaviour {
 				}
 			}
 		}
-		//rocket
-		else if(poweruparray[0] == 2){ 
+        else if (poweruparray[0] == 2)
+        {
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Fire1"))
+            {
+                Rigidbody2D clone;
+                clone = Instantiate(laZer, transform.position + new Vector3(0.8F, 0, 0), transform.rotation) as Rigidbody2D;
+                clone.velocity = transform.TransformDirection(new Vector3(b_speed, 0, 0));
+            }
+        }
+        //rocket
+        else if(poweruparray[0] == 3){ 
 			if (Input.GetKeyDown(KeyCode.Space)||Input.GetButtonDown("Fire1")) {
 				Rigidbody2D clone;
 				clone = Instantiate(rocket, transform.position + new Vector3(0.8F,0,0), transform.rotation) as Rigidbody2D;
@@ -135,21 +148,24 @@ public class Player_control : MonoBehaviour {
 			}	
 		}
 		//laZer
-		else if(poweruparray[0] == 3){ 
-			if (Input.GetKeyDown(KeyCode.Space)||Input.GetButtonDown("Fire1")) {
-				Rigidbody2D clone;
-				clone = Instantiate(laZer, transform.position + new Vector3(0.8F,0,0), transform.rotation) as Rigidbody2D;
-				clone.velocity = transform.TransformDirection(new Vector3(b_speed, 0,0));
-			}	
-		}
+
 		//default
 		else{ 
 			if (Input.GetKeyDown(KeyCode.Space)||Input.GetButtonDown("Fire1")) {
-				Rigidbody2D clone;
-				clone = Instantiate(projectile, transform.position + new Vector3(0.8F,0,0), transform.rotation) as Rigidbody2D;
-				clone.velocity = transform.TransformDirection(new Vector3(b_speed, 0,0));
-			}
-		}
+                if (automaticFire)
+                {
+                    Rigidbody2D clone;
+                    clone = Instantiate(projectile, transform.position + new Vector3(0.8F, 0, 0), transform.rotation) as Rigidbody2D;
+                    clone.velocity = transform.TransformDirection(new Vector3(b_speed, 0, 0));
+                    automaticFire = false;
+                }
+                else if (!coRoutineIsStarted)
+                {
+                    StartCoroutine(regFire());
+                }
+            }
+            
+        }
 	}
 
 	void UseAbility(){
@@ -176,9 +192,14 @@ public class Player_control : MonoBehaviour {
 			if (cooldownbool.cooldowncomplete) {
 				cooldownbool.cooldowncomplete = false;
 				playeranimator.SetTrigger ("teleport");
-				var move = new Vector3(Input.GetAxis("Horizontal") * teleportDistance, Input.GetAxis("Vertical") * teleportDistance,0);
-				transform.position += move * m_speed * Time.deltaTime;
-			}
+                invuln_timer = 1f;
+                this.gameObject.layer = 10;
+                //var move = new Vector3(Input.GetAxis("Horizontal") * teleportDistance, Input.GetAxis("Vertical") * teleportDistance,0);
+                var move = new Vector3(teleportDistance,0, 0);
+                transform.position += move * m_speed * Time.deltaTime;
+                
+                this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
+            }
 		} 
 		//charge attack
 		else if(poweruparray[2] == 3){
@@ -246,7 +267,7 @@ public class Player_control : MonoBehaviour {
 
 		//speed up
 		if (poweruparray[2] == 1){
-			m_speed=m_speed*1.5f;
+			m_speed=m_speed+1.5f;
 		}
 		else{
 			m_speed=default_speed;
@@ -270,12 +291,20 @@ public class Player_control : MonoBehaviour {
 	public IEnumerator AutoFire() {
 		coRoutineIsStarted = true;
 		automaticFire = false;
-		yield return new WaitForSeconds (.18f);
+		yield return new WaitForSeconds (.15f);
 		automaticFire = true;
 		coRoutineIsStarted = false;
 	}
+    public IEnumerator regFire()
+    {
+        coRoutineIsStarted = true;
+        automaticFire = false;
+        yield return new WaitForSeconds(.15f);
+        automaticFire = true;
+        coRoutineIsStarted = false;
+    }
 
-	public IEnumerator chargeTime() {
+    public IEnumerator chargeTime() {
 		yield return new WaitForSeconds (.1f);
 		ambientSpeed -= charge_speed;
 		this.gameObject.tag = "Player";

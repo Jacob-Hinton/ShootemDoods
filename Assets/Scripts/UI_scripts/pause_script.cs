@@ -46,6 +46,10 @@ public class pause_script : MonoBehaviour {
     }
 
     void Update () {
+        if (isGameOver)
+        {
+            gameOverScreen.GetComponent<CanvasGroup>().alpha = 1.0f;
+        }
         if (isPause)
         {
             Time.timeScale = 0;
@@ -59,10 +63,7 @@ public class pause_script : MonoBehaviour {
 			isPause = !isPause;
 			
 		}
-        if (isGameOver)
-        {
-            gameOverScreen.GetComponent<CanvasGroup>().alpha = 1.0f;
-        }
+
 	}
 
 }

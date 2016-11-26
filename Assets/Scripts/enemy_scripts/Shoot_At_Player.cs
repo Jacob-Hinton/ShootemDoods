@@ -11,6 +11,7 @@ using System.Collections;
 /* DATE     BY     			  DESCRIPTION
 /* ======== ======= 		  =============
 /* 11/20/16 Brandon           created script + header
+ * 11/25/15 Brandon           adjusted targetX value so that the bullet will shoot a bit ahead of the player to improve accuracy
 /*
 /****************************************************************************************/
 
@@ -22,7 +23,7 @@ public class Shoot_At_Player : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		targetX = GameObject.FindWithTag ("Player").transform.position.x;
+		targetX = GameObject.FindWithTag ("Player").transform.position.x+2;
 		targetY = GameObject.FindWithTag ("Player").transform.position.y;
 		target = new Vector2 (targetX,targetY);
 		target = transform.position + (target - transform.position).normalized * 1000.0f;

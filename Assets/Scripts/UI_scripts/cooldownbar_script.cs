@@ -2,6 +2,21 @@
 using System.Collections;
 using UnityEngine.UI;
 
+/****************************************************************************************/
+/*
+/* FILE NAME: cooldownbar_script
+/*
+/* DESCRIPTION: dictates the activities of the special power cooldown bar
+/*
+/*
+/* DATE     BY     	DESCRIPTION
+/* ======== ======= =============
+/* 11/24/16	Jacob	created script
+ * 11/25/16 Brandon decreased cooldown time by half
+/*
+/*
+/****************************************************************************************/
+
 public class cooldownbar_script : MonoBehaviour {
 
 	public bool cooldowncomplete;
@@ -33,15 +48,15 @@ public class cooldownbar_script : MonoBehaviour {
 	public IEnumerator cooldown() {
 		numerationbegan = true;
 		img.sprite = Sprite0;
-		yield return new WaitForSeconds (.5f);
+		yield return new WaitForSeconds (.25f);
 		img.sprite = Sprite1;
-		yield return new WaitForSeconds (.5f);
+		yield return new WaitForSeconds (.25f);
 		img.sprite = Sprite2;
-		yield return new WaitForSeconds (.5f);
+		yield return new WaitForSeconds (.25f);
 		img.sprite = Sprite3;
-		yield return new WaitForSeconds (.5f);
+		yield return new WaitForSeconds (.25f);
 		img.sprite = Sprite4;
-		yield return new WaitForSeconds (.5f);
+		yield return new WaitForSeconds (.25f);
 		img.sprite = Sprite5;
 		cooldowncomplete = true;
 		numerationbegan = false;
