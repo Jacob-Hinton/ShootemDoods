@@ -19,7 +19,7 @@ public class Shoot_At_Player : MonoBehaviour {
 	private float targetX;
 	private float targetY;
 	private Vector3 target;
-	public float speed = 2.0F;
+	public float speed = 1.7F;
 
 	// Use this for initialization
 	void Start () {

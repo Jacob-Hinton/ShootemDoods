@@ -35,7 +35,7 @@ public class Destroy_ship : MonoBehaviour {
 				Vector3 pos = contact.point;
 				Instantiate(explosionPrefab, pos, rot);
 				Destroy(col.gameObject);
-                StartCoroutine(showGameOver());
+				StartCoroutine (lifeDown ());
             }
 			else{
 				pc.LosePowerUp();
@@ -49,16 +49,12 @@ public class Destroy_ship : MonoBehaviour {
 			Vector3 pos = contact.point;
 			Instantiate(explosionPrefab, pos, rot);
 			Destroy(col.gameObject);
-            StartCoroutine(showGameOver());
+			StartCoroutine (lifeDown ());
 		}
 	}
 
-    public IEnumerator showGameOver()
-    {
-        yield return new WaitForSeconds(1.0f);
-        pause_script.Pause();
-        pause_script.gameOver();
-
-
-    }
+	public IEnumerator lifeDown() {
+		yield return new WaitForSeconds (1.0f);
+		life_counter.decreaseLife ();
+	}
 }
