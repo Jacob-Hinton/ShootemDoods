@@ -32,6 +32,5 @@ public class Shoot_At_Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		transform.position = Vector2.MoveTowards (transform.position, target, speed * Time.deltaTime);
-//		transform.position = Vector2.MoveTowards(new Vector2(transform.position.x,transform.position.y),target,speed*Time.deltaTime);
 	}
 }

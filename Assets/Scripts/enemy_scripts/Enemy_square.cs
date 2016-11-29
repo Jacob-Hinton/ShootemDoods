@@ -10,7 +10,7 @@ using System.Collections;
 /*
 /* DATE     BY     	DESCRIPTION
 /* ======== ======= =============
-/* 11/25/16	Jacob	created script
+/* 11/25/16	Brandon	created script
 /*
 /*
 /****************************************************************************************/

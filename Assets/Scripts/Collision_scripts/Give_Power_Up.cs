@@ -23,10 +23,11 @@ public class Give_Power_Up : MonoBehaviour
 
 	void OnTriggerEnter2D (Collider2D col)
 	{
+		//if the collision is with player and the pwrup count is below 3,
+		//give corresponding pwrup then delete the obj
 		if (col.gameObject.tag == "Player") {
 			pc = col.gameObject.GetComponent<Player_control> ();
 
-			// ContactPoint2D contact = col.contacts[0];
 			if (this.gameObject.tag == "red_power_up") {
 				if (pc.held_power_ups.Count <= 2) {
 					pc.held_power_ups.Push ('r');
@@ -43,9 +44,7 @@ public class Give_Power_Up : MonoBehaviour
 					Destroy (this.gameObject);
 				}
 			}
-			// Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
-			// Vector3 pos = contact.point;
-			// Instantiate(, pos, rot);
+
 		}
 	}
 }

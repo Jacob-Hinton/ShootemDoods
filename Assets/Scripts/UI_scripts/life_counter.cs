@@ -2,6 +2,20 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
+/****************************************************************************************/
+/*
+/* FILE NAME: life_counter
+/*
+/* DESCRIPTION: this script manages the total life count of the player ship
+ * 				and is maintained over all levels
+/*
+/*
+/* DATE     BY     			  DESCRIPTION
+/* ======== ======= 		  =============
+/* 11/27/16 Jacob			  created script
+/*
+/****************************************************************************************/
+
 
 public class life_counter : MonoBehaviour {
 

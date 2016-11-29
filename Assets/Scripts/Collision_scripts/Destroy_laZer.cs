@@ -12,7 +12,7 @@ using System.Collections;
 /* DATE     BY     	DESCRIPTION
 /* ======== ======= =============
 /* 10/25/16	Jacob	created headr
-/*
+/* 11/20/16 Jacob   modified laZer functionality due to enemy behavior being toyed with
 /*
 /****************************************************************************************/
 
@@ -28,11 +28,13 @@ public class Destroy_laZer : MonoBehaviour {
 	}
 	void OnCollisionEnter2D(Collision2D col) {
 
+		//if object is designated to destroy laZers do so
         if (col.gameObject.tag == "terrain"|| col.gameObject.tag == "blocks_lazer")
         {
             Destroy(gameObject);
         }
 
+		//otherwise reset the laZer's speed and continue
         currentrigid.velocity = transform.TransformDirection(new Vector3(b_speed, 0,0));
 			ContactPoint2D contact = col.contacts[0];
 			Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);

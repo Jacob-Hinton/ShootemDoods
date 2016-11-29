@@ -16,6 +16,7 @@ using System.Collections;
 /* 11/15/16 Jacob/Brandon     edited movement/machine gun pwrup
  * 11/18/16 Brandon/Jacob     added ship movement animation
  * 						      added rocket pwrup
+ * 11/23/16 Jacob			  added the rest of the pwr ups
  * 11/24/16 Brandon           switch special to B button (joystick 1)
  * 11/25/16 Brandon           balanced machine gun and default gun by adding default gun delay, also decreased default speed.
  *                            For additional balance, added some i frames to the blink, blink only teleports certain distance to the right
@@ -90,7 +91,7 @@ public class Player_control : MonoBehaviour {
 		transform.position += Vector3.right * ambientSpeed * Time.deltaTime;
 
 
-			//up-down animation
+		//up-down animation
 		if (move.y < 0) {
             playeranimator.SetTrigger("flyDown");
         } else if (move.y > 0) {
@@ -237,20 +238,8 @@ public class Player_control : MonoBehaviour {
 	void ActivatePowerups() {
 		// Cashing in
 
-		//array indices: 0=red, 1=blue, 2=yellow
-		//Clear power-up stack, determine activated power-up, activate power-up
-		// switch(poweruparray){
-		// 	case [0, 0, 0]:
-		// 		break;
-		// 	case [1, 0, 0]:
-
-		// }
-
-		// held_power_ups.CopyTo(poweruparray, 0);
-
 		poweruparray = new int[3];
 
-		// Debug.Log(held_power_ups.Pop());
 		while (held_power_ups.Count>0){
 			char code = (char)held_power_ups.Pop();
 			Debug.Log(code);
@@ -272,21 +261,9 @@ public class Player_control : MonoBehaviour {
 		else{
 			m_speed=default_speed;
 		}
-
-
-
-
-		// held_power_ups.Clear();
-
 	}
 
-	// float getX() {
-	// 	return transform.position.x;
-	// }
 
-	// float getY() {
-	// 	return transform.position.y;
-	// }
 
 	public IEnumerator AutoFire() {
 		coRoutineIsStarted = true;

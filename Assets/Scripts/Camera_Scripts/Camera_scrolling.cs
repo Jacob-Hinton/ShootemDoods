@@ -26,8 +26,6 @@ public class Camera_scrolling : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-//		pos.x += space;
-//		transform.position = Vector3.MoveTowards(transform.position, pos, cameraScrollSpeed * Time.deltaTime);
 		transform.position += Vector3.right * Ambient_scrolling.ambientScrollSpeed * Time.deltaTime;
 	}
 }

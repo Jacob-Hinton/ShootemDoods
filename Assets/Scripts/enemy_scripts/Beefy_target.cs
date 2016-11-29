@@ -41,10 +41,7 @@ public class Beefy_target : MonoBehaviour
             {
                 this.gameObject.GetComponent<Spawn_powerup>().Spawn();
             }
-           // if(curhealth_points < maxhealth_points / 2)
-            //{
-                
-            //}
+
             if (curhealth_points <= 0)
             {
                 Destroy(gameObject);

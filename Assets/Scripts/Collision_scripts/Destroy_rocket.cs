@@ -23,6 +23,7 @@ public class Destroy_rocket : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col) {
 
+			//destroy rocket and spawn a rocket explosion at point of contact
 			ContactPoint2D contact = col.contacts[0];
 			Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
 			Vector3 pos = contact.point;

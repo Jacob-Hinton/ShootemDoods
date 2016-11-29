@@ -23,6 +23,7 @@ public class Destroy_bullet : MonoBehaviour {
 
 
 	void OnCollisionEnter2D(Collision2D col) {
+			//spawn an explosion at point of contact and destroy the bullet
 			ContactPoint2D contact = col.contacts[0];
 			Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
 			Vector3 pos = contact.point;

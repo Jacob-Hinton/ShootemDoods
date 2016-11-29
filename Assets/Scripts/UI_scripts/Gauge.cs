@@ -51,6 +51,8 @@ public class Gauge : MonoBehaviour {
 	void Update () {
 		Color c = nodeImage1.color;
 		c.a = 1f;
+		//polls the pwr up stack and makes the current sprite in the corresponding
+		//location match the color
 		if (held_power_ups.Count == 1) {
 			getpwr = (char)held_power_ups.Peek ();
 			if (getpwr == 'r') {
@@ -81,7 +83,9 @@ public class Gauge : MonoBehaviour {
 				nodeImage3.sprite = yellowNode;
 			}
 			nodeImage3.color = c;
-		} else {
+		} 
+		//if no powerups in stack set bar to show no power ups
+		else {
 			c.a = 0;
 			nodeImage1.color = c;
 			nodeImage2.color = c;

@@ -39,12 +39,14 @@ public class cooldownbar_script : MonoBehaviour {
 	void Update () {
 		if (!cooldowncomplete) {
 			if (!numerationbegan) {
-				Debug.Log ("BOB");
 				StartCoroutine ("cooldown");
 			}
 		}
 	}
 
+	//counts and adds a bar back every 1/4 second
+	//i did this super gross set of 5 sprites becaus of how unity handles data
+	//in its gui to properly let me drag and drop sprites into the obj
 	public IEnumerator cooldown() {
 		numerationbegan = true;
 		img.sprite = Sprite0;
