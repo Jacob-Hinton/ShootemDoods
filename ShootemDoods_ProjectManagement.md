@@ -31,7 +31,11 @@ Table of Contents
 
 1. **Vision**
 2. **Process Model**
-3. **Configuration Management**
+3. **Configuration Management**  
+  1. Overview of GitHub Management  
+  2. Utilization of the Branching Feature
+  3. Documentation
+  4. Graphs  
 4. **Deliverables**
 5. **Potential Risks**
 6. **Team Members**
@@ -50,6 +54,19 @@ Table of Contents
 # 1. Vision
 # 2. Process Model
 # 3. Configuration Management  
+## i. Overview of GitHub Management    
+Per Professor Nash's requirements, the version control that our team used was GitHub. Most of our team has past experience with GitHub so being required to use it did not disadvantage us. The team member with the most GitHub experience was Jacob Hinton so he took on the role of managing the repository by merging branches and fixing coding conflicts when they appeared.  
+
+## ii. Utilization of the Branching Feature  
+The ability to create and merge branches was a feature of GitHub that our team heavily relied upon. To elaborate, it allowed our programming team to create separate branches for different features and our art team to create their own art assets branch which ended up greatly minimizing any coding conflicts. Also, working on a branch that was separate from the master branch prevented us from catastrophically breaking any of the code.  
+
+## iii. Documentation  
+All of the official documentation for *Shootem Doods* that we posted on GitHub was done in GitHub-flavored Markdown. In the beginning, learning GitHub-flavored Markdown was a bit of a challenge for our documentation group. However, the text editor Atom (which is made by GitHub) proved to be a great help. The most helpful feature of Atom is it is programmed to recognize GitHub-flavored Markdown and even allows you to preview the rendered text before uploading it to GitHub.
+
+![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/AtomScreenshot.png"Screenshot of Atom")   
+
+## iv. Graphs  
+
 # 4. Deliverables  
 # 5. Potential Risks  
 # 6. Team Members  
@@ -59,9 +76,6 @@ Table of Contents
 ___
 ### a. Steven Chase Bernard  
 ___  
-* Created art assets such as the player and enemies, as well as UI art elements
-* Created animation frames for powerup abilities
-* Helped with initial framework
 
 ___
 ### b. Elise Falgout  
@@ -70,11 +84,6 @@ ___
 ___
 ### c. Jacob Hinton  
 ___  
-
-* Team lead on programming of powerup system and all game mechanics
-* implemented all in game ui elements (powerup bar, life count, cooldown bar)
-* managed all source control through github. (main responsibility here was merging when conflicts appeared)
-* contributed to the SRS document, notably on the functional requirements
 
 ___
 ### d. Brandon Kilpatrick  
