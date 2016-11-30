@@ -68,6 +68,11 @@ ___
 ### c. Jacob Hinton  
 ___  
 
+* Team lead on programming of powerup system and all game mechanics
+* implemented all in game ui elements (powerup bar, life count, cooldown bar)
+* managed all source control through github. (main responsibility here was merging when conflicts appeared)
+* contributed to the SRS document, notably on the functional requirements
+
 ___
 ### d. Brandon Kilpatrick  
 ___  
