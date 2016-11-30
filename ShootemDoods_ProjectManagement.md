@@ -59,7 +59,9 @@ Table of Contents
 ___
 ### a. Steven Chase Bernard  
 ___  
-
+* Created art assets such as the player and enemies, as well as UI art elements
+* Created animation frames for powerup abilities
+* Helped with initial framework
 ___
 ### b. Elise Falgout  
 ___  
