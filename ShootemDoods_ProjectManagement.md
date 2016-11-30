@@ -57,27 +57,27 @@ Table of Contents
 ## ii. Individual Contributions  
 
 ___
-### 1. Steven Chase Bernard  
+### a. Steven Chase Bernard  
 ___  
 
 ___
-### 2. Elise Falgout  
+### b. Elise Falgout  
 ___  
 
 ___
-### 3. Jacob Hinton  
+### c. Jacob Hinton  
 ___  
 
 ___
-### 4. Brandon Kilpatrick  
+### d. Brandon Kilpatrick  
 ___  
 
 ___
-### 5. Jonah Knickles  
+### e. Jonah Knickles  
 ___  
 
 ___
-### 6. David Xu  
+### f. David Xu  
 ___  
 
 # 7. Project Schedule
