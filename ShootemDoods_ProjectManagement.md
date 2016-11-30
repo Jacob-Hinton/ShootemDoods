@@ -131,7 +131,8 @@ My main role in the development of *Shootem Doods* was in the creation of its do
     - Section 3: Configuration Management  
       I wrote this entire section.  
     - Section 6: Team Members  
-      I wrote the subsection i. Team Style and the introduction to subsection ii. Individual Contributions.    
+      I wrote the subsection i. Team Style and the introduction to subsection ii. Individual Contributions.  
+        
 ___
 ### c. Jacob Hinton  
 ___  
