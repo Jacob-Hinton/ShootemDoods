@@ -154,5 +154,11 @@ ___
 ### f. David Xu  
 ___  
 
+  Implemented parts of the main game code including:
+  
+* Power-up system and mechanics of power-up effects
+* Player/Enemy/Object collision and destruction
+* Player input/controls
+
 # 7. Project Schedule
 # 8. Meetings Summaries
