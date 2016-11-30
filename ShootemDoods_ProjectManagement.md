@@ -61,7 +61,7 @@ Per Professor Nash's requirements, the version control that our team used was Gi
 The ability to create and merge branches was a feature of GitHub that our team relied heavily upon. To elaborate, it allowed our programming team to create separate branches for each of our features and our art team to create their own art assets branch, thereby greatly minimizing any coding conflicts. Also, working on a branch that was separate from the master branch prevented us from catastrophically breaking any of the code.  
 
 ## iii. Documentation  
-All of the official documentation for *Shootem Doods* that we posted on GitHub was done in GitHub-flavored Markdown. In the beginning, learning GitHub-flavored Markdown was a bit of a challenge for our documentation group. However, the text editor Atom (which is made by GitHub) proved to be a great help. The most helpful feature of Atom is it is programmed to recognize GitHub-flavored Markdown and even allows you to preview the rendered text before uploading it to GitHub.
+All of the official documentation for *Shootem Doods* that we posted on GitHub was done in GitHub-flavored Markdown. In the beginning, learning GitHub-flavored Markdown was a bit of a challenge for our documentation group. However, the text editor Atom (which is made by GitHub) proved to be a great help. The most helpful feature of Atom is its ability to recognize GitHub-flavored Markdown and that it allows you to preview the rendered text before uploading it to GitHub.
 
 Working with Markdown in Atom  
 ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/AtomScreenshot.png "Screenshot of Atom")
@@ -83,7 +83,7 @@ The team style that our group decided to go with was the egoless approach. Howev
   3. Documentation Team  
     + Elise Falgout  
     + Jonah Knickles  
-    
+
 ## ii. Individual Contributions  
 
 ___
