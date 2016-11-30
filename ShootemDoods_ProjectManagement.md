@@ -34,9 +34,12 @@ Table of Contents
 3. **Configuration Management**  
   1. Overview of GitHub Management  
   2. Utilization of the Branching Feature
-  3. Documentation
+  3. Creating the Documentation  
   4. Graphs  
-4. **Deliverables**
+4. **Deliverables**  
+  1. Executables  
+  2. Documentation  
+  3. Manuals  
 5. **Potential Risks**
 6. **Team Members**
   1. Team Style  
@@ -60,7 +63,7 @@ Per Professor Nash's requirements, the version control that our team used was Gi
 ## ii. Utilization of the Branching Feature  
 The ability to create and merge branches was a feature of GitHub that our team relied heavily upon. To elaborate, it allowed our programming team to create separate branches for each of our features and our art team to create their own art assets branch, thereby greatly minimizing any coding conflicts. Also, working on a branch that was separate from the master branch prevented us from catastrophically breaking any of the code.  
 
-## iii. Documentation  
+## iii. Creating the Documentation  
 All of the official documentation for *Shootem Doods* that we posted on GitHub was done in GitHub-flavored Markdown. In the beginning, learning GitHub-flavored Markdown was a bit of a challenge for our documentation group. However, the text editor Atom (which is made by GitHub) proved to be a great help. The most helpful feature of Atom is its ability to recognize GitHub-flavored Markdown and that it allows you to preview the rendered text before uploading it to GitHub.
 
 Working with Markdown in Atom  
@@ -69,6 +72,13 @@ Working with Markdown in Atom
 ## iv. Graphs  
 
 # 4. Deliverables  
+## i. Executables  
+## ii. Documentation  
+### a. System Requirements Specification (SRS) Document  
+### b. Software Design Document (SDD)  
+### c. Software Testing Document (STD)  
+### d. *Shootem Doods*' Code
+## iii. Manuals    
 # 5. Potential Risks  
 # 6. Team Members  
 ## i. Team Style  
@@ -91,7 +101,7 @@ ___
 ___  
 
 * Created art assets such as the player and enemies, as well as UI art elements
-* Created animation frames for powerup abilities
+* Created animation frames for power-up abilities
 * Helped with initial framework
 
 ___
@@ -102,10 +112,10 @@ ___
 ### c. Jacob Hinton  
 ___  
 
-* Team lead on programming of powerup system and all game mechanics
-* implemented all in game ui elements (powerup bar, life count, cooldown bar)
-* managed all source control through github. (main responsibility here was merging when conflicts appeared)
-* contributed to the SRS document, notably on the functional requirements
+* Team lead on programming of power-up system and all game mechanics
+* Implemented all in game ui elements (power-up bar, life count, cooldown bar)
+* Managed all source control through GitHub. (main responsibility here was merging when conflicts appeared)
+* Contributed to the SRS document, notably on the functional requirements
 
 ___
 ### d. Brandon Kilpatrick  
