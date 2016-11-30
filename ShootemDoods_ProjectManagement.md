@@ -39,6 +39,10 @@ Table of Contents
 4. **Deliverables**  
   1. Executables  
   2. Documentation  
+    1. System Requirements Specification (SRS) Document  
+    2. Software Design Document (SDD)  
+    3. Software Testing Document (STD)  
+    4. *Shootem Doods*' Code
   3. Manuals  
 5. **Potential Risks**
 6. **Team Members**
