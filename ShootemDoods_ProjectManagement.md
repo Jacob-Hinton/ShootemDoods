@@ -45,7 +45,7 @@ Table of Contents
     4. *Shootem Doods*' Code
   3. Manuals  
 5. **Potential Risks**
-6. **Team Members**
+6. **Team Members** 
   1. Team Style  
   2. Individual Contributions  
     1. Steven Chase Bernard  
@@ -99,7 +99,7 @@ The team style that our group decided to go with was the egoless approach. Howev
     + Jonah Knickles  
 
 ## ii. Individual Contributions  
-The following subsections talk about each team member's specific contribution to *Shootem Doods* and which team meetings they attended.
+The following subsections describe each team member's specific contribution to *Shootem Doods* as well as which team meetings they attended.
 ___
 ### a. Steven Chase Bernard  
 ___  
@@ -132,7 +132,7 @@ My main role in the development of *Shootem Doods* was in the creation of its do
       I wrote this entire section.  
     - Section 6: Team Members  
       I wrote the subsection i. Team Style and the introduction to subsection ii. Individual Contributions.  
-        
+
 ___
 ### c. Jacob Hinton  
 ___  
