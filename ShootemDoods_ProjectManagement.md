@@ -146,6 +146,12 @@ ___
 ### d. Brandon Kilpatrick  
 ___  
 
+* Created and implemented art assets such as the scrolling parralax background, the Menu Screen, game control screen, and enemies
+* Implemented UI elements such as the main menu, pause menu, and game-over screen
+* designed and coded the behaviors of all enemy types
+* designed and assembled the game test level
+* Helped with documentation work, most notably the SRS document
+
 ___
 ### e. Jonah Knickles  
 ___  
