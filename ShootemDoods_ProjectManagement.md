@@ -45,7 +45,7 @@ Table of Contents
     4. *Shootem Doods*' Code
   3. Manuals  
 5. **Potential Risks**
-6. **Team Members** 
+6. **Team Members**
   1. Team Style  
   2. Individual Contributions  
     1. Steven Chase Bernard  
@@ -57,6 +57,10 @@ Table of Contents
 
 7. **Project Schedule**
 8. **Meetings Summaries**  
+  1. Group Meetings  
+  2. Programming Team Meetings  
+  3. Documentation Team Meetings  
+  4. Art/Design Team Meetings  
 
 # 1. Vision
 # 2. Process Model
@@ -161,10 +165,48 @@ ___
 ___  
 
   Implemented parts of the main game code including:
-  
+
 * Power-up system and mechanics of power-up effects
 * Player/Enemy/Object collision and destruction
 * Player input/controls
 
 # 7. Project Schedule
 # 8. Meetings Summaries
+## i. Group Meetings  
+### Thursday, August 25th  
+**Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu  
+**Time:**  
+**Summary:**  During our first official group meeting, we collectively decided that we wanted to develop a side scrolling space shooting game called *Shootem Doods* using the Unity Game Engine. In addition, we decided that we wanted our game to have a three way power-up system and branching level paths.  
+
+### Thursday, September 22nd  
+**Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu   
+**Time:**  
+**Summary:**  We officially delegated our team roles at the beginning of this meeting before finalizing the power-up concepts and talking about documentation.  
+
+### Tuesday, September 27th  
+**Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu   
+**Time:**  
+**Summary:**  The main objective of today's meeting was to decide what our first level was going to look like. Once we finished sketching it out, we broke off into our subgroups. The programming team worked on finishing up the power-up system while the art/design team continued to flesh out the design of the first level and the documentation team discussed Assignment #1.  
+
+### Sunday, November 26th  
+**Team Members Present:**  Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick and Jonah Knickles    
+**Time:** 1:00 pm - 3:30 pm  
+**Summary:**  Today's meeting was purely about the final presentation on Monday, November 27th. We spent the first ten to fifteen minutes divvying up the slides and the rest of the meeting practicing our talking points with each other.   
+
+## ii. Programming Team Meetings  
+### Saturday, September 3rd  
+**Team Members Present:**  Steven Chase Bernard, Jacob Hinton and Brandon Kilpatrick  
+**Time:**  
+**Summary:**    
+### Friday, September 23rd  
+**Team Members Present:**  Jacob Hinton, Brandon Kilpatrick, and David Xu  
+**Time:**  
+**Summary:**    
+
+## iii. Documentation Team Meetings  
+### Thursday, October 20th  
+**Team Members Present:** Elise Falgout, Jacob Hinton, Brandon Kilpatrick and Jonah Knickles   
+**Time:**  
+**Summary:**  
+
+## iv. Art/Design Team Meetings  
