@@ -1,4 +1,4 @@
-___
+﻿___
 
 # <p style="text-align: left;">Project Management Document</p>
 
@@ -184,6 +184,25 @@ ___
 ___
 ### e. Jonah Knickles  
 ___  
+My main role in the development of *Shoot'em Doods* was in the creation of its documentation. More specifically, I did the following:  
+  + Software Requirements Specification Document (SRS)  
+    - Table of contents and formatting
+      I formatted the document.
+    - Section 1 
+      I wrote this in Markdown.
+    - Section 4: Functional requirements
+      I wrote this section in Markdown. Jacob Hinton, Brandon Kilpatrick, and Elise Falgout added to and tweaked the requirements. 
+    - Section 5: Nonfunctional Requirements
+    - I wrote this section in Markdown. Jacob Hinton, Brandon Kilpatrick, and Elise Falgout proofread it.
+    - Proof read the final document
+  + Software Design Document (SDD)
+    - I wrote this in markdown.
+    - I created the Diagrams using Dia.
+    - Proofread along with Jacob Hinton, Brandon Kilpatrick, and Elise Falgout
+  + Software Testing Document (STD)  
+    - Section 2: Functional Requirements Test Cases  
+      I wrote all of the test cases under subsections I - IX. These subsections correspond to the functional requirements FR-1 through FR-9 that were outlined in our SRS document.  
+    - Proof read the final document  
 
 ___
 ### f. David Xu  
