@@ -209,7 +209,7 @@ ___
 ### Tuesday, September 6th
 **Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu   
 **Time:** 5:00 pm - 5:30 pm  
-**Summary:**  
+**Summary:**  We discussed the talking points of our first presentation and decided that Jacob Hinton would be the presenter because he was the one who came up with the game idea.    
 
 ### Thursday, September 22nd  
 **Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu   
