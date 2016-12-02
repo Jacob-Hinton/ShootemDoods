@@ -97,17 +97,23 @@ For the first release of *Shoot'em Doods* there is an executable for the Windows
 [*Shoot'em Doods*' Software Design Document](https://github.com/jacobmhinton/ShootemDoods/blob/master/ShootemDoods_SDD.md) further specifies the implementation of *Shoot'em Doods* as described in the SRS document. Its main purpose is to use diagrams and formal notations to illustrate the primary functions of *Shoot'em Doods* to its developers. The SDD will also be revised as game development continues.    
 
 ### c. Software Testing Document (STD)  
-[*Shoot'em Doods*' Testing Document](https://github.com/jacobmhinton/ShootemDoods/blob/master/ShootemDoods_STD.md) details all of the test cases that need to be used in order to test the functionality of *Shoot'em Doods*. All of the test cases in the STD correspond directly to the functional requirements outlined in *Shoot'em Doods*' SRS document and its description on how they work. As *Shoot'em Doods* develops, the STD will be adjusted as need so that it continues to accurately test the system.  
+[*Shoot'em Doods*' Testing Document](https://github.com/jacobmhinton/ShootemDoods/blob/master/ShootemDoods_STD.md) details all of the test cases that need to be used in order to test the functionality of *Shoot'em Doods*. All of the test cases in the STD correspond directly to the functional requirements outlined in *Shoot'em Doods*' SRS document and its description on how they work. As *Shoot'em Doods* develops, the STD will be adjusted as needed so that it continues to accurately test the system.  
 
 ### d. *Shoot'em Doods*' Code    
 Due to *Shoot’em Doods*’ open sourced nature, it was necessary for our developers to neatly document the functionality of the game’s code so that future developers will be able to understand how it works. More specifically, our programmers added header comments at the top of each file, comments on methods whose use was immediately apparent, and gave the variables meaningful names.
+
+  Sample Header Comment  
+  ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/HeaderCommentExample.png "Sample Header Comment")  
+
+    Sample Method Comment  
+    ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/MethodCommentExample.png "Sample Method Comment")  
 
 # 5. Potential Risks  
 The potential risks of *Shoot’em Doods* primarily pertains to time. To elaborate, many of our developers’ initial plans for *Shoot’em Doods*, such as branching level paths, might not be able to be implemented in the first release of the game because of the brevity of the allotted development time.  An additional risk that *Shoot’em Doods* faces is the possibility of an incohesive team dynamic. While many of our team members have worked well together on past projects, it is always possible that unforeseen personal circumstances/commitments will negatively impact our team dynamic and impede the development of *Shoot’em Doods*.
 
 # 6. Team Members  
 ## i. Team Style  
-The team style that our group decided to go with was the egoless approach. However, we did spit our team up into the following subgroups:  
+The team style that our group decided to go with was the egoless approach. However, we did split our team up into the following subgroups:  
   1. Programming Team  
     + Jacob Hinton  
     + Brandon Kilpatrick  
@@ -200,14 +206,14 @@ ___
 **Time:**  5:00 pm - 6:30 pm
 **Summary:**  During our first official group meeting, we collectively decided that we wanted to develop a side scrolling space shooting game called *Shoot'em Doods* using the Unity Game Engine. In addition, we decided that we wanted our game to have a three way power-up system and branching level paths.  
 
-## Tuesday, September 6th
+### Tuesday, September 6th
 **Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu   
 **Time:** 5:00 pm - 5:30 pm  
 **Summary:**  
 
 ### Thursday, September 22nd  
 **Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu   
-**Time:** 6:00 pm - 7:30 pm
+**Time:** 6:00 pm - 7:30 pm  
 **Summary:**  We officially delegated our team roles at the beginning of this meeting before finalizing the power-up concepts and talking about documentation.  
 
 ### Tuesday, September 27th  
@@ -250,7 +256,7 @@ ___
 ## iii. Documentation Team Meetings  
 ### Thursday, October 20th  
 **Team Members Present:** Elise Falgout, Jacob Hinton, Brandon Kilpatrick and Jonah Knickles   
-**Time:** 6:00 pm - 12:00 am
+**Time:** 6:00 pm - 12:00 am  
 **Summary:**  We met in the library and finished the SRS document.
 
 ___  
@@ -260,9 +266,18 @@ ___
 ### Wednesday, September 21st
 **Team Members Present:** Steven Chase Bernard and Brandon Kilpatrick   
 **Time:** 6:15 pm - 7:00 pm  
-**Summary:**  Chase and Brandon met up at Brandon's apartment and sketched up the first design of the player's ship before creating it in Paint.net.
+**Summary:**  Chase and Brandon met up at Brandon's apartment and sketched up the first design of the player's ship before creating it in Paint.net.  
+
+  Photo of the Hand-drawn Player Ship  
+  ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/ShipMockUp1_Handdrawn.jpeg "Hand-drawn player ship")  
 
 ### Tuesday, November 15th
 **Team Members Present:** Steven Chase Bernard and Brandon Kilpatrick   
 **Time:** 3:00 pm - 8:00 pm  
-**Summary:**  Chase finished designing some of the enemies and Brandon finished the cityscape background he has been working on.     
+**Summary:**  Chase finished designing some of the enemies and Brandon finished the cityscape background he has been working on.  
+
+  Compilation of the Default Enemies  
+  ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/DefaultEnemiesMockUp.png "Compilation of the Default Enemies")  
+
+    Finished Background Cityscape  
+    ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/ShipMockUp1_Handdrawn.jpeg "Background Cityscape")     
