@@ -97,9 +97,14 @@ For the first release of *Shoot'em Doods* there is an executable for the Windows
 [*Shoot'em Doods*' Software Design Document](https://github.com/jacobmhinton/ShootemDoods/blob/master/ShootemDoods_SDD.md) further specifies the implementation of *Shoot'em Doods* as described in the SRS document. Its main purpose is to use diagrams and formal notations to illustrate the primary functions of *Shoot'em Doods* to its developers. The SDD will also be revised as game development continues.    
 
 ### c. Software Testing Document (STD)  
-[*Shoot'em Doods*' Testing Document](https://github.com/jacobmhinton/ShootemDoods/blob/master/ShootemDoods_STD.md) details all of the test cases that need to be used in order to test the functionality of *Shoot'em Doods*. All of the test cases in the STD correspond directly to the functional requirements outlined in *Shoot'em Doods*' SRS document and its description on how they work. As *Shoot'em Doods* develops, the STD will be adjusted as need so that it continues to accurately test the system.          
-### d. *Shoot'em Doods*' Code     
-# 5. Potential Risks    
+[*Shoot'em Doods*' Testing Document](https://github.com/jacobmhinton/ShootemDoods/blob/master/ShootemDoods_STD.md) details all of the test cases that need to be used in order to test the functionality of *Shoot'em Doods*. All of the test cases in the STD correspond directly to the functional requirements outlined in *Shoot'em Doods*' SRS document and its description on how they work. As *Shoot'em Doods* develops, the STD will be adjusted as need so that it continues to accurately test the system.  
+
+### d. *Shoot'em Doods*' Code    
+Due to *Shoot’em Doods*’ open sourced nature, it was necessary for our developers to neatly document the functionality of the game’s code so that future developers will be able to understand how it works. More specifically, our programmers added header comments at the top of each file, comments on methods whose use was immediately apparent, and gave the variables meaningful names.
+
+# 5. Potential Risks  
+The potential risks of *Shoot’em Doods* primarily pertains to time. To elaborate, many of our developers’ initial plans for *Shoot’em Doods*, such as branching level paths, might not be able to be implemented in the first release of the game because of the brevity of the allotted development time.  An additional risk that *Shoot’em Doods* faces is the possibility of an incohesive team dynamic. While many of our team members have worked well together on past projects, it is always possible that unforeseen personal circumstances/commitments will negatively impact our team dynamic and impede the development of *Shoot’em Doods*.
+
 # 6. Team Members  
 ## i. Team Style  
 The team style that our group decided to go with was the egoless approach. However, we did spit our team up into the following subgroups:  
@@ -186,41 +191,78 @@ ___
 
 # 7. Project Schedule
 # 8. Meetings Summaries  
+___  
+
+
 ## i. Group Meetings  
-### Thursday, August 25th  
+### Tuesday, August 30th  
 **Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu  
-**Time:**  
+**Time:**  5:00 pm - 6:30 pm
 **Summary:**  During our first official group meeting, we collectively decided that we wanted to develop a side scrolling space shooting game called *Shoot'em Doods* using the Unity Game Engine. In addition, we decided that we wanted our game to have a three way power-up system and branching level paths.  
+
+## Tuesday, September 6th
+**Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu   
+**Time:** 5:00 pm - 5:30 pm  
+**Summary:**  
 
 ### Thursday, September 22nd  
 **Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu   
-**Time:**  
+**Time:** 6:00 pm - 7:30 pm
 **Summary:**  We officially delegated our team roles at the beginning of this meeting before finalizing the power-up concepts and talking about documentation.  
 
 ### Tuesday, September 27th  
 **Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu   
-**Time:**  
+**Time:**  5:00 pm - 5:45 pm  
 **Summary:**  The main objective of today's meeting was to decide what our first level was going to look like. Once we finished sketching it out, we broke off into our subgroups. The programming team worked on finishing up the power-up system while the art/design team continued to flesh out the design of the first level and the documentation team discussed Assignment #1.  
 
-### Sunday, November 26th  
+### Sunday, November 27th  
 **Team Members Present:**  Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick and Jonah Knickles    
 **Time:** 1:00 pm - 3:30 pm  
-**Summary:**  Today's meeting was purely about the final presentation on Monday, November 27th. We spent the first ten to fifteen minutes divvying up the slides and the rest of the meeting practicing our talking points with each other.   
+**Summary:**  Today's meeting was purely about the final presentation on Monday, November 28th. We spent the first ten to fifteen minutes divvying up the slides and the rest of the meeting practicing our talking points with each other.   
+
+___  
+
 
 ## ii. Programming Team Meetings  
 ### Saturday, September 3rd  
 **Team Members Present:**  Steven Chase Bernard, Jacob Hinton and Brandon Kilpatrick  
-**Time:**  
-**Summary:**    
+**Time:**  10:30 am - 4:00 pm  
+**Summary:**  Chase, Jacob, and Brandon got together to begin familiarizing themselves with the Unity Game Engine.  
+
+### Saturday, September 10th  
+**Team Members Present:**  Steven Chase Bernard, Jacob Hinton and Brandon Kilpatrick  
+**Time:** 12:00 pm - 4:30 pm  
+**Summary:**  During this meeting, our programming team and art/design team met up at Jacob Hinton's place to implement a moving ship, a moving camera, and add a background to a mock level.  
+
+### Saturday, September 17th  
+**Team Members Present:**  Steven Chase Bernard, Jacob Hinton and Brandon Kilpatrick  
+**Time:** 10:00 am - 4:30 pm  
+**Summary:**  During this meeting, our programming team and art/design team met up at Jacob Hinton's place to create object and player collisions.    
+
 ### Friday, September 23rd  
 **Team Members Present:**  Jacob Hinton, Brandon Kilpatrick, and David Xu  
-**Time:**  
-**Summary:**    
+**Time:**  5:00 pm - 7:00 pm  
+**Summary:**  The programming team got together for a pair programming session and were able to implement the basic functionality of the power-up system as well as edit the camera.     
+
+___  
+
 
 ## iii. Documentation Team Meetings  
 ### Thursday, October 20th  
 **Team Members Present:** Elise Falgout, Jacob Hinton, Brandon Kilpatrick and Jonah Knickles   
-**Time:**  
+**Time:** 6:00 pm - 12:00 am
 **Summary:**  We met in the library and finished the SRS document.
 
+___  
+
+
 ## iv. Art/Design Team Meetings  
+### Wednesday, September 21st
+**Team Members Present:** Steven Chase Bernard and Brandon Kilpatrick   
+**Time:** 6:15 pm - 7:00 pm  
+**Summary:**  Chase and Brandon met up at Brandon's apartment and sketched up the first design of the player's ship before creating it in Paint.net.
+
+### Tuesday, November 15th
+**Team Members Present:** Steven Chase Bernard and Brandon Kilpatrick   
+**Time:** 3:00 pm - 8:00 pm  
+**Summary:**  Chase finished designing some of the enemies and Brandon finished the cityscape background he has been working on.     
