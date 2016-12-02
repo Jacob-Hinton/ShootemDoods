@@ -105,8 +105,8 @@ Due to *Shoot’em Doods*’ open sourced nature, it was necessary for our devel
   Sample Header Comment  
   ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/HeaderCommentExample.png "Sample Header Comment")  
 
-    Sample Method Comment  
-    ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/MethodCommentExample.png "Sample Method Comment")  
+  Sample Method Comment  
+  ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/MethodCommentExample.png "Sample Method Comment")  
 
 # 5. Potential Risks  
 The potential risks of *Shoot’em Doods* primarily pertains to time. To elaborate, many of our developers’ initial plans for *Shoot’em Doods*, such as branching level paths, might not be able to be implemented in the first release of the game because of the brevity of the allotted development time.  An additional risk that *Shoot’em Doods* faces is the possibility of an incohesive team dynamic. While many of our team members have worked well together on past projects, it is always possible that unforeseen personal circumstances/commitments will negatively impact our team dynamic and impede the development of *Shoot’em Doods*.
@@ -279,5 +279,5 @@ ___
   Compilation of the Default Enemies  
   ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/DefaultEnemiesMockUp.png "Compilation of the Default Enemies")  
 
-    Finished Background Cityscape  
-    ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/ShipMockUp1_Handdrawn.jpeg "Background Cityscape")     
+  Finished Background Cityscape  
+  ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/BackgroundMockUp.png "Background Cityscape")     
