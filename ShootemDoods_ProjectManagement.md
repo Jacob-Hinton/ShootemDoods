@@ -66,8 +66,11 @@ Table of Contents
 
 The three colors that *Shoot'em Doods*' power-up system uses are red, yellow, and blue. Each color indicates a different kind of ability. To elaborate, all the red power-ups are attack related, all the blue power-ups are defensive, and all the yellow power-ups pertain to utility. The idea of the color-coded power-up system is to make the game more intuitive while still adding another level of strategy to the gameplay.  
 
-Ultimately, *Shoot'em Doods*' implementation of a tri-colored power-up system and its unique marriage of pixel art and modern graphics makes it an intriguing, thought provoking game.       
-# 2. Process Model
+Ultimately, *Shoot'em Doods*' implementation of a tri-colored power-up system and its unique marriage of pixel art and modern graphics makes it an intriguing, thought provoking game.  
+
+# 2. Process Model  
+The process model that *Shoot'em Doods* followed was the agile method Extreme Programming (XP). Using the XP method allowed our team to create *Shoot'em Doods* incrementally while still allowing us to go back and refactor the code. Also, the pair programming facet of XP proved to be very beneficial for our programming team.  
+
 # 3. Configuration Management  
 ## i. Overview of GitHub Management    
 Per Professor Nash's requirements, the version control that our team used was GitHub. Most of our team has past experience with GitHub so being required to use it was not problematic for us. The team member with the most GitHub experience was Jacob Hinton so he took on the role of managing the repository by merging branches and fixing coding conflicts when they appeared.  
@@ -85,6 +88,7 @@ Working with Markdown in Atom
 
 # 4. Deliverables  
 ## i. Executables  
+For the first release of *Shoot'em Doods* there is an executable for the Windows, OSX, and Linux operating systems. While we did create executables for OSX and Linux, we only officially support the Windows executable at this time. New executables will be created each time a new version of *Shoot'em Doods* is released. For information on how to run the *Shoot'em Doods*' executables, please see the [readmeexe.md](https://github.com/jacobmhinton/ShootemDoods/blob/master/executables/readmeexe.md) in the folder '[executables](https://github.com/jacobmhinton/ShootemDoods/tree/master/executables)' located in the [*Shoot'em Doods*' repository](https://github.com/jacobmhinton/ShootemDoods).      
 ## ii. Documentation  
 ### a. System Requirements Specification (SRS) Document  
 [*Shoot'em Doods*' System Requirements Specification document](https://github.com/jacobmhinton/ShootemDoods/blob/master/ShootemDoods_SRS.md) describes the main features of the game as precisely as possible. Our programming team then used this document as a blueprint for coding the first release of the game. As the development of *Shoot'em Doods* continues, the SRS document will continue to be revised so that it accurately depicts the functionality of the game.  
@@ -95,7 +99,7 @@ Working with Markdown in Atom
 ### c. Software Testing Document (STD)  
 [*Shoot'em Doods*' Testing Document](https://github.com/jacobmhinton/ShootemDoods/blob/master/ShootemDoods_STD.md) details all of the test cases that need to be used in order to test the functionality of *Shoot'em Doods*. All of the test cases in the STD correspond directly to the functional requirements outlined in *Shoot'em Doods*' SRS document and its description on how they work. As *Shoot'em Doods* develops, the STD will be adjusted as need so that it continues to accurately test the system.          
 ### d. *Shoot'em Doods*' Code     
-# 5. Potential Risks  
+# 5. Potential Risks    
 # 6. Team Members  
 ## i. Team Style  
 The team style that our group decided to go with was the egoless approach. However, we did spit our team up into the following subgroups:  
