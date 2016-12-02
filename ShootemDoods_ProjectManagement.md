@@ -8,7 +8,7 @@ ___
 
 </br>
 
-# <p style="text-align: left;">Shootem Doods</p>
+# <p style="text-align: left;">Shoot'em Doods</p>
 
 </br>
 
@@ -42,8 +42,7 @@ Table of Contents
     1. System Requirements Specification (SRS) Document  
     2. Software Design Document (SDD)  
     3. Software Testing Document (STD)  
-    4. *Shootem Doods*' Code
-  3. Manuals  
+    4. *Shoot'em Doods*' Code   
 5. **Potential Risks**
 6. **Team Members**
   1. Team Style  
@@ -62,7 +61,12 @@ Table of Contents
   3. Documentation Team Meetings  
   4. Art/Design Team Meetings  
 
-# 1. Vision
+# 1. Vision  
+*Shoot'em Doods* is a new, self-contained, side-scrolling video game similar to that of the 1985 video game *Gradius*. Similar to its predecessor, the primary concept of *Shoot'em Doods* is to successfully navigate a space ship through a level by evading various enemies and obstacles with the aid of power-ups. What makes *Shoot'em Doods* unique, however, is its tri-colored power-up system.  
+
+The three colors that *Shoot'em Doods*' power-up system uses are red, yellow, and blue. Each color indicates a different kind of ability. To elaborate, all the red power-ups are attack related, all the blue power-ups are defensive, and all the yellow power-ups pertain to utility. The idea of the color-coded power-up system is to make the game more intuitive while still adding another level of strategy to the gameplay.  
+
+Ultimately, *Shoot'em Doods*' implementation of a tri-colored power-up system and its unique marriage of pixel art and modern graphics makes it an intriguing, thought provoking game.       
 # 2. Process Model
 # 3. Configuration Management  
 ## i. Overview of GitHub Management    
@@ -72,7 +76,7 @@ Per Professor Nash's requirements, the version control that our team used was Gi
 The ability to create and merge branches was a feature of GitHub that our team relied heavily upon. To elaborate, it allowed our programming team to create separate branches for each of our features and our art team to create their own art assets branch, thereby greatly minimizing any coding conflicts. Also, working on a branch that was separate from the master branch prevented us from catastrophically breaking any of the code.  
 
 ## iii. Creating the Documentation  
-All of the official documentation for *Shootem Doods* that we posted on GitHub was done in GitHub-flavored Markdown. In the beginning, learning GitHub-flavored Markdown was a bit of a challenge for our documentation group. However, the text editor Atom (which is made by GitHub) proved to be a great help. The most helpful feature of Atom is its ability to recognize GitHub-flavored Markdown and that it allows you to preview the rendered text before uploading it to GitHub.
+All of the official documentation for *Shoot'em Doods* that we posted on GitHub was done in GitHub-flavored Markdown. In the beginning, learning GitHub-flavored Markdown was a bit of a challenge for our documentation group. However, the text editor Atom (which is made by GitHub) proved to be a great help. The most helpful feature of Atom is its ability to recognize GitHub-flavored Markdown and that it allows you to preview the rendered text before uploading it to GitHub.
 
 Working with Markdown in Atom  
 ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/AtomScreenshot.png "Screenshot of Atom")
@@ -83,10 +87,14 @@ Working with Markdown in Atom
 ## i. Executables  
 ## ii. Documentation  
 ### a. System Requirements Specification (SRS) Document  
+[*Shoot'em Doods*' System Requirements Specification document](https://github.com/jacobmhinton/ShootemDoods/blob/master/ShootemDoods_SRS.md) describes the main features of the game as precisely as possible. Our programming team then used this document as a blueprint for coding the first release of the game. As the development of *Shoot'em Doods* continues, the SRS document will continue to be revised so that it accurately depicts the functionality of the game.  
+
 ### b. Software Design Document (SDD)  
+[*Shoot'em Doods*' Software Design Document](https://github.com/jacobmhinton/ShootemDoods/blob/master/ShootemDoods_SDD.md) further specifies the implementation of *Shoot'em Doods* as described in the SRS document. Its main purpose is to use diagrams and formal notations to illustrate the primary functions of *Shoot'em Doods* to its developers. The SDD will also be revised as game development continues.    
+
 ### c. Software Testing Document (STD)  
-### d. *Shootem Doods*' Code
-## iii. Manuals    
+[*Shoot'em Doods*' Testing Document](https://github.com/jacobmhinton/ShootemDoods/blob/master/ShootemDoods_STD.md) details all of the test cases that need to be used in order to test the functionality of *Shoot'em Doods*. All of the test cases in the STD correspond directly to the functional requirements outlined in *Shoot'em Doods*' SRS document and its description on how they work. As *Shoot'em Doods* develops, the STD will be adjusted as need so that it continues to accurately test the system.          
+### d. *Shoot'em Doods*' Code     
 # 5. Potential Risks  
 # 6. Team Members  
 ## i. Team Style  
@@ -103,7 +111,7 @@ The team style that our group decided to go with was the egoless approach. Howev
     + Jonah Knickles  
 
 ## ii. Individual Contributions  
-The following subsections describe each team member's specific contribution to *Shootem Doods* as well as which team meetings they attended.
+The following subsections describe each team member's specific contribution to *Shoot'em Doods* as well as which team meetings they attended.
 ___
 ### a. Steven Chase Bernard  
 ___  
@@ -115,7 +123,7 @@ ___
 ___
 ### b. Elise Falgout  
 ___  
-My main role in the development of *Shootem Doods* was in the creation of its documentation. More specifically, I did the following:  
+My main role in the development of *Shoot'em Doods* was in the creation of its documentation. More specifically, I did the following:  
   + Software Requirements Specification Document (SRS)  
     - Section 2: Overall Description  
       I wrote this section in a Word document and sent it to Jonah Knickles via email so he could convert it into Markdown.
@@ -133,6 +141,8 @@ My main role in the development of *Shootem Doods* was in the creation of its do
   + Project Management Document  
     - Formatted the document  
     - Section 3: Configuration Management  
+      I wrote this entire section.  
+    - Section 4: Deliverables    
       I wrote this entire section.  
     - Section 6: Team Members  
       I wrote the subsection i. Team Style and the introduction to subsection ii. Individual Contributions.  
@@ -171,12 +181,12 @@ ___
 * Player input/controls
 
 # 7. Project Schedule
-# 8. Meetings Summaries
+# 8. Meetings Summaries  
 ## i. Group Meetings  
 ### Thursday, August 25th  
 **Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu  
 **Time:**  
-**Summary:**  During our first official group meeting, we collectively decided that we wanted to develop a side scrolling space shooting game called *Shootem Doods* using the Unity Game Engine. In addition, we decided that we wanted our game to have a three way power-up system and branching level paths.  
+**Summary:**  During our first official group meeting, we collectively decided that we wanted to develop a side scrolling space shooting game called *Shoot'em Doods* using the Unity Game Engine. In addition, we decided that we wanted our game to have a three way power-up system and branching level paths.  
 
 ### Thursday, September 22nd  
 **Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu   
@@ -207,6 +217,6 @@ ___
 ### Thursday, October 20th  
 **Team Members Present:** Elise Falgout, Jacob Hinton, Brandon Kilpatrick and Jonah Knickles   
 **Time:**  
-**Summary:**  
+**Summary:**  We met in the library and finished the SRS document.
 
 ## iv. Art/Design Team Meetings  
