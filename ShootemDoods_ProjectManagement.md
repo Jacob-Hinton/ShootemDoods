@@ -29,7 +29,7 @@ Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu</p>
 # Table of Contents
 Table of Contents
 
-1. [Vision](#1-vision)
+1. [**Vision**](#1-vision)
 2. **Process Model**
 3. **Configuration Management**  
   1. Overview of GitHub Management  
