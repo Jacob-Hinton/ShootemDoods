@@ -215,6 +215,9 @@ ___
 * Player input/controls
 
 # 7. Project Schedule
+## i. Critical Path Method  
+## ii. Gantt Chart  
+
 # 8. Meetings Summaries  
 ___  
 
