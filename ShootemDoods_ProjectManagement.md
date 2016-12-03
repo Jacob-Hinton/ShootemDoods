@@ -248,7 +248,7 @@ ___
 # 7. Project Schedule
 ## i. Critical Path Method  
 | Task Description | Task | Tasks Precedence | Task Length (Days) |
-| :--------------: | :--: | :---------------:| :-----------------:|
+| :--------------- | :--: | :----------------| :-----------------:|
 | Initial Framework| A    | None             |  3                 |
 | Art              | B    | A                |  4                 |
 | Mechanics        | C    | A                |  5                 |
@@ -263,13 +263,14 @@ ___
 
 
 | Task | Tasks Precedence | Earliest Start | Latest Start | Slack |
-| :--: | :---------------:| :-------------:| :-----------:| :----:|
+| :--: | :----------------| :-------------:| :-----------:| :----:|
 | A    | None             |  0             |  0           |  0    |
 | B    | A                |  3             |  4           |  1    |
 | C    | A                |  3             |  3           |  0    |
 | D    | A, B, C          |  8             |  8           |  0    |
 | E    | A, B, C, D       |  11            |  11          |  0    |
-| F    | A, B, C, D, E    |  13            |  13          |  0    |
+| F    | A, B, C, D, E    |  13            |  13          |  0    |  
+
 ## ii. Gantt Chart  
 ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/GanttChart.png "Shoot'em Doods Gantt Chart")  
 
@@ -279,12 +280,12 @@ ___
 
 ## i. Group Meetings  
 ### Tuesday, August 30th  
-**Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu  
-**Time:**  5:00 pm - 6:30 pm
+**Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles, and David Xu  
+**Time:**  5:00 pm - 6:30 pm  
 **Summary:**  During our first official group meeting, we collectively decided that we wanted to develop a side scrolling space shooting game called *Shoot'em Doods* using the Unity Game Engine. In addition, we decided that we wanted our game to have a three way power-up system and branching level paths.
 
 ### Tuesday, September 6th
-**Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu   
+**Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles, and David Xu   
 **Time:** 5:00 pm - 5:30 pm  
 **Summary:**  We discussed the talking points of our first presentation and decided that Jacob Hinton would be the presenter because he was the one who came up with the game idea. Jacob also showed the team the powerpoint he had made and received feedback on modifications.
 
@@ -294,12 +295,12 @@ ___
 **Summary:**  We officially delegated our team roles at the beginning of this meeting before finalizing the power-up concepts and talking about documentation.   
 
 ### Tuesday, September 27th  
-**Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu   
+**Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles, and David Xu   
 **Time:**  5:00 pm - 5:45 pm  
 **Summary:**  The main objective of today's meeting was to decide what our first level was going to look like. Once we finished sketching it out, we broke off into our subgroups. The programming team worked on finishing up the power-up system while the art/design team continued to flesh out the design of the first level and the documentation team discussed Assignment #1.  
 
 ### Sunday, November 27th  
-**Team Members Present:**  Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick and Jonah Knickles    
+**Team Members Present:**  Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, and Jonah Knickles    
 **Time:** 1:00 pm - 3:30 pm  
 **Summary:**  Today's meeting was purely about the final presentation on Monday, November 28th. We spent the first ten to fifteen minutes divvying up the slides and the rest of the meeting practicing our talking points with each other.   
 
@@ -308,17 +309,17 @@ ___
 
 ## ii. Programming Team Meetings  
 ### Saturday, September 3rd  
-**Team Members Present:**  Steven Chase Bernard, Jacob Hinton and Brandon Kilpatrick  
+**Team Members Present:**  Steven Chase Bernard, Jacob Hinton, and Brandon Kilpatrick  
 **Time:**  10:30 am - 4:00 pm  
 **Summary:**  Chase, Jacob, and Brandon got together to begin familiarizing themselves with the Unity Game Engine.
 
 ### Saturday, September 10th  
-**Team Members Present:**  Steven Chase Bernard, Jacob Hinton and Brandon Kilpatrick  
+**Team Members Present:**  Steven Chase Bernard, Jacob Hinton, and Brandon Kilpatrick  
 **Time:** 12:00 pm - 4:30 pm  
 **Summary:**  During this meeting, our programming team and art/design team met up at Jacob Hinton's place to implement a moving ship, a moving camera, and add a background to a mock level.  
 
 ### Saturday, September 17th  
-**Team Members Present:**  Steven Chase Bernard, Jacob Hinton and Brandon Kilpatrick  
+**Team Members Present:**  Steven Chase Bernard, Jacob Hinton, and Brandon Kilpatrick  
 **Time:** 10:00 am - 4:30 pm  
 **Summary:**  During this meeting, our programming team and art/design team met up at Jacob Hinton's place to create object and player collisions.    
 
@@ -332,7 +333,7 @@ ___
 
 ## iii. Documentation Team Meetings  
 ### Thursday, October 20th  
-**Team Members Present:** Elise Falgout, Jacob Hinton, Brandon Kilpatrick and Jonah Knickles   
+**Team Members Present:** Elise Falgout, Jacob Hinton, Brandon Kilpatrick, and Jonah Knickles   
 **Time:** 6:00 pm - 12:00 am  
 **Summary:**  We met in the library and finished the SRS document. Jacob and Brandon were brought in to assist on the functional requirements of the SRS document because the scope of the assignment had outgrown what could be accomplished with just two resources in the short window our team had to complete the assignment.
 
