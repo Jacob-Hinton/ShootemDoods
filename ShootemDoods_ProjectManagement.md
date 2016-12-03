@@ -216,6 +216,16 @@ ___
 
 # 7. Project Schedule
 ## i. Critical Path Method  
+| Task Description | Task | Tasks Precedence | Task Length (Days) |
+| :--------------: | :--: | :---------------:| :-----------------:|
+| Initial Framework| A    | None             |  3                 |
+| Art              | B    | A                |  4                 |
+| Mechanics        | C    | A                |  5                 |
+| UI               | D    | A, B, C          |  3                 |
+| Level Design     | E    | A, B, C, D       |  4                 |
+| Testing          | F    | A, B, C, D, E    |  4                 |  
+
+
 ## ii. Gantt Chart  
 ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/GanttChart.png "Shoot'em Doods Gantt Chart")  
 
