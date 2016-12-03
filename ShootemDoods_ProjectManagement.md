@@ -222,8 +222,14 @@ ___
 | Art              | B    | A                |  4                 |
 | Mechanics        | C    | A                |  5                 |
 | UI               | D    | A, B, C          |  3                 |
-| Level Design     | E    | A, B, C, D       |  4                 |
-| Testing          | F    | A, B, C, D, E    |  4                 |  
+| Level Design     | E    | A, B, C, D       |  2                 |
+| Testing          | F    | A, B, C, D, E    |  2                 |  
+
+
+  
+![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/GanttChart.png "Shoot'em Doods CPM Diagram")  
+
+
 
 | Task | Tasks Precedence | Earliest Start | Latest Start | Slack |
 | :--: | :---------------:| :-------------:| :-----------:| :----:|
