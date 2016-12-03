@@ -188,10 +188,10 @@ My main role in the development of *Shoot'em Doods* was in the creation of its d
   + Software Requirements Specification Document (SRS)  
     - Table of contents and formatting
       I formatted the document.
-    - Section 1 
+    - Section 1
       I wrote this in Markdown.
     - Section 4: Functional requirements
-      I wrote this section in Markdown. Jacob Hinton, Brandon Kilpatrick, and Elise Falgout added to and tweaked the requirements. 
+      I wrote this section in Markdown. Jacob Hinton, Brandon Kilpatrick, and Elise Falgout added to and tweaked the requirements.
     - Section 5: Nonfunctional Requirements
     - I wrote this section in Markdown. Jacob Hinton, Brandon Kilpatrick, and Elise Falgout proofread it.
     - Proof read the final document
@@ -217,6 +217,7 @@ ___
 # 7. Project Schedule
 ## i. Critical Path Method  
 ## ii. Gantt Chart  
+![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/GanttChart.png "Shoot'em Doods Gantt Chart")  
 
 # 8. Meetings Summaries  
 ___  
