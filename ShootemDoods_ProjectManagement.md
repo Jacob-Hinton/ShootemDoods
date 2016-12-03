@@ -86,7 +86,7 @@ Working with Markdown in Atom
 ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/AtomScreenshot.png "Screenshot of Atom")
 
 ## iv. Graphs  
-
+![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/ShipMockUp1_Handdrawn.jpeg "GitHub Commit Graph")
 # 4. Deliverables  
 ## i. Executables  
 For the first release of *Shoot'em Doods* there is an executable for the Windows, OSX, and Linux operating systems. While we did create executables for OSX and Linux, we only officially support the Windows executable at this time. New executables will be created each time a new version of *Shoot'em Doods* is released. For information on how to run the *Shoot'em Doods*' executables, please see the [readmeexe.md](https://github.com/jacobmhinton/ShootemDoods/blob/master/executables/readmeexe.md) in the folder '[executables](https://github.com/jacobmhinton/ShootemDoods/tree/master/executables)' located in the [*Shoot'em Doods*' repository](https://github.com/jacobmhinton/ShootemDoods).      
@@ -290,7 +290,7 @@ ___
 **Summary:**  We discussed the talking points of our first presentation and decided that Jacob Hinton would be the presenter because he was the one who came up with the game idea. Jacob also showed the team the powerpoint he had made and received feedback on modifications.
 
 ### Thursday, September 22nd  
-**Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu   
+**Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles, and David Xu   
 **Time:** 6:00 pm - 7:30 pm  
 **Summary:**  We officially delegated our team roles at the beginning of this meeting before finalizing the power-up concepts and talking about documentation.   
 
