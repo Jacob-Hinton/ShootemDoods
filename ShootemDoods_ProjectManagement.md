@@ -29,9 +29,9 @@ Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu</p>
 # Table of Contents
 Table of Contents
 
-1. **Vision**
-2. **Process Model**
-3. **Configuration Management**  
+1. **[Vision](#vision)**
+2. **[Process Model](#process-model)**
+3. **[Configuration Management](#configuration-management)**  
   1. Overview of GitHub Management  
   2. Utilization of the Branching Feature
   3. Creating the Documentation  
@@ -53,11 +53,9 @@ Table of Contents
     4. Brandon Kilpatrick  
     5. Jonah Knickles  
     6. David Xu  
-
 7. **Project Schedule**  
   1. Critical Path Method  
   2. Gantt Chart  
-  
 8. **Meetings Summaries**  
   1. Group Meetings  
   2. Programming Team Meetings  
