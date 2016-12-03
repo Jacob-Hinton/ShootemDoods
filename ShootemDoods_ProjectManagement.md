@@ -138,29 +138,23 @@ ___
 ___
 ### b. Elise Falgout  
 ___  
-My main role in the development of *Shoot'em Doods* was in the creation of its documentation. More specifically, I did the following:  
+Elise's main role in the development of *Shoot'em Doods* was in the creation of its documentation. More specifically, she did the following:  
   + Software Requirements Specification Document (SRS)  
     - Section 2: Overall Description  
-      I wrote this section in a Word document and sent it to Jonah Knickles via email so he could convert it into Markdown.
+      Elise wrote this section in a Word document and sent it to Jonah Knickles via email so he could convert it into Markdown.
     - Section 3: External Interface Requirements  
-      I wrote this section in a Word document and sent it to Jonah Knickles via email so he could convert it into Markdown. Also, please note that I outlined which images I wanted shown under 3.1 User Interfaces and that Brandon Kilpatrick and Jacob Hinton actually took the images because they had access to the most current version of the game.  
+      Elise wrote this section in a Word document and sent it to Jonah Knickles via email so he could convert it into Markdown. Also, please note that she outlined which images she wanted shown under 3.1 User Interfaces and that Brandon Kilpatrick and Jacob Hinton actually took the images because they had access to the most current version of the game.  
     - Added more references   
     - Proof read the final document   
   + Software Testing Document (STD)  
     - Formatted the document  
     - Section 1: Introduction  
-      I wrote the Document Conventions subsection  
+      Elise wrote the Document Conventions subsection  
     - Section 2: Functional Requirements Test Cases  
-      I wrote all of the test cases under subsections x. Game Over - xx. Save High Score. These subsections correspond to the functional requirements FR-10 through FR-20 that were outlined in our SRS document.  
+      Elise wrote all of the test cases under subsections x. Game Over - xx. Save High Score. These subsections correspond to the functional requirements FR-10 through FR-20 that were outlined in our SRS document.  
     - Proof read the final document  
   + Project Management Document  
-    - Formatted the document  
-    - Section 3: Configuration Management  
-      I wrote this entire section.  
-    - Section 4: Deliverables    
-      I wrote this entire section.  
-    - Section 6: Team Members  
-      I wrote the subsection i. Team Style and the introduction to subsection ii. Individual Contributions.  
+    - Excluding her team members' individual contribution sections, Elise wrote this document.  
 
 ___
 ### c. Jacob Hinton  
