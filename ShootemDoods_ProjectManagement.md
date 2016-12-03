@@ -66,7 +66,7 @@ Table of Contents
 
 The three colors that *Shoot'em Doods*' power-up system uses are red, yellow, and blue. Each color indicates a different kind of ability. To elaborate, all the red power-ups are attack related, all the blue power-ups are defensive, and all the yellow power-ups pertain to utility. The idea of the color-coded power-up system is to make the game more intuitive while still adding another level of strategy to the gameplay.  
 
-Ultimately, *Shoot'em Doods*' implementation of a tri-colored power-up system and its unique marriage of pixel art and modern graphics makes it an intriguing, thought provoking game.  
+Ultimately, *Shoot'em Doods*' implementation of a tri-colored power-up system and its unique marriage of pixel art and modern graphics makes it an intriguing tactical game.  
 
 # 2. Process Model  
 The process model that *Shoot'em Doods* followed was the agile method Extreme Programming (XP). Using the XP method allowed our team to create *Shoot'em Doods* incrementally while still allowing us to go back and refactor the code. Also, the pair programming facet of XP proved to be very beneficial for our programming team.  
