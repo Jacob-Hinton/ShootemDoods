@@ -54,7 +54,10 @@ Table of Contents
     5. Jonah Knickles  
     6. David Xu  
 
-7. **Project Schedule**
+7. **Project Schedule**  
+  1. Critical Path Method  
+  2. Gantt Chart  
+  
 8. **Meetings Summaries**  
   1. Group Meetings  
   2. Programming Team Meetings  
