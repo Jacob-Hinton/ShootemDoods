@@ -54,8 +54,9 @@ Table of Contents
     5. Jonah Knickles  
     6. David Xu  
 7. [Project Schedule](#7-project-schedule)  
-  1. Critical Path Method  
-  2. Gantt Chart    
+  1. PERT Estimation Method    
+  2. Critical Path Method  
+  3. Gantt Chart    
 8. [Meetings Summaries](#8-meetings-summaries)  
   1. Group Meetings  
   2. Programming Team Meetings  
@@ -245,8 +246,15 @@ ___
 * Player/Enemy/Object collision and destruction
 * Player input/controls
 
-# 7. Project Schedule
-## i. Critical Path Method  
+# 7. Project Schedule  
+## i. PERT Estimation Method  
+Our team estimated the time required to develop *Shoot'em Doods* by using the PERT Estimation Method. The following is our results:    
+Pessimistic: 17 days   
+Most likely: 15 days    
+Optimistic: 13 days    
+Estimation = (17 + 4*15 + 13)/6 = 15 days  
+
+## ii. Critical Path Method  
 | Task Description | Task | Tasks Precedence | Task Length (Days) |
 | :--------------- | :--: | :----------------| :-----------------:|
 | Initial Framework| A    | None             |  3                 |
@@ -271,7 +279,7 @@ ___
 | E    | A, B, C, D       |  11            |  11          |  0    |
 | F    | A, B, C, D, E    |  13            |  13          |  0    |  
 
-## ii. Gantt Chart  
+## iii. Gantt Chart  
 ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/GanttChart.png "Shoot'em Doods Gantt Chart")  
 
 # 8. Meetings Summaries  
