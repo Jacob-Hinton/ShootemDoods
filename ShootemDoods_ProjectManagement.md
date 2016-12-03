@@ -225,7 +225,14 @@ ___
 | Level Design     | E    | A, B, C, D       |  4                 |
 | Testing          | F    | A, B, C, D, E    |  4                 |  
 
-
+| Task | Tasks Precedence | Earliest Start | Latest Start | Slack |
+| :--: | :---------------:| :-------------:| :-----------:| :----:|
+| A    | None             |  0             |  0           |  0    |
+| B    | A                |  3             |  4           |  1    |
+| C    | A                |  3             |  3           |  0    |
+| D    | A, B, C          |  8             |  8           |  0    |
+| E    | A, B, C, D       |  11            |  11          |  0    |
+| F    | A, B, C, D, E    |  13            |  13          |  0    |
 ## ii. Gantt Chart  
 ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/GanttChart.png "Shoot'em Doods Gantt Chart")  
 
