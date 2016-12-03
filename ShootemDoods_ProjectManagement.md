@@ -248,13 +248,15 @@ ___
 
 # 7. Project Schedule  
 ## i. PERT Estimation Method  
-Our team estimated the time required to develop *Shoot'em Doods* by using the PERT Estimation Method. The following is our results:    
+Our team estimated the time required to develop *Shoot'em Doods* by using the PERT Estimation Method. The following are our results:    
 Pessimistic: 17 days   
 Most likely: 15 days    
 Optimistic: 13 days    
-Estimation = (17 + 4*15 + 13)/6 = 15 days  
+Estimation = (17 + 4*15 + 13)/6 = 15 days of work  
 
 ## ii. Critical Path Method  
+Using the results of the PERT method, our team was able to come up with the following critical path using the Critical Path Method.  
+
 | Task Description | Task | Tasks Precedence | Task Length (Days) |
 | :--------------- | :--: | :----------------| :-----------------:|
 | Initial Framework| A    | None             |  3                 |
