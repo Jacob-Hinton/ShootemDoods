@@ -29,9 +29,9 @@ Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu</p>
 # Table of Contents
 Table of Contents
 
-1. [**Vision**](#1-vision)
-2. **[Process Model](#process-model)**
-3. **[Configuration Management](#configuration-management)**  
+1. **Vision**
+2. **Process Model**
+3. **Configuration Management**  
   1. Overview of GitHub Management  
   2. Utilization of the Branching Feature
   3. Creating the Documentation  
@@ -53,9 +53,11 @@ Table of Contents
     4. Brandon Kilpatrick  
     5. Jonah Knickles  
     6. David Xu  
+
 7. **Project Schedule**  
   1. Critical Path Method  
   2. Gantt Chart  
+  
 8. **Meetings Summaries**  
   1. Group Meetings  
   2. Programming Team Meetings  
@@ -161,10 +163,31 @@ ___
 ### c. Jacob Hinton  
 ___  
 
-* Team lead on programming of power-up system and all game mechanics
-* Implemented all in game ui elements (power-up bar, life count, cooldown bar)
-* Managed all source control through GitHub. (main responsibility here was merging when conflicts appeared)
-* Contributed to the SRS document, notably on the functional requirements
+I was team lead on the programming of the central game mechanics and in charge of source control on github these responsibilities manifested themselves in the following tasks that I performed in development.
+
+  + Worked on every facet of player control
+    - Player movement and actions with keyboard and Xinput controller
+    - All nine of the player power ups.
+      - Speed up
+      - Machine gun
+      - Shockwave
+      - Shield
+      - Barrel Roll
+      - LaZer
+      - Rocket
+      - Teleport
+      - Charge
+    - Animation implementation
+  + Worked on all collision and layers for objects
+  + Implemented all in game ui elements
+    - power up bar
+    - cooldown bar
+    - life counter
+  + Managed all source control through GitHub.
+    - Merged conflicts
+    - Yelled at people when commited to the wrong branch followed by rollback to previous commit state
+  + Contributed to the SRS document, notably on the functional requirements
+  + Provided consultation and editing for Project Management Document
 
 ___
 ### d. Brandon Kilpatrick  
@@ -245,17 +268,17 @@ ___
 ### Tuesday, August 30th  
 **Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu  
 **Time:**  5:00 pm - 6:30 pm
-**Summary:**  During our first official group meeting, we collectively decided that we wanted to develop a side scrolling space shooting game called *Shoot'em Doods* using the Unity Game Engine. In addition, we decided that we wanted our game to have a three way power-up system and branching level paths.  
+**Summary:**  During our first official group meeting, we collectively decided that we wanted to develop a side scrolling space shooting game called *Shoot'em Doods* using the Unity Game Engine. In addition, we decided that we wanted our game to have a three way power-up system and branching level paths.
 
 ### Tuesday, September 6th
 **Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu   
 **Time:** 5:00 pm - 5:30 pm  
-**Summary:**  We discussed the talking points of our first presentation and decided that Jacob Hinton would be the presenter because he was the one who came up with the game idea.    
+**Summary:**  We discussed the talking points of our first presentation and decided that Jacob Hinton would be the presenter because he was the one who came up with the game idea. Jacob also showed the team the powerpoint he had made and received feedback on what could be changed.
 
 ### Thursday, September 22nd  
 **Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu   
 **Time:** 6:00 pm - 7:30 pm  
-**Summary:**  We officially delegated our team roles at the beginning of this meeting before finalizing the power-up concepts and talking about documentation.  
+**Summary:**  We officially delegated our team roles at the beginning of this meeting before finalizing the power-up concepts and talking about documentation. This was important now that the initial framework of the game existed and actual work could begin on making *Shoot'em Doods* its own thing.
 
 ### Tuesday, September 27th  
 **Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu   
@@ -274,7 +297,7 @@ ___
 ### Saturday, September 3rd  
 **Team Members Present:**  Steven Chase Bernard, Jacob Hinton and Brandon Kilpatrick  
 **Time:**  10:30 am - 4:00 pm  
-**Summary:**  Chase, Jacob, and Brandon got together to begin familiarizing themselves with the Unity Game Engine.  
+**Summary:**  Chase, Jacob, and Brandon got together to begin familiarizing themselves with the Unity Game Engine.
 
 ### Saturday, September 10th  
 **Team Members Present:**  Steven Chase Bernard, Jacob Hinton and Brandon Kilpatrick  
@@ -289,7 +312,7 @@ ___
 ### Friday, September 23rd  
 **Team Members Present:**  Jacob Hinton, Brandon Kilpatrick, and David Xu  
 **Time:**  5:00 pm - 7:00 pm  
-**Summary:**  The programming team got together for a pair programming session and were able to implement the basic functionality of the power-up system as well as edit the camera.     
+**Summary:**  The programming team got together for a pair programming session and were able to implement the basic functionality of the power-up system, as well as edit the camera.     
 
 ___  
 
@@ -298,7 +321,7 @@ ___
 ### Thursday, October 20th  
 **Team Members Present:** Elise Falgout, Jacob Hinton, Brandon Kilpatrick and Jonah Knickles   
 **Time:** 6:00 pm - 12:00 am  
-**Summary:**  We met in the library and finished the SRS document.
+**Summary:**  We met in the library and finished the SRS document. Jacob and Brandon were brought in to assist on the functional requirements of the SRS document because the scope of the assignment had outgrown what could be accomplished with just two people in the short window our team had to complete the assignment in.
 
 ___  
 
