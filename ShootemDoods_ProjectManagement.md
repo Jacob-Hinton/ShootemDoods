@@ -29,7 +29,7 @@ Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu</p>
 # Table of Contents
 Table of Contents
 
-1. **Vision**
+1. [Vision](#1-vision)
 2. **Process Model**
 3. **Configuration Management**  
   1. Overview of GitHub Management  
@@ -53,11 +53,9 @@ Table of Contents
     4. Brandon Kilpatrick  
     5. Jonah Knickles  
     6. David Xu  
-
 7. **Project Schedule**  
   1. Critical Path Method  
-  2. Gantt Chart  
-  
+  2. Gantt Chart    
 8. **Meetings Summaries**  
   1. Group Meetings  
   2. Programming Team Meetings  
@@ -193,7 +191,7 @@ ___
 ### d. Brandon Kilpatrick  
 ___  
 
-  + Created and implemented art assets such as 
+  + Created and implemented art assets such as
     - the scrolling parralax level back ground
     - Several enemy types
     - The end-game boss
