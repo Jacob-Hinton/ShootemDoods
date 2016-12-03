@@ -226,8 +226,8 @@ ___
 | Testing          | F    | A, B, C, D, E    |  2                 |  
 
 
-  
-![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/GanttChart.png "Shoot'em Doods CPM Diagram")  
+
+![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/CPM_Diagram.png "Shoot'em Doods CPM Diagram")  
 
 
 
