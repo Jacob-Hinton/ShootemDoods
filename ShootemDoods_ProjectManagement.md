@@ -162,10 +162,10 @@ ___
 ### c. Jacob Hinton  
 ___  
 
-I was team lead on the programming of the central game mechanics and in charge of source control on github these responsibilities manifested themselves in the following tasks that I performed in development.
+I was team lead on the programming of the central game mechanics and in charge of source control on GitHub. These responsibilities manifested themselves in the following tasks that I performed in development.
 
   + Worked on every facet of player control
-    - Player movement and actions with keyboard and Xinput controller
+    - Player movement and actions with keyboard and XInput controller
     - All nine of the player power ups.
       - Speed up
       - Machine gun
@@ -178,13 +178,13 @@ I was team lead on the programming of the central game mechanics and in charge o
       - Charge
     - Animation implementation
   + Worked on all collision and layers for objects
-  + Implemented all in game ui elements
+  + Implemented all in game UI elements
     - power up bar
     - cooldown bar
     - life counter
   + Managed all source control through GitHub.
     - Merged conflicts
-    - Yelled at people when committed to the wrong branch followed by rollback to previous commit state
+    - Yelled at people when they committed to the wrong branch followed by rollback to previous commit state
   + Contributed to the SRS document, notably on the functional requirements
   + Provided consultation and editing for Project Management Document
 
@@ -193,7 +193,7 @@ ___
 ___  
 
   + Created and implemented art assets such as
-    - the scrolling parralax level back ground
+    - The scrolling parralax level back ground
     - Several enemy types
     - The end-game boss
     - Power-up assets such as the shield and missile
@@ -201,13 +201,13 @@ ___
   + Implemented UI elements such as
     - The main menu
     - The in-game pause menu
-    - The game-over screen
-  + designed and coded the behaviors of all enemy types
-  + designed and assembled the game test level
-  + helped in initial coding of several game mechanics and power-ups, most notably the machine gun
-  + did final gameplay testing, made changes to power-up code to produce more satisfying gameplay, including
-    - re-ordering the progress of several power-ups
-    - differentiating the barrel roll and teleport power ups
+    - The Game-Over screen
+  + Designed and coded the behaviors of all enemy types
+  + Designed and assembled the game test level
+  + Helped in initial coding of several game mechanics and power-ups, most notably the machine gun
+  + Did final gameplay testing, made changes to power-up code to produce more satisfying gameplay, including
+    - Re-ordering the progress of several power-ups
+    - Differentiating the barrel roll and teleport power-ups
     - Slowing the speed of the default gun
     - Slowing the default speed of the ship
   + Helped with documentation work, most notably the SRS document
@@ -286,12 +286,12 @@ ___
 ### Tuesday, September 6th
 **Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu   
 **Time:** 5:00 pm - 5:30 pm  
-**Summary:**  We discussed the talking points of our first presentation and decided that Jacob Hinton would be the presenter because he was the one who came up with the game idea. Jacob also showed the team the powerpoint he had made and received feedback on what could be changed.
+**Summary:**  We discussed the talking points of our first presentation and decided that Jacob Hinton would be the presenter because he was the one who came up with the game idea. Jacob also showed the team the powerpoint he had made and received feedback on modifications.
 
 ### Thursday, September 22nd  
 **Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu   
 **Time:** 6:00 pm - 7:30 pm  
-**Summary:**  We officially delegated our team roles at the beginning of this meeting before finalizing the power-up concepts and talking about documentation. This was important now that the initial framework of the game existed and actual work could begin on making *Shoot'em Doods* its own thing.
+**Summary:**  We officially delegated our team roles at the beginning of this meeting before finalizing the power-up concepts and talking about documentation.   
 
 ### Tuesday, September 27th  
 **Team Members Present:** Steven Chase Bernard, Elise Falgout, Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu   
@@ -325,7 +325,7 @@ ___
 ### Friday, September 23rd  
 **Team Members Present:**  Jacob Hinton, Brandon Kilpatrick, and David Xu  
 **Time:**  5:00 pm - 7:00 pm  
-**Summary:**  The programming team got together for a pair programming session and were able to implement the basic functionality of the power-up system, as well as edit the camera.     
+**Summary:**  The programming team got together for a pair programming session and were able to both implement the basic functionality of the power-up system as well as edit the camera.     
 
 ___  
 
@@ -334,7 +334,7 @@ ___
 ### Thursday, October 20th  
 **Team Members Present:** Elise Falgout, Jacob Hinton, Brandon Kilpatrick and Jonah Knickles   
 **Time:** 6:00 pm - 12:00 am  
-**Summary:**  We met in the library and finished the SRS document. Jacob and Brandon were brought in to assist on the functional requirements of the SRS document because the scope of the assignment had outgrown what could be accomplished with just two people in the short window our team had to complete the assignment in.
+**Summary:**  We met in the library and finished the SRS document. Jacob and Brandon were brought in to assist on the functional requirements of the SRS document because the scope of the assignment had outgrown what could be accomplished with just two resources in the short window our team had to complete the assignment.
 
 ___  
 
@@ -343,7 +343,7 @@ ___
 ### Wednesday, September 21st
 **Team Members Present:** Steven Chase Bernard and Brandon Kilpatrick   
 **Time:** 6:15 pm - 7:00 pm  
-**Summary:**  Chase and Brandon met up at Brandon's apartment and sketched up the first design of the player's ship before creating it in Paint.net.  
+**Summary:**  Chase and Brandon met at Brandon's apartment and sketched the first design of the player's ship before creating it in Paint.net.  
 
   Photo of the Hand-drawn Player Ship  
   ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/ShipMockUp1_Handdrawn.jpeg "Hand-drawn player ship")  
@@ -351,7 +351,7 @@ ___
 ### Tuesday, November 15th
 **Team Members Present:** Steven Chase Bernard and Brandon Kilpatrick   
 **Time:** 3:00 pm - 8:00 pm  
-**Summary:**  Chase finished designing some of the enemies and Brandon finished the cityscape background he has been working on.  
+**Summary:**  Chase finished designing some of the enemies and Brandon finished the cityscape background he had been working on.  
 
   Compilation of the Default Enemies  
   ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/DefaultEnemiesMockUp.png "Compilation of the Default Enemies")  
