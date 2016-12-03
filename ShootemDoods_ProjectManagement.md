@@ -35,7 +35,7 @@ Table of Contents
   1. Overview of GitHub Management  
   2. Utilization of the Branching Feature
   3. Creating the Documentation  
-  4. Graphs  
+  4. GitHub Commit Graph    
 4. [Deliverables](#4-deliverables)  
   1. Executables  
   2. Documentation  
@@ -85,8 +85,8 @@ All of the official documentation for *Shoot'em Doods* that we posted on GitHub 
 Working with Markdown in Atom  
 ![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/AtomScreenshot.png "Screenshot of Atom")
 
-## iv. Graphs  
-![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/ShipMockUp1_Handdrawn.jpeg "GitHub Commit Graph")
+## iv. GitHub Commit Graph    
+![alt text](https://github.com/jacobmhinton/ShootemDoods/blob/master/mockups/GitHubCommitGraph.png "GitHub Commit Graph")
 # 4. Deliverables  
 ## i. Executables  
 For the first release of *Shoot'em Doods* there is an executable for the Windows, OSX, and Linux operating systems. While we did create executables for OSX and Linux, we only officially support the Windows executable at this time. New executables will be created each time a new version of *Shoot'em Doods* is released. For information on how to run the *Shoot'em Doods*' executables, please see the [readmeexe.md](https://github.com/jacobmhinton/ShootemDoods/blob/master/executables/readmeexe.md) in the folder '[executables](https://github.com/jacobmhinton/ShootemDoods/tree/master/executables)' located in the [*Shoot'em Doods*' repository](https://github.com/jacobmhinton/ShootemDoods).      
