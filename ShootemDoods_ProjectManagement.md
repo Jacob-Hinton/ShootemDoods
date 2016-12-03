@@ -29,22 +29,22 @@ Jacob Hinton, Brandon Kilpatrick, Jonah Knickles and David Xu</p>
 # Table of Contents
 Table of Contents
 
-1. [**Vision**](#1-vision)
-2. **Process Model**
-3. **Configuration Management**  
+1. [Vision](#1-vision)
+2. [Process Model](#2-process-model)
+3. [Configuration Management](#3-configuration-management)  
   1. Overview of GitHub Management  
   2. Utilization of the Branching Feature
   3. Creating the Documentation  
   4. Graphs  
-4. **Deliverables**  
+4. [Deliverables](#4-deliverables)  
   1. Executables  
   2. Documentation  
     1. System Requirements Specification (SRS) Document  
     2. Software Design Document (SDD)  
     3. Software Testing Document (STD)  
     4. *Shoot'em Doods*' Code   
-5. **Potential Risks**
-6. **Team Members**
+5. [Potential Risks](#5-potential-risks)
+6. [Team Members](#6-team-members)
   1. Team Style  
   2. Individual Contributions  
     1. Steven Chase Bernard  
@@ -53,10 +53,10 @@ Table of Contents
     4. Brandon Kilpatrick  
     5. Jonah Knickles  
     6. David Xu  
-7. **Project Schedule**  
+7. [Project Schedule](#7-project-schedule)  
   1. Critical Path Method  
   2. Gantt Chart    
-8. **Meetings Summaries**  
+8. [Meetings Summaries](#8-meetings-summaries)  
   1. Group Meetings  
   2. Programming Team Meetings  
   3. Documentation Team Meetings  
@@ -139,23 +139,24 @@ ___
 ___
 ### b. Elise Falgout  
 ___  
-Elise's main role in the development of *Shoot'em Doods* was in the creation of its documentation. More specifically, she did the following:  
+My main role in the development of *Shoot'em Doods* was in the creation of its documentation. More specifically, I did the following:  
   + Software Requirements Specification Document (SRS)  
     - Section 2: Overall Description  
-      Elise wrote this section in a Word document and sent it to Jonah Knickles via email so he could convert it into Markdown.
+      I wrote this section in a Word document and sent it to Jonah Knickles via email so he could convert it into Markdown.
     - Section 3: External Interface Requirements  
-      Elise wrote this section in a Word document and sent it to Jonah Knickles via email so he could convert it into Markdown. Also, please note that she outlined which images she wanted shown under 3.1 User Interfaces and that Brandon Kilpatrick and Jacob Hinton actually took the images because they had access to the most current version of the game.  
+      I wrote this section in a Word document and sent it to Jonah Knickles via email so he could convert it into Markdown. Also, please note that I outlined which images I wanted shown under 3.1 User Interfaces and that Brandon Kilpatrick and Jacob Hinton actually took the images because they had access to the most current version of the game.  
     - Added more references   
     - Proof read the final document   
   + Software Testing Document (STD)  
     - Formatted the document  
     - Section 1: Introduction  
-      Elise wrote the Document Conventions subsection  
+      I wrote the Document Conventions subsection  
     - Section 2: Functional Requirements Test Cases  
-      Elise wrote all of the test cases under subsections x. Game Over - xx. Save High Score. These subsections correspond to the functional requirements FR-10 through FR-20 that were outlined in our SRS document.  
+      I wrote all of the test cases under subsections x. Game Over - xx. Save High Score. These subsections correspond to the functional requirements FR-10 through FR-20 that were outlined in our SRS document.  
     - Proof read the final document  
   + Project Management Document  
-    - Excluding her team members' individual contribution sections, Elise wrote this document.  
+    - Excluding my team members' individual contribution sections, I wrote this document.  
+Also, I attended all of the group meetings and used GroupMe and Discord to talk Jonah and the rest of the team about documentation.  
 
 ___
 ### c. Jacob Hinton  
@@ -183,7 +184,7 @@ I was team lead on the programming of the central game mechanics and in charge o
     - life counter
   + Managed all source control through GitHub.
     - Merged conflicts
-    - Yelled at people when commited to the wrong branch followed by rollback to previous commit state
+    - Yelled at people when committed to the wrong branch followed by rollback to previous commit state
   + Contributed to the SRS document, notably on the functional requirements
   + Provided consultation and editing for Project Management Document
 
