@@ -193,11 +193,25 @@ ___
 ### d. Brandon Kilpatrick  
 ___  
 
-* Created and implemented art assets such as the scrolling parralax background, the Menu Screen, game control screen, and enemies
-* Implemented UI elements such as the main menu, pause menu, and game-over screen
-* designed and coded the behaviors of all enemy types
-* designed and assembled the game test level
-* Helped with documentation work, most notably the SRS document
+  + Created and implemented art assets such as 
+    - the scrolling parralax level back ground
+    - Several enemy types
+    - The end-game boss
+    - Power-up assets such as the shield and missile
+  + Worked on coordinating the overall visual design and scene design
+  + Implemented UI elements such as
+    - The main menu
+    - The in-game pause menu
+    - The game-over screen
+  + designed and coded the behaviors of all enemy types
+  + designed and assembled the game test level
+  + helped in initial coding of several game mechanics and power-ups, most notably the machine gun
+  + did final gameplay testing, made changes to power-up code to produce more satisfying gameplay, including
+    - re-ordering the progress of several power-ups
+    - differentiating the barrel roll and teleport power ups
+    - Slowing the speed of the default gun
+    - Slowing the default speed of the ship
+  + Helped with documentation work, most notably the SRS document
 
 ___
 ### e. Jonah Knickles  
